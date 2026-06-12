@@ -12,7 +12,7 @@
 | Luiz Eduardo Damacena | @username | 3C |
 
 **Tema:** Tecnologia para Desenvolvimento de Metodologia de Ensino
-**Tecnologia:** Python + Flask + SQLite
+**Tecnologia:** Python + HTML/CSS + Flask + PostgreSQL + Heroku + Plotly
 
 ---
 
@@ -20,7 +20,7 @@
 
 (Descreva em 2-3 frases o problema que o sistema resolve e para quem)
 
----
+Extingui ou reduzi as constantes reclamações, críticas e desinteresse dos estudantes do CEMIC sobre as aulas. Ademais, auxiliar o educador na escolha, ou na adaptação, ou na criação da metodologia de ensino que mais se adeque ao perfil acadêmico do grupo. Isto posto, com o trabalho, não se prende apenas na interpretação do conteúdo, mas também, no ambiente escolar e na formação acadêmica dos alunos, priorizando a preparação do discente para todas as dimensões sociais.
 
 ## 🔄 Como o grupo trabalha toda semana
 
