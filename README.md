@@ -7,11 +7,11 @@
 
 | Nome completo | GitHub | Turma |
 |--------------|--------|-------|
-| (nome 1) | @username | 3A |
-| (nome 2) | @username | 3A |
-| (nome 3) | @username | 3A |
+| João Pedro Lima de Souza | pleniterballet | 3C |
+| Guilherme Martins Reis Rodrigues | @username | 3C |
+| Luiz Eduardo Damacena | @username | 3C |
 
-**Tema:** (escreva aqui em 1 frase)
+**Tema:** Tecnologia para Desenvolvimento de Metodologia de Ensino
 **Tecnologia:** Python + Flask + SQLite
 
 ---
