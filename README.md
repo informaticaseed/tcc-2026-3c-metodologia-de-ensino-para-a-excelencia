@@ -8,7 +8,7 @@
 | Nome completo | GitHub | Turma |
 |--------------|--------|-------|
 | João Pedro Lima de Souza | pleniterballet | 3C |
-| Guilherme Martins Reis Rodrigues | @username | 3C |
+| Guilherme Martins Reis Rodrigues | @GuilhermeRodrigues511 | 3C |
 | Luiz Eduardo Damacena | @username | 3C |
 
 **Tema:** Tecnologia para Desenvolvimento de Metodologia de Ensino
