@@ -11,7 +11,7 @@
 | Guilherme Martins Reis Rodrigues | @GuilhermeRodrigues511 | 3C |
 | Luiz Eduardo Damacena Figueira | @luizfigueiradtp-spec | 3C |
 
-**Tema:** Tecnologia para Desenvolvimento de Metodologia de Ensino.
+**Tema:** Tecnologia para Desenvolvimento de Metodologia de Ensino. 
 **Tecnologia:** Python + HTML/CSS + Flask + PostgreSQL + Heroku + Plotly.
 
 ---
