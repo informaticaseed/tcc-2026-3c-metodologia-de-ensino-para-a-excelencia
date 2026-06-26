@@ -7,7 +7,7 @@
 
 | Nome completo | GitHub | Turma |
 |--------------|--------|-------|
-| João Pedro Lima de Souza | pleniterballet | 3C |
+| João Pedro Lima de Souza | @pleniterballet | 3C |
 | Guilherme Martins Reis Rodrigues | @GuilhermeRodrigues511 | 3C |
 | Luiz Eduardo Damacena Figueira | @luizfigueiradtp-spec | 3C |
 
