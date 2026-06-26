@@ -7,12 +7,12 @@
 
 | Nome completo | GitHub | Turma |
 |--------------|--------|-------|
-| João Pedro Lima de Souza | pleniterballet | 3C |
+| João Pedro Lima de Souza | @pleniterballet | 3C |
 | Guilherme Martins Reis Rodrigues | @GuilhermeRodrigues511 | 3C |
-| Luiz Eduardo Damacena | @luizfigueiradtp-spec | 3C |
+| Luiz Eduardo Damacena Figueira | @luizfigueiradtp-spec | 3C |
 
-**Tema:** Tecnologia para Desenvolvimento de Metodologia de Ensino
-**Tecnologia:** Python + HTML/CSS + Flask + PostgreSQL + Heroku + Plotly
+**Tema:** Tecnologia para Desenvolvimento de Metodologia de Ensino. 
+**Tecnologia:** Python + HTML/CSS + Flask + PostgreSQL + Heroku + Plotly.
 
 ---
 
@@ -24,10 +24,10 @@ Extingui ou reduz as constantes reclamações, críticas e desinteresse dos estu
 
 ## 🔄 Como o grupo trabalha toda semana
 
-1. **Segunda** — cada integrante abre Issues da semana (use o template "Tarefa Semanal")
-2. **Durante a semana** — trabalham e fazem commits
-3. **Sexta** — o grupo abre 1 Pull Request linkando as Issues concluídas
-4. **Push** — métricas de participação aparecem automaticamente no Actions
+1. **Segunda** — cada integrante abre Issues da semana (use o template "Tarefa Semanal").
+2. **Durante a semana** — trabalham e fazem commits.
+3. **Sexta** — o grupo abre 1 Pull Request linkando as Issues concluídas.
+4. **Push** — métricas de participação aparecem automaticamente no Actions.
 
 ---
 
