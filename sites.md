@@ -123,10 +123,8 @@
 
 | Título do Site | Link | 
 |--------------|--------|
-| Course Directory - Postgraduate Study | https://www.postgraduate.study.cam.ac.uk/courses?utm_source=GoogleAds&utm_medium=cpc&utm_campaign=Latin_America_Strategy1_Increase_Awareness&gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrG_XrLUyZPVl-MRkYznvxuai9AHsSUjlCdj76eW2uxqBMKDE-z7ZhxhoCPOgQAvD_BwE |
-| 
-Conheça as vantagens do método Cambridge de ensino de inglês
- | https://www.okidiomas.com/site/noticias/lerNoticia/49#:~:text=O%20m%C3%A9todo%20Cambridge%20de%20estudo,de%20diversos%20recursos%20para%20aprendizagem |
+| Course Directory - Postgraduate Study | https://www.postgraduate.study.cam.ac.uk/courses utm_source=GoogleAds&utm_medium=cpc&utm_campaign=Latin_America_Strategy1_Increase_Awareness&gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrG_XrLUyZPVl-MRkYznvxuai9AHsSUjlCdj76eW2uxqBMKDE-z7ZhxhoCPOgQAvD_BwE |
+| Conheça as vantagens do método Cambridge de ensino de inglês | https://www.okidiomas.com/site/noticias/lerNoticia/49#:~:text=O%20m%C3%A9todo%20Cambridge%20de%20estudo,de%20diversos%20recursos%20para%20aprendizagem |
 | Ensino, aprendizagem e avaliação | https://www.cambridgeenglish.org/br/teaching-english/professional-development/cambridge-english-teaching-framework/teaching-learning-and-assessment/ |
 | Metodologia de Cambridge English | https://primoris.wordpress.com/english-now/metodologia-cambridge-english/ |
 | Qualificações Cambridge English para escolas | https://www.cambridgeenglish.org/br/exams-and-tests/qualifications/schools/ |
