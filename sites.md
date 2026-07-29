@@ -123,16 +123,28 @@
 
 | Título do Site | Link | 
 |--------------|--------|
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| Course Directory - Postgraduate Study | https://www.postgraduate.study.cam.ac.uk/courses?utm_source=GoogleAds&utm_medium=cpc&utm_campaign=Latin_America_Strategy1_Increase_Awareness&gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrG_XrLUyZPVl-MRkYznvxuai9AHsSUjlCdj76eW2uxqBMKDE-z7ZhxhoCPOgQAvD_BwE |
+| 
+Conheça as vantagens do método Cambridge de ensino de inglês
+ | https://www.okidiomas.com/site/noticias/lerNoticia/49#:~:text=O%20m%C3%A9todo%20Cambridge%20de%20estudo,de%20diversos%20recursos%20para%20aprendizagem |
+| Ensino, aprendizagem e avaliação | https://www.cambridgeenglish.org/br/teaching-english/professional-development/cambridge-english-teaching-framework/teaching-learning-and-assessment/ |
+| Metodologia de Cambridge English | https://primoris.wordpress.com/english-now/metodologia-cambridge-english/ |
+| Qualificações Cambridge English para escolas | https://www.cambridgeenglish.org/br/exams-and-tests/qualifications/schools/ |
+| Universidade de Cambridge: veja como estudar no Reino Unido | https://www.remessaonline.com.br/blog/universidade-de-cambridge/ |
+| Desvendando o Sucesso do Projeto Bilíngue: Metodologia Cambridge e a Parceria Família-Escola | https://www.colegioestillo.com.br/desvendando-o-sucesso-do-projeto-bilingue-metodologia-cambridge-e-a-parceria-familia-escola/ |
+| Cambridge: tudo sobre a universidade de Isaac Newton e Charles Darwin | https://www.estudarfora.org.br/universidade-de-cambridge/ |
+| Cambridge Primary: um guia para os pais | https://www.cambridgeinternational.org/Images/467520-cambridge-primary-a-guide-for-parents-portuguese-.pdf |
+|  | https://www.prospects.ac.uk/universities/university-of-cambridge-3692?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrGwAtQU8Yh7thV2vjf8iVAR20pad_d8goRlqC5xZvAlXFH554-5zz8hoCrFUQAvD_BwE |
+| Propects | https://www.prospects.ac.uk/universities/university-of-cambridge-3692?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrGwAtQU8Yh7thV2vjf8iVAR20pad_d8goRlqC5xZvAlXFH554-5zz8hoCrFUQAvD_BwE |
 
 **Objetivo:** (a definir)
 
 ---
+
+## Stanford 
+
+| Título do Site | Link | 
+|--------------|--------|
+|  |  |
+
+**Objetivo:** (a definir)
