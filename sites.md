@@ -99,3 +99,40 @@
 | 27 cursos online oferecidos pelo Imperial College | https://www.universidadedointercambio.com/imperial-college-conheca-os-27-cursos-online-oferecidos/ |
 
 **Objetivo:** (a definir)
+
+---
+
+## Oxford
+
+| Título do Site | Link | 
+|--------------|--------|
+| Project Access | https://projectaccess.org/uk-undergraduate-program?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrG9gCEOsKIS05lVXprZD5oqQDikVroklMi6ZYGeN7GHEm5VxUlYYFChoCLAYQAvD_BwE |
+| Metodologia e Tecnologia | http://oxford.org.br/metodologia.asp#:~:text=Metodologia%20e%20tecnologia&text=No%20OXFORD%20voc%C3%AA%20recebe%20aten%C3%A7%C3%A3o,que%20foi%20ensinado%20em%20aula |
+| Conheça modelo de aula de Oxford e Cambridge que existe há mais de 600 anos | https://www.estudarfora.org.br/tutorias-oxford-e-cambridge/ |
+| Soul Bilíngue - Somos Oxford! | https://www.soulbilingue.com/post/agora-somos-metodologia-oxford |
+| Análise comparativa entre os métodos de ensino de Inglês Oxford University Press e Pearson English - o papel da gramática | https://proceedings.science/ciel-2017/trabalhos/analise-comparativa-entre-os-metodos-de-ensino-de-ingles-oxford-university-press?lang=pt-br |
+| Universidade de Oxford: conheça a 1ª universidade em língua inglesa | https://www.estudarfora.org.br/oxford-university/ |
+| Oxford International Study Centre | https://www.languagecourse.net/pt/escola-oxford-international-study-centre-oxford?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrGwbhTeRoeQ2fT4nGC2xeUSSUnPk_bRaoEdD-_Tmk4Cg_cT3oSIGdvRoC85AQAvD_BwE |
+| Tutoriais de Oxford e Cambridge: conheça modelo de aula que existe desde o século 15 | https://epocanegocios.globo.com/Carreira/noticia/2018/09/tutoriais-de-oxford-e-cambridge-conheca-modelo-de-aula-que-existe-desde-o-seculo-15.html |
+
+**Objetivo:** (a definir)
+
+---
+
+## Cambridge
+
+| Título do Site | Link | 
+|--------------|--------|
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+
+**Objetivo:** (a definir)
+
+---
