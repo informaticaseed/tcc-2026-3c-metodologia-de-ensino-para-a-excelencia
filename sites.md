@@ -93,7 +93,7 @@
 | Imperial College London: a melhor universidade de Londres | https://www.universidadedointercambio.com/imperial-college-london/ |
 | Educations.com - Imperial College London | https://www.masterstudies.com.br/institutions/imperial-college-london |
 | IDP Hotcourses | https://www.hotcoursesabroad.com/study/uk/school-college-university/imperial-college-london/3813/international.html |
-| #vamosconhecer | Imperial College | https://abmes.org.br/noticias/detalhe/5056/-vamosconhecer-imperial-college- |
+| #vamosconhecer - Imperial College | https://abmes.org.br/noticias/detalhe/5056/-vamosconhecer-imperial-college- |
 | Information Planet | https://www.informationplanet.pt/ensino-superior/reino-unido/imperial-college-london/ |
 | Versus | https://versus.com/br/imperial-college-london |
 | 27 cursos online oferecidos pelo Imperial College | https://www.universidadedointercambio.com/imperial-college-conheca-os-27-cursos-online-oferecidos/ |
@@ -123,7 +123,7 @@
 
 | Título do Site | Link | 
 |--------------|--------|
-| Course Directory - Postgraduate Study | https://www.postgraduate.study.cam.ac.uk/courses utm_source=GoogleAds&utm_medium=cpc&utm_campaign=Latin_America_Strategy1_Increase_Awareness&gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrG_XrLUyZPVl-MRkYznvxuai9AHsSUjlCdj76eW2uxqBMKDE-z7ZhxhoCPOgQAvD_BwE |
+| Course Directory - Postgraduate Study | https://www.postgraduate.study.cam.ac.uk/coursesutm_source=GoogleAds&utm_medium=cpc&utm_campaign=Latin_America_Strategy1_Increase_Awareness&gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrG_XrLUyZPVl-MRkYznvxuai9AHsSUjlCdj76eW2uxqBMKDE-z7ZhxhoCPOgQAvD_BwE |
 | Conheça as vantagens do método Cambridge de ensino de inglês | https://www.okidiomas.com/site/noticias/lerNoticia/49#:~:text=O%20m%C3%A9todo%20Cambridge%20de%20estudo,de%20diversos%20recursos%20para%20aprendizagem |
 | Ensino, aprendizagem e avaliação | https://www.cambridgeenglish.org/br/teaching-english/professional-development/cambridge-english-teaching-framework/teaching-learning-and-assessment/ |
 | Metodologia de Cambridge English | https://primoris.wordpress.com/english-now/metodologia-cambridge-english/ |
@@ -143,6 +143,24 @@
 
 | Título do Site | Link | 
 |--------------|--------|
-|  |  |
+| Stanford University: conheça a universidade mãe do Google e da Nik | https://www.estudarfora.org.br/stanforduniversity/#:~:text=Como%20%C3%A9%20estudar%20na%20Stanford,nas%20mesmas%20salas%20e%20ambientes |
+| Curso com metodologia de Stanford acelera aprendizado de alunos | https://agenciabrasil.ebc.com.br/educacao/noticia/2020-08/curso-com-metodologia-de-stanford-acelera-aprendizado-de-alunos |
+| Programa de Stanford usa Neurociência para ensinar matemática de forma inovadora | https://mentalidadesmatematicas.org.br/stanford-neurociencia-matematica/ |
+| Informações sobre Standford Universaty | https://www.hotcoursesabroad.com/study/us-usa/school-college-university/stanford-university/72102/international.html |
+| Tudo o que você precisa saber sobre a University Stanford, umas das instituições mais renomadas do mundo! | https://www.geniumeducation.com.br/university-stanford/ |
+| Forbes Tech
+Como funciona o primeiro curso em VR da Stanford University? | https://forbes.com.br/forbes-tech/2021/12/como-funciona-o-primeiro-curso-em-vr-da-stanford-university/ |
+| Universidade Stanford: segunda melhor dos Estados Unidos | https://www.universidadedointercambio.com/por-dentro-de-stanford/ |
 
 **Objetivo:** (a definir)
+
+---
+
+## Stanford 
+
+| Título do Site | Link | 
+|--------------|--------|
+| Os caminhos da aprendizagem: como o cérebro funciona? | https://porvir.org/os-caminhos-da-aprendizagem-como-o-cerebro-funciona/ |
+| Quanto é o valor do salário mínimo em 2026? Veja o histórico | https://meutudo.com.br/blog/tabelas/salario-minimo/#:~:text=O%20sal%C3%A1rio%20m%C3%ADnimo%20em%202008,%2C00%20(12%2C05%25) |
+| Cinco cidades concentram quase 50% da extrema  no DF | https://www.metropoles.com/distrito-federal/cinco-cidades-concentram-quase-50-da-extrema-pobreza-no-df-veja-o-mapa |
+| Paciente é chamada para consulta pelo SUS onze anos após ter morrido | https://www.jusbrasil.com.br/noticias/paciente-e-chamada-para-consulta-pelo-sus-onze-anos-apos-ter-morrido/703486596 |
