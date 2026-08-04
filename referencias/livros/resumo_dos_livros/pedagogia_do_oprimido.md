@@ -1,23 +1,20 @@
-# (Nome do Livro)
-## (Responsável pelo Resumo)
+# (Pedagogia do Oprimido)
+## (Luiz E. D. Figueira)
 
 ---
 
 ## Capitulos
 | Numeração do Capitulo | Título do Capitulo |
 |---|----------------------------------------| 
-| ? | (escreva aqui) | 
-| ? | (escreva aqui) | 
-| ? | (escreva aqui) | 
-| ? | (escreva aqui) | 
-| ? | (escreva aqui) | 
-| ? | (escreva aqui) | 
-
+| 1 | (Justificativa da pedagogia do oprimido) | 
+| 2 | (A concepção “bancária” da educação como instrumento da opressão. Seus pressupostos, sua crítica) | 
+| 3 | (A dialogicidade: essência da educação como prática da liberdade) | 
+| 4 | (A teoria da ação antidialógica) | 
 ---
 
 ## (Página Inicial e Página Final do Bloco de Resumo: Ex. Páginas 1-15)
 
-Capítulo 1 "Primeiras Palavras"
+Primeiras Palavras
 
 
 	O livro foi escrito após observações durante 5 anos de exílio (Brasíl estava no período da Ditadura Militar)
@@ -29,7 +26,7 @@ Capítulo 1 "Primeiras Palavras"
 	A sectarização é sempre limitadora, alimentada pelo fanatismo, enquanto a radicalização é crítica, por isso, libertadora. A radicalização é libertadora pois é o processo de enraizamento da escolha que os homens fizeram, portanto os engaja cada vez mais no esforço de transformação de sua realidade. A sectarização, irreal e irracional, transforma a realidade em uma falsa realidade, realidade que assim não pode ser mudada. A sectarização é um obstáculo à libertação dos homens.
 
 
-"Justificativa da pedagogia do oprimido"
+Capítulo 1 "Justificativa da pedagogia do oprimido"
 
 
 	Humanização: processo de desenvolver plenamente aquilo que nos torna humanos: pensamento crítico, autonomia, participar do desenvolvimento da sociedade, não viver de ordens.
@@ -43,3 +40,27 @@ Capítulo 1 "Primeiras Palavras"
 	Os opressores, apesar de sua força, não tem poder para libertar nem aos oprimidos, nem a si mesmos. Apenas os oprimidos possuem poder suficiente para libertar a ambos. Isso se dá pois os oprimidos, melhor que qualquer um, entendem a necessidade da libertação
 
 	"Quem, melhor que os oprimidos, se encontrará preparado para entender o significado terrível de uma sociedade opressora? Quem sentirá, melhor que eles, os efeitos da opressão? Quem, mais que eles, para ir compreendendo a necessidade da libertação? Libertação a que não chegarão pelo acaso, mas pela práxis de sua busca; pelo conhecimento e reconhecimento da necessidade de lutar por ela."
+
+
+Capítulo 2 "A concepção “bancária” da educação como instrumento da opressão. Seus pressupostos, sua crítica"
+
+
+	Ao analisar as relações educador-educandos (professor-aluno), observa-se um caráter marcante, sempre são relações fundalmentalmente narradoras, dissertadoras. Conteúdos que tendem a se petrificar, "fazer-se algo quase morto". Esse formato de narração implica um sujeito, o narrador, e objetos, ouvintes e pacientes, os alunos.
+	O educador tem apenas o papel de "depositar" sua narrativa na cabeça dos educandos, causando uma desconexão entre os conteúdos e a realidade do aluno.
+	A concepção "bancária" de Freire compara os alunos como "bancos", onde seu único papel na educação é "receber seus depósitos, guardá-los e arquivá-los".
+	Neste formato de educação, não há criatividade, não há transformação, não há saber. Para Freire, só há saber na invenção, na reinvenção, na busca inquieta ao mundo.
+	O educador se mantém fixo, sempre é o que sabe e os educandos sempre seram os que não sabem. A rigidez destas oisuções nega o conhecimento.
+
+a. o educador é o que educa; os educandos, os que são educados;
+b. o educador é o que sabe; os educandos, os que não sabem;
+c. o educador é o que pensa; os educandos, os pensados;
+d. o educador é o que diz a palavra; os educandos, os que a escutam docilmente;
+e. o educador é o que disciplina; os educandos, os disciplinados;
+f. o educador é o que opta e prescreve sua opção; os educandos, os que seguem a prescrição;
+g. o educador é o que atua; os educandos, os que têm a ilusão de que atuam, na atuação do educador;
+h. o educador escolhe o conteúdo programático; os educandos, jamais ouvidos nesta escolha, se acomodam a ele;
+i. o educador identifica a autoridade do saber com sua autoridade funcional, que opõe antagonicamente à liberdade dos educandos; estes devem adaptar-se às determinações daquele;
+j. o educador, finalmente, é o sujeito do processo; os educandos, meros objetos.
+
+	A razão deste modelo é para limitar o conhecimento do oprimido e "tranformar a mentalidade dos oprimidos e não a situação que os oprime" isto pare que, melhor os dominem.
+	
