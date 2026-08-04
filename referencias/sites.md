@@ -1,17 +1,166 @@
-# Sites
-**Lista das Referências Bibliográficas - Sites**
+# Sites da Fundamentação Teórica 
 
 ---
 
-## 📚 Sites - Pedagogia
+## Pedagogia
 
-| Titulo | Link | 
+| Título do Site | Link | 
 |--------------|--------|
 | Pedagogia: o que é e o que faz | https://www.pedagogiaaopedaletra.com/pedagogia-o-que-e-e-o-que-faz/ |
-| O que é Pedagogia, afinal? Descubra tudo sobre este curso | https://www.guiadacarreira.com.br/blog/o-que-e-pedagogia |
-| Sobre a Pedagogia | https://www.pedagogiaaopedaletra.com/sobre-a-pedagogia-quem-e-o-pedagogo/ |
+| O que é Pedagogia, afinal? Descubra tudo sobre este curso | https://www.guiadacarreira.com.br/blog/o-que-e-pedagogia | 
+| Sobre a Pedagogia | https://www.pedagogiaaopedaletra.com/sobre-a-pedagogia-quem-e-o-pedagogo/ | 
 | Pedagogia EAD: Como desenvolver uma boa aula online | https://www.pedagogiaaopedaletra.com/pedagogia-ead-como-desenvolver-uma-boa-aula-online/ |
 
-**Propósito:** (Escreva)
+**Objetivo:** Explorar os temas relacionandos ao processo de ensino.
 
 ---
+
+## Universidades
+
+| Título do Site | Link | 
+|--------------|--------|
+| QS World University Rankings 2026 | https://www.hotcoursesabroad.com/study/rankings/qs-world.html |
+| As melhores universidades do mundo em 2025 | https://www.estudarfora.org.br/melhores-universidades-do-mundo/ |
+| Quais são as 3 universidades da América Latina entre as 100 melhores do mundo | https://g1.globo.com/educacao/noticia/2024/04/27/quais-sao-as-3-universidades-da-america-latina-entre-as-100-melhores-do-mundo.ghtml |
+| Ranking QS: Veja quais são as melhores universidades do mundo em cada disciplina | https://www.estudarfora.org.br/ranking-qs-subject/ |
+| USP está entre as 0,6% melhores universidades do mundo, segundo ranking internacional | https://jornal.usp.br/comunicados/usp-e-classificada-entre-as-06-melhores-universidades-do-mundo-segundo-ranking-internacional/ |
+| Oxford lidera ranking das melhores universidades do mundo; veja o top 10 | https://forbes.com.br/carreira/2023/09/as-melhores-universidades-do-mundo-em-2024/ |
+| Times Higher Education World University Rankings 2026 | https://www.hotcoursesabroad.com/study/rankings/the-world-university.html |
+| Melhores universidades do mundo: as top 10 de 2024 | https://www.intercultural.com.br/melhores-universidades-mundo/ |
+
+**Objetivo:** (a definir) 
+
+---
+
+## Métodos de Estudo
+
+| Título do Site | Link | 
+|--------------|--------|
+| Cronograma de estudos: como montar um e qual sua importância | https://www.pravaler.com.br/blog/dicas-de-estudo/cronograma-de-estudos-como-montar-um-e-qual-sua-importancia/ |
+| Veja como aplicar o método de estudo de Harvard | https://www.pravaler.com.br/blog/dicas-de-estudo/metodo-de-estudo-de-harvard/ |
+| Gestão do tempo: conheça técnicas para melhorar sua produtividade | https://www.pravaler.com.br/blog/dicas-de-estudo/gestao-do-tempo/ | 
+
+**Objetivo:** (a definir)
+
+---
+
+## Metodologia 
+
+| Título do Site | Link | 
+|--------------|--------|
+| Conheça 4 metodologias ativas que estão transformando a educação superior | https://blog.mackenzie.br/vestibular/atualidades/conheca-4-metodologias-ativas-que-estao-transformando-a-educacao-superior/ |
+
+**Objetivo:** (a definir)
+
+---
+
+## Harvard
+
+| Título do Site | Link | 
+|--------------|--------|
+| A proposta de Harvard para uma educação para compreensão | https://porvir.org/a-proposta-de-harvard-para-uma-educacao-para-compreensao/ |
+| Veja como aplicar o método de estudo de Harvard | https://www.pravaler.com.br/blog/dicas-de-estudo/metodo-de-estudo-de-harvard/ |
+| O Método de Estudo de Caso de Harvard mediado pela Sala de Aula Invertida na mobilização de conhecimentos no ensino-aprendizado de Química | https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0187-893X2018000300022 |
+| Estudo de Harvard mostra por que metodologias ativas funcionam melhor | https://www.starteducacao.com/post/harvard-defende-esfor%C3%A7o-aprendizagem-ativa |
+| Sucesso de Harvard vem do uso dos estudos de caso | https://caputconsultoria.com.br/sucesso-da-harvard-vem-do-uso-dos-estudos-de-caso/ |
+| Aluna-prodígio de Harvard e Yale dá 10 dicas para ser mais eficiente nos estudos | https://www.estudarfora.org.br/aluna-da-dicas-estudo-harvard-yale/ |
+| Project Zero | https://pz.harvard.edu/ |
+
+**Objetivo:** (a definir)
+
+---
+
+## MIT 
+
+| Título do Site | Link | 
+|--------------|--------|
+| MIT Professional Education | https://professionalprograms.mit.edu/pt-pt/mit-professional-education/ |
+| Massachusetts Institute of Technology (MIT): a universidade que já formou mais de 100 prêmios Nobel | https://www.estudarfora.org.br/massachusetts-institute-of-technology-mit/ |
+| Instituto de Tecnologia de Massachusetts: tudo que você precisa saber sobre o MIT | https://www.geniumeducation.com.br/instituto-de-tecnologia-de-massachusetts/ |
+| MIT: como entrar no Massachusetts Institute of Technology | https://www.remessaonline.com.br/blog/mit/ |
+| 'É preciso desenvolver o método de acordo com o aluno', diz ex-reitora do MIT | https://epocanegocios.globo.com/Tecnologia/noticia/2018/08/epoca-negocios-e-preciso-desenvolver-o-metodo-de-acordo-com-o-aluno-diz-ex-reitora-do-mit.html |
+
+**Objetivo:** (a definir)
+
+---
+
+## Imperial College London 
+
+| Título do Site | Link | 
+|--------------|--------|
+| Project Access | https://projectaccess.org/?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrG6jsqze1WVcUiJsdC1Dfd0W9w0NmC76KnAQh1kGzqoIaZ-ERzFQd8RoCSGYQAvD_BwE |
+| Conheça o Imperial College London, referência em ciência e medicina | https://www.estudarfora.org.br/conheca-o-imperial-college-london/ |
+| Imperial College London: a melhor universidade de Londres | https://www.universidadedointercambio.com/imperial-college-london/ |
+| Educations.com - Imperial College London | https://www.masterstudies.com.br/institutions/imperial-college-london |
+| IDP Hotcourses | https://www.hotcoursesabroad.com/study/uk/school-college-university/imperial-college-london/3813/international.html |
+| #vamosconhecer - Imperial College | https://abmes.org.br/noticias/detalhe/5056/-vamosconhecer-imperial-college- |
+| Information Planet | https://www.informationplanet.pt/ensino-superior/reino-unido/imperial-college-london/ |
+| Versus | https://versus.com/br/imperial-college-london |
+| 27 cursos online oferecidos pelo Imperial College | https://www.universidadedointercambio.com/imperial-college-conheca-os-27-cursos-online-oferecidos/ |
+
+**Objetivo:** (a definir)
+
+---
+
+## Oxford
+
+| Título do Site | Link | 
+|--------------|--------|
+| Project Access | https://projectaccess.org/uk-undergraduate-program?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrG9gCEOsKIS05lVXprZD5oqQDikVroklMi6ZYGeN7GHEm5VxUlYYFChoCLAYQAvD_BwE |
+| Metodologia e Tecnologia | http://oxford.org.br/metodologia.asp#:~:text=Metodologia%20e%20tecnologia&text=No%20OXFORD%20voc%C3%AA%20recebe%20aten%C3%A7%C3%A3o,que%20foi%20ensinado%20em%20aula |
+| Conheça modelo de aula de Oxford e Cambridge que existe há mais de 600 anos | https://www.estudarfora.org.br/tutorias-oxford-e-cambridge/ |
+| Soul Bilíngue - Somos Oxford! | https://www.soulbilingue.com/post/agora-somos-metodologia-oxford |
+| Análise comparativa entre os métodos de ensino de Inglês Oxford University Press e Pearson English - o papel da gramática | https://proceedings.science/ciel-2017/trabalhos/analise-comparativa-entre-os-metodos-de-ensino-de-ingles-oxford-university-press?lang=pt-br |
+| Universidade de Oxford: conheça a 1ª universidade em língua inglesa | https://www.estudarfora.org.br/oxford-university/ |
+| Oxford International Study Centre | https://www.languagecourse.net/pt/escola-oxford-international-study-centre-oxford?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrGwbhTeRoeQ2fT4nGC2xeUSSUnPk_bRaoEdD-_Tmk4Cg_cT3oSIGdvRoC85AQAvD_BwE |
+| Tutoriais de Oxford e Cambridge: conheça modelo de aula que existe desde o século 15 | https://epocanegocios.globo.com/Carreira/noticia/2018/09/tutoriais-de-oxford-e-cambridge-conheca-modelo-de-aula-que-existe-desde-o-seculo-15.html |
+
+**Objetivo:** (a definir)
+
+---
+
+## Cambridge
+
+| Título do Site | Link | 
+|--------------|--------|
+| Course Directory - Postgraduate Study | https://www.postgraduate.study.cam.ac.uk/coursesutm_source=GoogleAds&utm_medium=cpc&utm_campaign=Latin_America_Strategy1_Increase_Awareness&gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrG_XrLUyZPVl-MRkYznvxuai9AHsSUjlCdj76eW2uxqBMKDE-z7ZhxhoCPOgQAvD_BwE |
+| Conheça as vantagens do método Cambridge de ensino de inglês | https://www.okidiomas.com/site/noticias/lerNoticia/49#:~:text=O%20m%C3%A9todo%20Cambridge%20de%20estudo,de%20diversos%20recursos%20para%20aprendizagem |
+| Ensino, aprendizagem e avaliação | https://www.cambridgeenglish.org/br/teaching-english/professional-development/cambridge-english-teaching-framework/teaching-learning-and-assessment/ |
+| Metodologia de Cambridge English | https://primoris.wordpress.com/english-now/metodologia-cambridge-english/ |
+| Qualificações Cambridge English para escolas | https://www.cambridgeenglish.org/br/exams-and-tests/qualifications/schools/ |
+| Universidade de Cambridge: veja como estudar no Reino Unido | https://www.remessaonline.com.br/blog/universidade-de-cambridge/ |
+| Desvendando o Sucesso do Projeto Bilíngue: Metodologia Cambridge e a Parceria Família-Escola | https://www.colegioestillo.com.br/desvendando-o-sucesso-do-projeto-bilingue-metodologia-cambridge-e-a-parceria-familia-escola/ |
+| Cambridge: tudo sobre a universidade de Isaac Newton e Charles Darwin | https://www.estudarfora.org.br/universidade-de-cambridge/ |
+| Cambridge Primary: um guia para os pais | https://www.cambridgeinternational.org/Images/467520-cambridge-primary-a-guide-for-parents-portuguese-.pdf |
+|  | https://www.prospects.ac.uk/universities/university-of-cambridge-3692?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrGwAtQU8Yh7thV2vjf8iVAR20pad_d8goRlqC5xZvAlXFH554-5zz8hoCrFUQAvD_BwE |
+| Propects | https://www.prospects.ac.uk/universities/university-of-cambridge-3692?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrGwAtQU8Yh7thV2vjf8iVAR20pad_d8goRlqC5xZvAlXFH554-5zz8hoCrFUQAvD_BwE |
+
+**Objetivo:** (a definir)
+
+---
+
+## Stanford 
+
+| Título do Site | Link | 
+|--------------|--------|
+| Stanford University: conheça a universidade mãe do Google e da Nik | https://www.estudarfora.org.br/stanforduniversity/#:~:text=Como%20%C3%A9%20estudar%20na%20Stanford,nas%20mesmas%20salas%20e%20ambientes |
+| Curso com metodologia de Stanford acelera aprendizado de alunos | https://agenciabrasil.ebc.com.br/educacao/noticia/2020-08/curso-com-metodologia-de-stanford-acelera-aprendizado-de-alunos |
+| Programa de Stanford usa Neurociência para ensinar matemática de forma inovadora | https://mentalidadesmatematicas.org.br/stanford-neurociencia-matematica/ |
+| Informações sobre Standford Universaty | https://www.hotcoursesabroad.com/study/us-usa/school-college-university/stanford-university/72102/international.html |
+| Tudo o que você precisa saber sobre a University Stanford, umas das instituições mais renomadas do mundo! | https://www.geniumeducation.com.br/university-stanford/ |
+| Forbes Tech
+Como funciona o primeiro curso em VR da Stanford University? | https://forbes.com.br/forbes-tech/2021/12/como-funciona-o-primeiro-curso-em-vr-da-stanford-university/ |
+| Universidade Stanford: segunda melhor dos Estados Unidos | https://www.universidadedointercambio.com/por-dentro-de-stanford/ |
+
+**Objetivo:** (a definir)
+
+---
+
+## Stanford 
+
+| Título do Site | Link | 
+|--------------|--------|
+| Os caminhos da aprendizagem: como o cérebro funciona? | https://porvir.org/os-caminhos-da-aprendizagem-como-o-cerebro-funciona/ |
+| Quanto é o valor do salário mínimo em 2026? Veja o histórico | https://meutudo.com.br/blog/tabelas/salario-minimo/#:~:text=O%20sal%C3%A1rio%20m%C3%ADnimo%20em%202008,%2C00%20(12%2C05%25) |
+| Cinco cidades concentram quase 50% da extrema  no DF | https://www.metropoles.com/distrito-federal/cinco-cidades-concentram-quase-50-da-extrema-pobreza-no-df-veja-o-mapa |
+| Paciente é chamada para consulta pelo SUS onze anos após ter morrido | https://www.jusbrasil.com.br/noticias/paciente-e-chamada-para-consulta-pelo-sus-onze-anos-apos-ter-morrido/703486596 |
