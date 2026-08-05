@@ -6,10 +6,10 @@
 ## Capitulos
 | Numeração do Capitulo | Título do Capitulo |
 |---|----------------------------------------| 
-| 1 | (Justificativa da pedagogia do oprimido) | 
-| 2 | (A concepção “bancária” da educação como instrumento da opressão. Seus pressupostos, sua crítica) | 
-| 3 | (A dialogicidade: essência da educação como prática da liberdade) | 
-| 4 | (A teoria da ação antidialógica) | 
+| 1 | Justificativa da pedagogia do oprimido | 
+| 2 | A concepção “bancária” da educação como instrumento da opressão. Seus pressupostos, sua crítica | 
+| 3 | A dialogicidade: essência da educação como prática da liberdade | 
+| 4 | A teoria da ação antidialógica | 
 ---
 
 ## (Página Inicial e Página Final do Bloco de Resumo: Ex. Páginas 1-15)
@@ -63,4 +63,16 @@ i. o educador identifica a autoridade do saber com sua autoridade funcional, que
 j. o educador, finalmente, é o sujeito do processo; os educandos, meros objetos.
 
 	A razão deste modelo é para limitar o conhecimento do oprimido e "tranformar a mentalidade dos oprimidos e não a situação que os oprime" isto pare que, melhor os dominem.
+
+
+Capítulo 3: "A dialogicidade: essência da educação como prática da liberdade"
 	
+
+	"Quando tentamos um adentramento no diálogo como fenômeno humano, se nos revela algo que já poderemos dizer ser ele mesmo: a palavra.Mas, ao encontrarmos a palavra, na análise do diálogo, como algo mais que um meio para que ele se faça, se nos impõe buscar, também, seus elementos constitutivos."
+	Freire defende o uso do diálogo para não só impor conhecimento, mas sim criar conhecimento, tanto para os educandos, tanto para os educadores.
+	É da natureza humana dialogar, por isso o método de ensino narrativo é insuficiente, pois não há espaço para o diálogo.
+	"Não é no silêncio que os homens se fazem, mas na palavra, no trabalho, na ação-reflexão."
+	O diálogo deve ser de igual para igual, nesse contexto os educadores não são "seres detentores da verdade", mas sim iguais com os educandos, ambos em busca de construir ainda mais conhecimento.
+	"Não há o diálogo verdadeiro se não há nos seus sujeitos um pensar verdadeiro. Pensar crítico." Mais uma vez, a educação pelo diálogo verdadeiro deve prezar pelo pensamento crítico dos educandos, já que não há diálogo se não há pensamento crítico.
+
+
