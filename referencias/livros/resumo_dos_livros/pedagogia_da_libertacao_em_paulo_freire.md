@@ -1,10 +1,10 @@
-# (Nome do Livro)
-## (Responsável pelo Resumo)
+# (Pedagogia da Libertação em Paulo Freire)
+## (João Pedro Lima de Souza)
 
 ---
 
-## Capitulos
-| Numeração do Capitulo | Título do Capitulo |
+## Capítulos
+| Numeração do Capítulo | Título do Capítulo |
 |---|----------------------------------------| 
 | ? | (escreva aqui) | 
 | ? | (escreva aqui) | 
@@ -15,6 +15,16 @@
 
 ---
 
-## (Página Inicial e Página Final do Bloco de Resumo: Ex. Páginas 1-15)
+## (Páginas 1-15)
 
-(Texto do Resumo)
+O livro e uma coletânea de textos - Estudiosos da "pedagogia da libertação". 
+
+Os textos analisam o trabalho de Paulo Freire a partir de diversas perspectivas (os estudiosos vêm de diferentes lugares, histórias, contextos, áreas e culturas). 
+
+Introdução da Primeira Parte do Livro. 
+
+(Olhares sobre a Pedagogia do Oprimido). 
+
+---
+
+## (Páginas 16-30)
