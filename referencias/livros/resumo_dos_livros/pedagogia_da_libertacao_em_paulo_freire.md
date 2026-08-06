@@ -188,3 +188,65 @@ O que existe em comum é “desescolarização” da escola: primeiro, pela muda
 ---
 
 ## (Páginas 76-90)
+
+12-Pedagogia como Currículo da Práxis (Antonio Fernando Gouvêa da Silva) 
+
+	O educador precisa fazer o estudante questionar a intencionalidade dos conteúdos e dos objetos de estudo retirados de livros didáticos, não apenas aprofundar e atualizar o conhecimento específico. 
+
+	Questões sociais precisam ser específicas. 
+
+	Projeto da Interdisciplinaridade, via "tema-gerador" (Pág.74). 
+
+  
+
+13-Aproximando-me (Arantxa Ugartetxea) 
+
+	Euskal-Herria (País Basco). 
+
+	Ela conheceu pessoalmente Paulo Freire e foi uma de suas alunas, viu os resultados da prática das teorias desse grande pedagogo. 
+
+  
+
+14-Paulo Freire: Memórias como Narrações Compartilhadas (Célia Linhares) 
+
+	Fala sobre as reflexões que as obras de Paulo Freire provocam no amago do indivíduo que as lê. 
+
+	“Às vezes, nós é que não percebemos o ‘parentesco’ entre os tempos vividos e perdemos assim a possibilidade de ‘soldar’ conhecimentos desligados e, ao fazê-lo, iluminar com os segundos a precária claridade dos primeiros.”.	 
+
+	Notas - Pág.86 
+
+  
+
+15-Uma Pedagogia do (Outro) Descobrimento (Danilo R. Streck) 
+
+	Teologia da libertação (Gustavo Gutierrez - 1971). 
+
+	Theology of Human Hope (Rubem Alves - 1969). 
+
+	Paulo Freire verbalizou um desejo global, a da mudança da educação e progresso social. 
+
+	“Só o poder que nasça da debilidade dos oprimidos será suficientemente forte para libertar a ambos.". 
+
+	“O meu ponto de vista é o dos ‘condenados da Terra’, dos excluídos.” - Pedagogia da Autonomia. 
+
+	“Aos esfarrapados do mundo e aos que neles se descobrem e, assim, descobrindo-se, com eles sofrem, mas, sobretudo, com eles lutam.” - Pedagogia do Oprimido. 
+
+	"nem realidade nem opressão são grandezas e conceitos estáticos.". 
+
+	Pedagogia da Esperança - "retrata o fim dos sonhos de mudança revolucionária da forma como estavam colocados nos anos 1960 e 70.". 
+
+	"Assim como a realidade se desvela e se oculta, assim também a pedagogia se encontra nesse constante processo de reconstrução.". 
+
+	"Uma das lições que Paulo Freire deriva dessa cosmovisão é a da humildade, condição básica do diálogo que, por sua vez, caracteriza o ser (ou o estar sendo) radical, em contraposição ao ser (ou estar sendo) sectário.". 
+
+	“o sectário nada cria porque não ama”. 
+
+	“uma das condições necessárias para pensar certo é não estarmos demasiado certos de nossas certezas”. 
+
+	“desvergonha da arrogância de quem se acha cheia ou cheio de si mesmo”. 
+
+	Notas - Pág. 93 
+
+---
+
+## (Páginas 91-105)
