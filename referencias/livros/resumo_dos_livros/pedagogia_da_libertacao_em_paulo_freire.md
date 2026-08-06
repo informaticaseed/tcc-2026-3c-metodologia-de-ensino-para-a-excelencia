@@ -105,3 +105,41 @@ Introdução da Primeira Parte do Livro.
 
 ## (Páginas 46-60)
 
+7-A Pedagogia do Oprimido na Alemanha (Joachim Schroeder) 
+
+	Na década de 70, a Alemanha conhece a educação do terceiro mundo. 
+
+	As primeiras tentativas de adoção da pedagogia freireana ocorreram na área de educação de trabalhadores migrantes. 
+
+	A metodologia também teve resultados positivos com os sem-teto. 
+
+	"A pedagogia do oprimido possuía um poder de fascinação na Alemanha politizada da década de 1970, em razão de sua demanda por uma prática pedagógica independente da escola formal; essa pedagogia contribuiu para o desenvolvimento de alternativas à instrução escolar." 
+
+	Existem de 50 a 60 mil organizações comunitárias, grupos de interesse e projetos de autoajuda voltados para a educação informal e extramuros. 
+
+	As instituições educacionais alternativas buscam problematizar, utilizando das biografias pessoais, experiências e condições de vida. 
+
+	A pedagogia do oprimido contribuiu para a “desescolarização” da escola "o debate sobre a “desescolarização” está assumindo, correntemente, formas teóricas e práticas muito diferentes.  
+
+O que existe em comum é “desescolarização” da escola: primeiro, pela mudança do aprendizado para vários espaços de aprendizados; segundo, pelo alinhamento do currículo à experiência vivida dos educandos; terceiro, pelo trabalho de educadores leigos instruídos, que atuam como professores e educandos e que, ocasionalmente, substituem professores academicamente treinados.". 
+
+	Espaços de aprendizado - Não tentar manter as crianças longe de situações conflituosas, mas torná-las indivíduos atraídos para áreas de resolução de conflitos. 
+
+	Currículo - abordagem situacional (ou contextual) utiliza como ponto de partida a vida do aluno como base para a criação de códigos (textos, fotografias etc). Mesmo que nem sempre esses códigos representem bem as experiências subculturais e de classe econômica dos estudantes, é a tentativa de aproximação mais bem desenvolvida para a projeção de um currículo do tipo popular e "desescolarizante". 
+
+	Educadores leigos (não profissionais). 
+
+	A pedagogia do oprimido ampliou a didática e a metodologia da educação política - evitar a falta de perguntas sobre o óbvio, questionar a normalidade. 
+
+	Alfabetização. 
+
+	Didática visual - os estudantes não costumam aprender através de textos por motivos diversos, o que se mostra um empecilho, já que as escolas códigos predominantemente textuais, colocando os alunos em desvantagem. Portanto, Paulo Freire, recomenta a utilização de formas icônicas. 
+
+	A pedagogia da libertação contribuiu para o desenvolvimento de conceitos “dialógicos” na educação política. 
+
+	Notas - Pág.59 
+
+ ---
+
+## (Páginas 61-75)
+	 
