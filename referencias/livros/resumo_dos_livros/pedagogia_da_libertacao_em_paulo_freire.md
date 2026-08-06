@@ -250,3 +250,57 @@ O que existe em comum é “desescolarização” da escola: primeiro, pela muda
 ---
 
 ## (Páginas 91-105)
+
+16-A Pedagogia Antimétido: Uma Perspectiva Freireana (Donaldo Macedo) 
+
+	Os americanos conservadores são tão liberais e neoliberais, além de serem hiper influenciado pelo capitalismo, que utilizam da pedagogia freireana para justificar a privatização das escolas e o desvio da verba pública da educação para instituições privadas educacionais já bem-sucedidas. 
+
+	"Seguindo a linha da argumentação de que o 'privado' é sempre o melhor, perguntaríamos com Jack Beatty: 'Teríamos de montar um Pentágono privado para melhorar o nosso sistema de defesa pública?'". 
+
+	“assimiladas pela prevalecente obsessão da educação da América do Norte, seguindo a tendência em todas as ciências humanas e sociais, com os métodos — de verificação do conhecimento e, em escolas, do ensino, o que significa transmitir conhecimentos para estudantes despreparados”. 
+
+	“Donaldo, eu não quero ser importado ou exportado. É impossível exportar práticas pedagógicas sem reinventá-las. Por favor, diz aos teus colegas educadores americanos para não me importarem. Peça-lhes para recriarem e reescreverem as minhas ideias.”. 
+
+	O educador deve aprender com o educado, mas isso não significa que o educado saiba mais que o educador. Não conceda poder a mais para o educado só por paternalismo romântico. 
+
+	"A pedagogia do oprimido animado de autêntico humanismo e não humanitarismo apresenta-se generosamente como uma pedagogia do homem [da mulher]. A pedagogia que começa com os interesses egoístas dos opressores (um egoísmo calcado na falsa generosidade do paternalismo) e faz dos[as] oprimidos[as] objetos do seu humanitarianismo, ela própria mantém e corporiza a opressão. É um instrumento da desumanização.". 
+
+	"Os educadores pseudocríticos são parte desse novo termo de alfabetização instrumentalista, cuja ampliação leva à redução do método dialógico de Freire a uma forma de 'especialismo'.". 
+
+	pedagogia antimétodo 
+
+	Notas - Pág.101 
+
+  
+
+17-A Atualidade de Freire nos Cursos de Pedagogia (Fábio Manzini Camargo) 
+
+	Conceitos opostos para Freire são complementares, como a teoria e a prática. 
+
+	"a conscientização é o aprofundamento da tomada de consciência". 
+
+	consciência transitiva crítica - diálogo crítico, a fala e a convivência. 
+
+	Diálogo, processo de humanização. 
+
+	1ª Virtude do Diálogo - respeito aos educandos, como indivíduos e expressões de prática social. 
+
+	Outras Virtudes do Diálogo - Escutar e Tolerar - “virtude de conviver com o diferente para poder brigar com o antagônico”. 
+
+	"Conhecimento é diferente de transferência de conhecimento". 
+
+	"a alfabetização é 'aquisição, produção, reinvenção da linguagem escrita e necessariamente lida e deve constituir-se também como uma introdução ao modo de pensar certo'". 
+
+	Pedagogia do Dominante (ou pedagogia burguesa) - Pedagogia Bancária. 
+
+	Teoria Dialógica e Método de Problematização. 
+
+	concepção bancária vs concepção problematizadora. 
+
+	Lei de Diretrizes e Bases (LDB). 
+
+	Notas - Pág.107	 
+
+---
+
+## (Páginas 120-135)
