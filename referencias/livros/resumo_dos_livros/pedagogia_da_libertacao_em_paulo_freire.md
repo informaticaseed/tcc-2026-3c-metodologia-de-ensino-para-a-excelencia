@@ -69,6 +69,39 @@ Introdução da Primeira Parte do Livro.
 
 	Notas - Pág.29 
   
-  ---
+---
 
 ## (Páginas 31-45)
+
+4-Pedagogia do Oprimido: Um Projeto Coletivo 
+
+ 	O autor argumenta razão dessa obra ser mais parecida com um trabalho coletivo do que um trabalho individual. 
+
+	Notas - Pág.35 
+
+  
+
+5-Recordando o Legado da Pedagogia do Oprimido (Henry A. Giroux) 
+
+	Para Paulo Freire, a compreensão da história é uma possibilidade, não algo pré-determinado. 
+
+	A esperança para Paulo Freire não é como uma rígida separação entre a mente e o coração, o pensamento e a ação. 
+
+	Uma das tarefas do educador (progressista) é desvelar oportunidades para a esperança, independente dos obstáculos encontrados no caminho. 
+
+	“o poder, a história, a memória, a análise relacional, a justiça (não apenas a sua representação) e a ética como questões centrais das lutas democráticas transnacionais”. 
+
+  
+
+6-Uma Pedagogia da Esperança ou Trinta Anos Depois da Pedagogia do Oprimido de Paulo Freire (Joachim Dabisch) 
+
+	O autor dessa parte discorre durante o texto a importância do método freireana para o mundo, principalmente para a Alemanha em 1960, sendo o seu exemplo de mudança e renovação originários da pedagogia freireana. 
+
+	O método freireano não gera apenas um tipo de metodologia de ensino, ele cria vários tipos. 
+
+	A pedagogia freireana é a ferramenta para que o educador construa um método de ensino eficiente, independente do contexto. 
+
+ ---
+
+## (Páginas 46-60)
+
