@@ -396,40 +396,62 @@ O que existe em comum é “desescolarização” da escola: primeiro, pela muda
 	Introdução 
 		Busca verificar a influência em práticas educativas em instituições de ensino e na formação de educadores Apartir da análise das obras de Paulo Freire. 
 		O Núcleo de Educação Popular Paulo Freire: ações de ensino, pesquisa e extensão. 
+		
 		Apresenta diversas instituições de ensino, programas sociais, entre outros para justificar a influência e importância das obras e pedagogia de Paulo Freire. Além disso, analisa os resultados oriundos desses processos de ensino. 
+		
 		A presença de Paulo Freire nas ações pedagógicas do Núcleo de Educação Popular Paulo Freire. 
+		
 		"com ele e não para ele, enquanto homens ou povos na luta incessante de recuperação de sua humanidade. Pedagogia que faça da opressão e de suas causas objeto de reflexão dos oprimidos, de que resultará o seu engajamento necessário na luta por sua libertação". 
 		
 	Educação freireana 
 		"de classe, pelo engajamento político-cultural com as classes populares e oprimidas, considerando a sua situação concreta de opressão social; 
+		
 		gnosiológica, pelo fato de o sujeito conhecer, construir e reelaborar o conhecimento, por meio da comunicação e diálogo com outros sujeitos; 
+		
 		de práxis, no sentido de os seres humanos refletirem e agirem sobre o mundo para transformá-lo; 
+		
 		ético-política, na medida em que compreende a ação de comunicação e de intervenção sociocultural do ser humano no mundo, entrelaçada por uma relação de classe é de poder." 
+		
 		"'a favor de quem' se faz educação" 
+		
 		“reflexão e ação dos homens sobre o mundo para transformá-lo” 
+		
 	 	“exige a inserção crítica dos oprimidos na realidade opressora, com que, objetivando-a, simultaneamente atuam sobre ela”. 
+		
 		“não há conscientização se, de sua prática, não resulta a ação consciente dos oprimidos, como classe social explorada, na luta por sua libertação”. 
-		prática educativa - crítica, dialógica e democrática 
+		
+		prática educativa - crítica, dialógica e democrática
+		
 		"Quem apenas fala e jamais ouve; quem “imobiliza” o conhecimento e o transfere a estudantes, não importa se de escolas primárias ou universitárias; quem ouve o eco, apenas, de suas próprias palavras, numa espécie de narcisismo oral; quem considera petulância da classe trabalhadora reivindicar seus direitos; quem pensa, por outro lado, que a classe trabalhadora é demasiado inculta e incapaz, necessitando, por isso, de ser libertada de cima para baixo, não tem realmente nada a ver com libertação nem democracia". 
 
 	Educação dialógica 
 		a oralidade fonte de expressão do ser humano sobre o seu existir, o seu saber experienciado e a sua cultura.  
+		
 		o diálogo, numa dimensão metodológica e política, pois permite a comunicação entre os sujeitos do conhecimento e o direito de todos de dizerem a sua fala. 
+		
 		O educando tem que ser estimulado a falar e expressar sua visão de mundo. 
-
+		
 	Educação problematizadora 
 		A pergunta como fonte do conhecimento humano. 
-		a criticidade, que possibilita ao educando problematizar a realidade social e explicitar a “razão de ser” dos fatos, ao se estimular a curiosidade e o ato de perguntar. 
+		
+		a criticidade, que possibilita ao educando problematizar a realidade social e explicitar a “razão de ser” dos fatos, ao se estimular a curiosidade e o ato de perguntar.
+		
 		O educando tem que ser incentivado a perguntar, a problematizar a realidade social em que vive. 
+		
 		Educação da autonomia — O educando tem que ser sujeito da ação educativa, participar ativamente na construção do conhecimento, sendo o educador o orientador. 
+		
 		Educação ético-política — O educador deve promover ações educativas individuais e coletivas estimulando a solidariedade, o respeito às diferenças e a convivência democrática e coletiva em sala de aula. 
 
 	Educação rigorosa 
-		a práxis, como processo dialético permanente de reflexão-ação sobre o fazer educativo. 
+		a práxis, como processo dialético permanente de reflexão-ação sobre o fazer educativo.
+		
 		O educador deve trabalhar em sala de aula o vivenciado pelo aluno, suas situações existenciais, sociais e culturais articuladas aos saberes escolares. 
 		tarefa do educador popular - militância. 
+		
 		“os educadores libertadores não são missionários, não são técnicos, não são meros professores. Têm de tornar se, cada vez mais, militantes!”. 
+		
 		A contribuição do Núcleo de Educação Paulo Freire para a formação do educador. 
+		
  		O educador também precisa aprender a educar, e de preferência, constantemente. Para melhores resultados, a própria instituição deve promover os meios para o desenvolvimento do educador. Esse processo pode ser realizado através de diversos meios, como situações do cotidiano. 
 
 	Considerações finais 
@@ -439,23 +461,79 @@ O que existe em comum é “desescolarização” da escola: primeiro, pela muda
 21-Paulo Freire, Um Clássico (Mário Sérgio Cortella) 
 	
 	“Clássico é um escritor que não se contentou em chatear apenas os contemporâneos.” - Millôr Fernandes 
+	
 	“Sou um clássico, sim. Não porque subjetiva e presunçosamente deste modo me considere, mas porque, como clássico, sou considerado por todas aquelas e todos aqueles que encontram em minha obra um instrumento para enfrentar um clássico problema: a existência de opressores e oprimidos. Por isso, enquanto esse problema persistir, quero continuar chateando, incomodando e fustigando os que, contemporâneos meus ou não, defendam a permanência das desigualdades.”. 
 	
 22-Aspectos Semânticos e Pragmáticos da Pedagogia de Paulo Freire (Manfred Peters) 
 
-	Essa pesquisa busca determinar de que formas e até que ponto a língua pode ser instrumental no processo de conscientização. 
+	Essa pesquisa busca determinar de que formas e até que ponto a língua pode ser instrumental no processo de conscientização.
+	
 	2º Projeto - fundamentos filosóficos e metodológicos baseados na teoria educacional de Paulo Freire 
+	
 	"a linguagem não pode ser dissociada do seu contexto social e político ou do seu papel criador de estratégias de ação.". 
+	
 	relação - reflexão e ação. 
+	
 	"significado existencial para o grupo de educandos(as)". 
+	
 	"valor semântico tem suas origens em condições locais e temporais muito específicas". 
+	
 	“somente se pudermos ler a realidade, seremos capazes de compreender as palavras, o texto. Ler um texto requer não somente a leitura das palavras, mas também a leitura interpretativa do contexto”. 
+	
 	"nenhuma mudança fundamental é possível sem a desmitificação da realidade". 
+	
 	"MITOS: Seja qual for o formato em que são transmitidos — lendas, provérbios, canções ou textos religiosos — quando legitimam o poder de um homem sobre o outro, gerando a exploração e a discriminação sexual, precisam ser submetidos à análise crítica.". 
+	
 	Provérbios interessantes na página 148. 
+	
 	“Estritamente falando, o diálogo fraternal consiste em cada participante deixar de lado, temporariamente, a sua personalidade e os seus pontos de vista a fim de compreender e apreciar o ponto de vista de outra pessoa sem, necessariamente, compartilhá-la.”. 
+	
 	"a essência da linguagem e a alma daquele(a) que a usa são inseparáveis.". 
 
  ---
 
 ## (Páginas 151-165)
+
+23-Paulo Freire em Tempos de Exclusão (Miguel G. Arroyo) 
+
+	 “Ao longo dos quatro anos de formação como pedagogos, na copiosa bibliografia indicada, apenas nos foi recomendado um livro de Paulo Freire.”. 
+
+	“Paulo Freire, teu altar é bem-merecido, mas em outro santuário; lá terás seguidores e admiradores. Entre nós, na escola, nos cursos de Pedagogia, não passas de um estranho visionário, tu não fizeste história.”. 
+
+	"Mais uma vez os homens [mulheres], desafiados pela dramaticidade da hora atual, se propõem a si mesmos como problema... Se fazem problema a eles mesmos... O problema de sua humanização, apesar de sempre dever haver sido, de um ponto de vista axiológico, o seu problema central, assume, hoje, caráter iniludível.". 
+
+	"os homens 'se fazem problema a eles mesmos'". 
+
+	"Constatar esta preocupação implica, indiscutivelmente, reconhecer a desumanização, não apenas como viabilidade ontológica, mas como realidade histórica. É, também, e talvez sobretudo a partir desta dolorosa constatação que os homens se perguntam sobre a outra viabilidade — a de sua humanização. Ambas, na raiz de sua inconclusão, os inscrevem num permanente movimento de busca. Humanização e desumanização, dentro da história, num contexto real, concreto, objetivo, são possibilidades dos homens [mulheres] como seres inconclusos e conscientes de sua inconclusão.". 
+
+	“os camponeses que conhecemos em nossa experiência educativa... esses homens, mulheres, meninos desesperançados, mortos em vida, sobras de gente...” 
+
+	"É também, e talvez, sobretudo a partir desta dolorosa constatação (a desumanização) que os homens se perguntam sobre outra viabilidade — a de sua humanização. Se ambas são possibilidades, só a humanização nos parece ser o que chamamos de vocação dos homens. Vocação negada, mas também afirmada na própria negação. Vocação negada na injustiça, na exploração, na opressão, na violência dos opressores. Mas afirmada no anseio de liberdade, de justiça, de luta dos oprimidos, pela recuperação de sua humanidade roubada." 
+
+	Notas - Pág.160 
+
+  
+
+24-Paulo Freire: Aspectos de seu Humanismo Radical (Paulo de Tarso Santos) 
+
+  
+
+	"A Educação de Adultos é melhor percebida quando a situamos hoje como Educação Popular... Não é possível às educadoras e aos educadores pensar apenas sobre os procedimentos didáticos e os conteúdos a serem ensinados aos grupos populares.". 
+
+	"Estudar é, realmente, um trabalho difícil. Exige de quem o faz uma postura crítica, sistemática. Exige uma disciplina intelectual que não se ganha a não ser praticando-a. Isto é precisamente o que a 'educação bancária' não estimula... Sua 'disciplina' é a disciplina para a ingenuidade, em face do texto, não para a indispensável criticidade.". 
+
+	"o que foi criado pelo homem na busca dos caminhos de sua realização volta-se contra ele, passando a aliená-lo."; 
+
+	“a grande tarefa humanista e histórica dos oprimidos”. 
+
+	“libertar-se a si e aos opressores”. 
+
+	“ação dos homens sobre a realidade social — a primeira (desumanização) para a preservação do ‘status quo’; a segunda (humanização) para a radical transformação do mundo opressor”. 
+
+	“humanismo radical”. 
+
+	Notas - Pág.164 
+
+ ---
+
+## (Páginas 166-180)
