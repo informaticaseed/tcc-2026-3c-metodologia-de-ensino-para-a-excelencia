@@ -39,9 +39,9 @@ Páginas 16 - 30
 
 	Professores e alunos são iguais. 
 
-	A escola é mais como um lugar da reprodução da ideologia e do autoritarismo dominantes. 
+	A escola é mais como um lugar da reprodução da ideologia e do autoritarismo<br />dominantes. 
 
-	"Ninguém educa ninguém" não deve ser tratada como um fundamento imutável, da maneira extrema, se não, inviabiliza a ação pedagógica. 
+	"Ninguém educa ninguém" não deve ser tratada como um fundamento imutável,<br />da maneira extrema, se não, inviabiliza a ação pedagógica. 
 
 	"Não confundir desigualdade ético-cívica com desigualdade pedagógica". 
 
@@ -49,9 +49,9 @@ Páginas 16 - 30
 
 	O sonho de Ivan Illich pode ser conquistado pela internet. 
 
-	"A da equalização ilusória da humanidade em decorrência da equalização potencial de um grupo de indivíduos em uma parcela de suas vidas no ciberespaço". 
+	"A da equalização ilusória da humanidade em decorrência da equalização<br />potencial de um grupo de indivíduos em uma parcela de suas vidas no<br />ciberespaço". 
 
-	Gramsci - "sem dominar o que os dominantes dominam, os dominados jamais superarão sua condição de dominados". 
+	Gramsci - "sem dominar o que os dominantes dominam, os dominados jamais<br />superarão sua condição de dominados". 
 
   
 
@@ -63,7 +63,7 @@ Páginas 16 - 30
 
 3- A Pedagogia do Oprimido como Parte da "Pedagogia do Oprimido" de Paulo Freire 
 
-	"Fechando-nos no livro Pedagogia do oprimido, perdemos a 'pedagogia do oprimido'.". 
+	"Fechando-nos no livro Pedagogia do oprimido, perdemos a 'pedagogia do<br />oprimido'.". 
 
 	Bancarismo. 
 
