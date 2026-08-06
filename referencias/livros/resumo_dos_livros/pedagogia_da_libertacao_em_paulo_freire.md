@@ -143,3 +143,48 @@ O que existe em comum é “desescolarização” da escola: primeiro, pela muda
 
 ## (Páginas 61-75)
 	 
+8-Reflexões Sobre a Pedagogia do Oprimido de Paulo Freire (Maxine Greene) 
+
+ 	Culturas do silêncio. 
+
+  
+
+9-Considerações Sobre a Pedagogia do Oprimido (Renate Nestvogel) 
+
+ 	Resalta o senso de comunidade e a importância de debates "díficeis". 
+
+  
+
+10-Trinta Anos de Pedagogia do Oprimido (Renate Zwicker-Pelzer) 
+
+	Paul Watzlawik - axioma da comunicação. 
+
+	Gregory Bateson - Steps to an Ecology of Mind . 
+
+[Passos para uma ecologia da mente] - categorias de aprendizagem. 
+
+	Domesticação versus empowerment. 
+
+	Conceitos holístico-humanísticos de terapia e consulta - Virginia Satir, Fritz Perls, Carl Rogers. 
+
+	Diferenças de gênero - Poder e a Opressão. 
+
+	Patriarcado — Feminilidade. Desafios em desenvolver maiores distinções e desdobramentos da pedagogia de Freire. 
+
+	qualificativo patriarcal. 
+
+	Mulheres e homens são capazes de chegar ao "ser mais" humano. 
+
+	Patriarcado não é o oposto do mundo feminino, é parte de nós. 
+
+	A mulher aprende de forma diferente. 
+
+11-O Legado de Paulo Freire (Arve Brunvoll) 
+
+	"Freire uniu o local e o global..." 
+
+	"'cruzador de fronteiras'" 
+
+---
+
+## (Páginas 76-90)
