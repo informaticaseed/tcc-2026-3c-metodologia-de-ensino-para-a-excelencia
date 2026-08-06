@@ -29,48 +29,46 @@ Introdução da Primeira Parte do Livro.
 
 ## (Páginas 16-30)
 
-Páginas 16 - 30 
-<pre>
-###1- A Pedagogia do Oprimido: clandestina e universal (Alípio Márcio Dias Clasali) 
+1- A Pedagogia do Oprimido: clandestina e universal (Alípio Márcio Dias Clasali) 
 
-Pedagogia do Oprimido, um dos temas centrais da igualdade como fundamento e condição da ação pedagógica libertadora. 
+	Pedagogia do Oprimido, um dos temas centrais da igualdade como fundamento e condição da ação pedagógica libertadora. 
 
-Educação não tem lugar. 
+	Educação não tem lugar. 
 
-Professores e alunos são iguais. 
+	Professores e alunos são iguais. 
 
-A escola é mais como um lugar da reprodução da ideologia e do autoritarismo<br />dominantes. 
+	A escola é mais como um lugar da reprodução da ideologia e do autoritarismo dominantes. 
 
-"Ninguém educa ninguém" não deve ser tratada como um fundamento imutável,<br />da maneira extrema, se não, inviabiliza a ação pedagógica. 
+	"Ninguém educa ninguém" não deve ser tratada como um fundamento imutável, da maneira extrema, se não, inviabiliza a ação pedagógica. 
 
-"Não confundir desigualdade ético-cívica com desigualdade pedagógica". 
+	"Não confundir desigualdade ético-cívica com desigualdade pedagógica". 
 
-O livro já trata das questões sobre a internet. 
+	O livro já trata das questões sobre a internet. 
 
-O sonho de Ivan Illich pode ser conquistado pela internet. 
+	O sonho de Ivan Illich pode ser conquistado pela internet. 
 
-"A da equalização ilusória da humanidade em decorrência da equalização<br />potencial de um grupo de indivíduos em uma parcela de suas vidas no<br />ciberespaço". 
+	"A da equalização ilusória da humanidade em decorrência da equalização potencial de um grupo de indivíduos em uma parcela de suas vidas no ciberespaço". 
 
-Gramsci - "sem dominar o que os dominantes dominam, os dominados jamais<br />superarão sua condição de dominados". 
+	Gramsci - "sem dominar o que os dominantes dominam, os dominados jamais superarão sua condição de dominados". 
 
   
 
-###2- Sobre a Pedagogia do Oprimido (Ana Mae Barbosa) 
+2- Sobre a Pedagogia do Oprimido (Ana Mae Barbosa) 
 
-Paulo Freire, Jonathan Kozol e Ivan Illich, grandes heróis da educação naquela época pedagogia crítica e pedagogia cultural. 
+	Paulo Freire, Jonathan Kozol e Ivan Illich, grandes heróis da educação naquela época pedagogia crítica e pedagogia cultural. 
 
   
 
-###3- A Pedagogia do Oprimido como Parte da "Pedagogia do Oprimido" de Paulo Freire 
+3- A Pedagogia do Oprimido como Parte da "Pedagogia do Oprimido" de Paulo Freire 
 
-"Fechando-nos no livro Pedagogia do oprimido, perdemos a 'pedagogia do<br />oprimido'.". 
+	"Fechando-nos no livro Pedagogia do oprimido, perdemos a 'pedagogia do oprimido'.". 
 
-Bancarismo. 
+	Bancarismo. 
 
-Leitmotif. 
+	Leitmotif. 
 
-Notas - Pág.29 
-</pre>
+	Notas - Pág.29 
+  
   ---
 
 ## (Páginas 31-45)
