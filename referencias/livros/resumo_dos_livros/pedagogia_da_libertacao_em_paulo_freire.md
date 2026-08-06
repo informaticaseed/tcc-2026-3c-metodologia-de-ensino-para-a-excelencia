@@ -303,4 +303,88 @@ O que existe em comum é “desescolarização” da escola: primeiro, pela muda
 
 ---
 
-## (Páginas 120-135)
+## (Páginas 121-135)
+
+19-Educação Libertadora e Globalização (Heinz-Peter Gerhardt) 
+
+ 	Conceitos 
+
+		educação libertadora - "história e aos métodos de trabalho da educação popular na América Latina, desde a década de 1960, e à introdução dessa teoria e prática educacional no mundo inteiro". 
+
+		palavras geradoras. 
+
+		codificação-descodificação. 
+
+		Diálogo. 
+
+		dicotomia opressor(a)-oprimido(a). 
+
+		Humanização. 
+
+		Humildade. 
+
+		Amor. 
+
+		Esperança. 
+
+		Autonomia. 
+
+		cultura do silêncio. 
+
+		educação dialógica, pedagogia construtivista, "nova sociologia da educação, novas perspectivas na sociologia da educação e abordagem situacional - "Abordagens baseadas na educação libertadora". 
+
+	 
+
+	História 
+
+		tradição da luta anticolonial e anti-hegemônica. 
+
+		Aprendizado global - "ação e reflexão para acabar com a desumanização do mundo como um todo". 
+
+		"O universal não é considerado superior ao local, ao contrário, o primeiro surge das diversas práticas locais e do seu processamento, ou seja, o local é redescoberto, modificado, enriquecido e adaptado em cada ato de recriação do conhecimento". 
+
+		"A esperança em relação à possibilidade da mudança é o pré-requisito indispensável para o sucesso da educação libertadora, para a mudança das estruturas, das outras pessoas e de nós mesmos(as)". 
+
+	 
+
+		A importância do nível micro. 
+
+  
+
+		extramuros - temas de projetos e movimentos. 
+
+		"temas dobradiça" - "aqueles que se ligam ao tema corrente, no mesmo ou em outro patamar". 
+
+		mudanças entre os níveis - problemas e interesses. 
+
+		estreitamento do campo de visão - necessário, pois mantem o "grupo motivado em relação ao problema em pauta e para que não perca de vista o seu objetivo". 
+
+		"A diferenciação entre os níveis micro, meso e macro, ilustrada na Figura 1, tem, portanto, pouca relação com uma estrutura hierárquica". 
+
+  
+
+	O local e o global 
+
+		A figura 2 "une os indivíduos e os grupos da Figura 1 aos três tipos de problemas já mencionados". 
+
+		abordagem libertária - investigação temática, os temas geradores e a “dobradiça”. 
+
+		"Em nível micro, os grupos examinam o conhecimento localmente produzido, criando relações, redes de trabalho e, talvez, instituições". 
+
+		"níveis meso (nacional) e macro (internacional), como, por exemplo, a Greenpeace, a Anistia Internacional e a Sentinela Internacional". 
+
+		democratas populares (Basisdemokraten) - "preferência geral pelos 'produtos' locais". 
+
+		políticos pragmáticos (Realpolitiker) - "salientar o nível internacional ou, pelo menos, nacional e a não levar em consideração aquilo que é produzido localmente". 
+
+		"as duas facções sejam ainda capazes de se unir em 'ações culturais', a fim de superar as estruturas sociais opressivas". 
+
+ 
+
+	Referências - Pág.126 
+
+	Notas - Pág.129 
+
+---
+
+## (Páginas 136-150)
