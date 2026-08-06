@@ -537,3 +537,91 @@ O que existe em comum é “desescolarização” da escola: primeiro, pela muda
  ---
 
 ## (Páginas 166-180)
+
+25-Uma Pedagogia da Possibilidade: Reflexões sobre a Política Educacional de Paulo Freire (Peter McLaren) 
+
+	"O que tenho proposto com base em minhas convicções políticas, minhas convicções filosóficas, é um profundo respeito pela autonomia total do(a) educador(a). O que tenho proposto é um profundo respeito pela identidade cultural dos(as) educandos(as) — uma identidade cultural que implica respeito pela linguagem do outro, a cor do outro, o sexo do outro, a classe social do outro, a orientação sexual do outro, a capacidade intelectual do outro; que implica a capacidade de estimular a capacidade do outro. Contudo, estas coisas acontecem num contexto social e histórico, e não soltas no espaço. Estas coisas acontecem na história e eu, Paulo Freire, não sou dono da história." 
+
+	A filosofia da pedagogia de Freire: uma opção preferencial pelos pobres. 
+
+ 	"O resultado de tal intersubjetividade mediatizada pela práxis jamais pode ser totalmente predeterminado.". 
+
+	"uma grande tensão ideológica residia na capacidade de as pessoas assimilarem um conceito de política que fosse além de uma identidade consumista engendrada com base na panóplia da lógica de mercado.". 
+
+	"para que os oprimidos materializem suas próprias atividades em força revolucionária, precisam desenvolver uma consciência coletiva de sua própria condição ou formação como classe subalterna, bem como um ethos de solidariedade e independência.". 
+
+	alfabetização crítica - “consciência crítica”. 
+
+	“política de identidade”. 
+
+	"estipula as condições para a possibilidade da existência de vários discursos concorrentes e conflitantes entre si, ou formas de construir significados com base em experiências vivenciadas.". 
+
+	Os educadores devem evitar a catacrese. 
+
+	A influência de Freire na pedagogia crítica norte-americana. 
+
+	“A esperança é um ímpeto natural, possível e necessário no contexto de nossa inconclusão... sem ela, ao invés de história, teríamos puro determinismo.”. 
+
+	A obra de Paulo Freire influenciou na educação americana, mudando a grade curricular desenvolvida em sala de aula e projetos políticos contrários ao preconceito sexual, ao racismo e à aversão ao homossexualismo. 
+
+	Influências na Educação Norte-americana: 
+
+		filosofias latino-americanas da libertação; 
+
+		alfabetização crítica; 
+
+		sociologia do conhecimento; 
+
+		escola de teoria crítica de Frankfurt; 
+
+		educação para adultos; 
+
+		teoria feminista; 
+
+		educação bilíngue;  
+
+		bicultural; 
+
+		educação para professores (segundo McLaren); 
+
+		crítica cultural neomarxista. 
+
+ 
+
+	Lankshear & McLaren - Síntese dos 6 princípios de aprendizagem com base no trabalho de Paulo Freire: 
+
+		"1. O mundo deve ser abordado como um objeto a ser compreendido e conhecido por meio dos esforços dos(as) próprios(as) educandos(as). Além disso, seus atos cognoscentes devem ser estimulados e fundamentados em suas próprias existências, experiências, necessidades, circunstâncias e destinos.  
+
+		2. O mundo histórico e cultural deve ser abordado como uma realidade criada e passível de transformação que, a exemplo dos seres humanos, passa por um processo constante de reformulação e construção pelo esforço humano, de acordo com representações ideológicas da realidade. 
+
+		3. Os(as) educandos(as) precisam aprender como estabelecer conexões, de forma ativa, entre suas próprias existências, as situações vivenciadas e a formação da realidade que vem ocorrendo até a presente data. 
+
+		4. Eles devem considerar a possibilidade de 'novas formas' de realidade, as novas possibilidades de ser que emergem dessas novas formas em processo de elaboração, e devem se comprometer com a tarefa de moldar uma nova história capacitadora e regenerativa. As novas maneiras de fazer a realidade constituem tarefa social, coletiva e compartilhada, na qual precisam ser ouvidas as vozes de todos os participantes. 
+
+		5. Na fase de alfabetização, os(as) educandos(as) começam a observar a importância da escrita para a execução desse projeto compartilhado. Ao adquirir a competência da escrita nesse processo de trazer suas experiências e significados para o mundo em construção e reconstrução ativa (de relações e práticas vivenciadas), os alunos irão, efetivamente, experimentar sua própria potencialidade no próprio ato de compreensão do que significa ser um sujeito humano. Na fase de pós-alfabetização, a base de ação é a exploração de temas geradores assistidos pela palavra escrita. A abordagem do tema da 'cultura ocidental', conforme concebido por pessoas como Hirsch e reificado em grades curriculares e pedagogias amplamente adotadas, bem como a busca por transcender esta concepção, envolve justamente o tipo de práxis pretendida por Freire. 
+
+	6. Os(as) educandos(as) precisam começar a compreender de que forma os mitos presentes nos discursos dominantes são precisamente os mitos que os oprimem e os marginalizam — mas que podem ser transcendidos por meio da ação transformadora.". 
+
+  
+
+	A pedagogia freireana: suas limitações. 
+
+	papel pedagógico do Paulo Freire - “Peregrino do Óbvio”. 
+
+	Wal-Martização da cultura global. 
+
+	"A minha rebeldia contra toda espécie de discriminação, dá mais explícita e gritante à mais sub-reptícia e hipócrita, não menos ofensiva e imoral, me acompanha desde minha infância. Desde a mais tenra idade que reajo, quase instintivamente, contra toda palavra, todo gesto, todo sinal de discriminação racial. Como também de discriminação contra os pobres que, bem mais tarde, se definia contra a discriminação de classe.". 
+
+  
+
+	O poder do amor 
+
+	"Não há diálogo, porém, se não há um profundo amor ao mundo e aos homens/às mulheres. Não é possível a pronúncia do mundo, que é um ato de criação e re-criação, se não há amor que a infunda. Sendo fundamento do diálogo, o amor é, também, diálogo. Daí que seja essencialmente tarefa de sujeitos e que não possa verificar-se na relação de dominação. Nesta, o que há é patologia de amor: sadismo em quem domina; masoquismo nos dominados. Amor, não. Porque é um ato de coragem, nunca de medo, o amor é compromisso com os homens/as mulheres. Onde quer que estejam estes, oprimidos, o ato de amor está em comprometer-se com sua causa. A causa de sua libertação. Mas, este compromisso, porque é amoroso, é dialógico. Como ato de valentia, não pode ser piegas; como ato de liberdade, não pode ser pretexto para a manipulação, senão gerador de outros atos de liberdade. A não ser assim, não é amor. Somente com a supressão da situação opressora é possível restaurar o amor que nela estava proibido. Se não amo o mundo, se não amo a vida, se não amo os homens/as mulheres, não me é possível o diálogo." 
+
+	Notas - Pág.182 
+
+---
+
+## (Páginas 181-195)
+
+
