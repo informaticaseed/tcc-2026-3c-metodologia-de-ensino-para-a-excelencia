@@ -624,4 +624,37 @@ O que existe em comum é “desescolarização” da escola: primeiro, pela muda
 
 ## (Páginas 181-195)
 
+26-Por Que Paulo é o Principal Pedagogo na Atual Sociedade da Informação? (Ramón Flecha) 
+
+	"o giro dialógico das ciências sociais atuais orienta-se em direção às contribuições da obra freireana; a atual sociedade da informação necessita do compromisso proposto por Freire.". 
+
+	Teoria da ação comunicativa. 
+
+	Habermas. 
+
+	Beck, Giddens, Touraine. 
+
+	O rumo que a pedagogia tomou Freire já havia trabalho antes, com uma década de antecedência. 
+
+	sociedades industriais. 
+
+	"o único modelo de sociedade da informação foi o da dualização social, gerando a exclusão da maioria da população.". 
+
+	“transformar as dificuldades em possibilidades”. 
+
+	“uma das tarefas mais importantes para os intelectuais progressistas é desmistificar os discursos pós-modernos sobre a inexorabilidade desta situação”. 
+
+	Congresso de Barcelona (1994) - Freire, Ramón, Nita, Donaldo e Castells. 
+
+	"destacaremos duas: tertúlias literárias na educação de adultos e comunidades de aprendizado nas escolas de crianças e jovens.". 
+
+	"As tertúlias literárias para pessoas adultas são círculos nas quais pessoas classificadas nos censos de população como 'analfabetas’ chegam a usufruir da leitura de livros de Kafka, Dostoievski, Joyce ou Cervantes. Essas tertúlias se organizam com base na dinâmica dialógica da educação libertadora proposta por Freire. Esse aprendizado dialógico gera um salto extraordinário na aprendizagem instrumental da Literatura e outras disciplinas (Arte, Filosofia, Política), supondo ao mesmo tempo um incremento de sua participação e solidariedade social". 
+
+	“Onde quer que exista um homem [uma mulher] oprimido, o ato de amor radica em comprometer-se com a sua causa. A causa da sua libertação. Este compromisso, devido ao seu caráter amoroso, é Dialógico.”. 
+
+	Notas.189 
+
+---
+
+## (Páginas 196-210)
 
