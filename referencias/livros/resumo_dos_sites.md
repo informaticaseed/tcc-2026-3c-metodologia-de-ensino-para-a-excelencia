@@ -17,3 +17,9 @@
   Explica o que é um pedagogo, suas funções, especializações e relevância, e do que se trata o trabalho de um pedagogo. 
 
 ---
+
+## Pedagogia EAD: Como desenvolver uma boa aula online
+
+  Explica o que é a pedagogia EAD, as vantagens e desvantagens de trabalhar com essa metodologia, ferramentas e recursos para o ensino online e formas de desenvolver uma boa aula online. Além disso, orienta como estabelecer metas e objetivos para a aula online. 
+
+---
