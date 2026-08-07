@@ -47,3 +47,11 @@
   Apresenta quais são as melhores universidades do mundo em cada disciplina, mostrando um raking delas. 
 
 ---
+
+## USP está entre as 0,6% melhores universidades do mundo, segundo ranking internacional
+
+  Apresenta um ranking internacional, onde a USP está entre as 0,6% melhores universidades do mundo.
+
+---
+
+##
