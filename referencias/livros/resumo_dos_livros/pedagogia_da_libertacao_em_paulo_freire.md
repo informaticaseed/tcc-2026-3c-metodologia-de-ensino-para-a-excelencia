@@ -4,14 +4,40 @@
 ---
 
 ## Capítulos
-| Numeração do Capítulo | Título do Capítulo |
-|---|----------------------------------------| 
-| ? | (escreva aqui) | 
-| ? | (escreva aqui) | 
-| ? | (escreva aqui) | 
-| ? | (escreva aqui) | 
-| ? | (escreva aqui) | 
-| ? | (escreva aqui) | 
+| Numeração do Capítulo | Título do Capítulo | Autor |  Página Inicial |
+|---|----------------------------------------| ----- | ---- |
+| 01 | A Pedagogia do Oprimido: Clandestina e Universal | Alípio Márcio Dias Casali | 16 |
+| 02 | Sobre a Pedagogia do Oprimido | Ana Mae Barbosa | 21 |
+| 03 | A Pedagogia do Oprimido Como Parte da "Pedagogia do Oprimido" de Paulo Freire | Ana Maria Araújo Freire | 23 |
+| 04 | (escreva aqui) | | |
+| 05 | (escreva aqui) | | |
+| 06 | (escreva aqui) | | |
+| 07 | (escreva aqui) | | |
+| 08 | (escreva aqui) | | |
+| 09 | (escreva aqui) | | |
+| 10 | (escreva aqui) | | |
+| 11 | (escreva aqui) | | |
+| 12 | (escreva aqui) | | |
+| 13 | (escreva aqui) | | |
+| 14 | (escreva aqui) | | |
+| 15 | (escreva aqui) | | |
+| 16 | (escreva aqui) | | |
+| 17 | (escreva aqui) | | |
+| 18 | (escreva aqui) | | |
+| 19 | (escreva aqui) | | |
+| 20 | (escreva aqui) | | |
+| 21 | (escreva aqui) | | |
+| 22 | (escreva aqui) | | |
+| 23 | (escreva aqui) | | |
+| 24 | (escreva aqui) | | |
+| 25 | (escreva aqui) | | |
+| 26 | (escreva aqui) | | |
+| 27 | (escreva aqui) | | |
+| 28 | (escreva aqui) | | |
+| 29 | (escreva aqui) | | |
+| 30 | (escreva aqui) | | |
+| 31 | (escreva aqui) | | |
+| 32 | (escreva aqui) | | |
 
 ---
 
