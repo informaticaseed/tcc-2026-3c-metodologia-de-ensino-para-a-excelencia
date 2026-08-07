@@ -485,6 +485,8 @@ O que existe em comum é “desescolarização” da escola: primeiro, pela muda
 	"MITOS: Seja qual for o formato em que são transmitidos — lendas, provérbios, canções ou textos religiosos — quando legitimam o poder de um homem sobre o outro, gerando a exploração e a discriminação sexual, precisam ser submetidos à análise crítica.". 
 	
 	Provérbios interessantes na página 148. 
+	<img width="431" height="460" alt="figura-147" src="https://github.com/user-attachments/assets/9baf7f0f-a803-43ba-8d69-e38551fd38ae" />
+
 	
 	“Estritamente falando, o diálogo fraternal consiste em cada participante deixar de lado, temporariamente, a sua personalidade e os seus pontos de vista a fim de compreender e apreciar o ponto de vista de outra pessoa sem, necessariamente, compartilhá-la.”. 
 	
@@ -658,3 +660,99 @@ O que existe em comum é “desescolarização” da escola: primeiro, pela muda
 
 ## (Páginas 196-210)
 
+27-Os Múltiplos Paulo Freire (Rosa María Torres) 
+
+	Caricatura de Paulo Freire: 
+
+		alfabetização, conscientização, educação de adultos, educação popular, educador educando, educação bancária, círculo de cultura, palavra geradora, tema gerador, universo vocabular e universo temático, diálogo, codificação e decodificação, unidade teoria-prática, ação-reflexão-ação, pesquisa participante, problematização, crítica, pensamento dialético, transformação da realidade, pedagogia do oprimido, cultura do silêncio, invasão e libertação cultural. 
+
+		“Com nenhuma. Eu não inventei nem um método, nem uma teoria, nem um programa, nem um sistema, nem uma pedagogia, nem uma filosofia. São as pessoas que precisam colocar nomes nas coisas.”. 
+
+		Paulo Freire possui várias identidades, por conta das diversas interpretações sobre a suas obras. 
+
+		Diversas visões surgem a partir de Paulo Freire, até visões antagônicas. 
+
+		"Muita gente pensa que eu desenvolvi todos estes temas porque sou especialista em alfabetização de adultos. Não, não e não. Não é assim. É lógico que a alfabetização de adultos é algo que eu estudei profundamente, mas estudei este tema devido a uma necessidade social do meu país, como um desafio. Em segundo lugar, estudei a alfabetização de adultos dentro do contexto da educação e dentro do contexto de referência da teoria do conhecimento, mas não como algo em si mesmo, porque como tal não existe.". 
+
+		“A educação popular não se confunde nem se restringe somente aos adultos. O que caracteriza, o que define a educação popular não é a idade dos educandos, mas sim, a opção política.”. 
+
+	“O educador que diz que é igual aos educandos ou é demagogo, ou mente, ou é incompetente. Toda educação é diretiva, e isto já foi dito na Pedagogia do oprimido.”. 
+
+		“escola ativa” - impulsores (Dewey, Decroly, Montessori, Claparede, Freinet). 
+		
+
+	Opinião de Paulo Freire sobre a "escola ativa": 
+
+		"A escola ativa efetivamente trouxe contribuições muito importantes a nível metodológico. Criticava a relação entre educadores e educandos e criticava também a fragmentação da escola tradicional, mas não ultrapassava este limite da crítica. Eu critico o que a 'escola nova' criticava da escola tradicional, mas crítico também o modo de produção capitalista.". 
+
+ 		proposta desescolarizadora - "impulsores" (Freire e Illich). 
+
+	Opinião de Paulo Freire sobre a proposta desescolarizadora: 
+
+		"A impressão que se tem quando estudamos Illich é que a escola, como instituição, aparece como possuindo uma essência demoníaca, o que equivale dizer que é imutável. No meu entender, somente ao analisar a força ideológica que está por trás da escola como instituição podemos compreender o que ela é, mas pode deixar de ser.". 
+
+		“Comecei a me preocupar com o uso da palavra ‘conscientização’. O desgaste que esta palavra sofreu na América Latina e depois na Europa foi tal que há cinco anos ou mais eu não a utilizo”. 
+
+	A atualidade (ou não) de Freire. 
+
+	Piaget, Vygotsky ou Ferreiro - comparação com Paulo Freire. 
+
+	Os múltiplos Paulo Freire. 
+
+	Notas - Pág.201 
+
+28-Comunicação e Cultura no Fim do Século XX: A Atualidade de Paulo Freire 
+
+	incomunicação e a “cultura do silêncio”. 
+
+	Não existe comunicação sem cultura. 
+
+	Notas - Pág. 208 
+
+
+
+Parte 3 - Criação da Cátedra Paulo Freire Criação da Cátedra Paulo Freire Programa de Pós-Graduação em Educação - Currículo da Pontifícia Universidade Católica-SP 
+
+	Cátedra Paulo Freire - "desenvolvimento de pesquisas/estudos em nível de Pós-Graduação, sobre a obra de Paulo Freire e suas repercussões teórico-práticas para educação dentro e fora do Brasil.". 
+
+	"Objetivos:  
+
+		1. desenvolver estudos e pesquisas, em nível de Pós-Graduação, sobre a obra de Paulo Freire, suas repercussões teórico-práticas no Brasil e no exterior;  
+
+		2. oportunizar o intercâmbio de pesquisadores e interessados no estudo e releitura da obra de Paulo Freire;  
+
+		3. criar um banco de dados de trabalhos desenvolvidos; sobre a obra de Paulo Freire;  
+
+		4. criar rede de pesquisadores sobre a obra de Paulo Freire;  
+
+		5. documentar e divulgar a produção e realização da Cátedra Paulo Freire." 
+
+  
+
+	"Temáticas:  
+
+		1. 30 anos da Pedagogia do oprimido;  
+
+		2. Alfabetização de adultos; 
+
+		3. As exigências da prática freireana para a formação  
+
+		permanente dos educadores;  
+
+		4. Currículo na teoria e prática de Paulo Freire;  
+
+		5. Ética e política na obra de Paulo Freire;  
+
+		6. A pesquisa na obra de Paulo Freire;  
+
+		7. Os fundamentos da obra de Paulo Freire;  
+
+		8. Repercussões da obra de Paulo Freire no Brasil e no exterior" 
+
+  
+
+	Nota - Pág. 212 
+
+---
+
+## (Páginas 211-225)
