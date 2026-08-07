@@ -756,3 +756,19 @@ Parte 3 - Criação da Cátedra Paulo Freire Criação da Cátedra Paulo Freire 
 ---
 
 ## (Páginas 211-225)
+
+Discursos da Aula Inaugural - Abertura da Cátedra Paulo Freire (Isabel Franchi Cappelletti) 
+
+	Auto explicativo. 
+
+  
+
+Cátedra Paulo Freire: nossa tarefa de revivê-lo e recriá-lo (Ana Maria Araújo Freire) 
+
+  
+
+	Bibliográfia de Paulo Freire e Agradecimentos pela honra de continuar o sonho de seu mestre. 
+
+---
+
+## (Páginas 226-240)
