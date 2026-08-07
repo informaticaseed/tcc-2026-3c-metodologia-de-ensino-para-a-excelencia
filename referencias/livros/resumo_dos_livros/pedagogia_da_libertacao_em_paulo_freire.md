@@ -146,7 +146,7 @@ Introdução da Primeira Parte do Livro.
 
 	A pedagogia do oprimido contribuiu para a “desescolarização” da escola "o debate sobre a “desescolarização” está assumindo, correntemente, formas teóricas e práticas muito diferentes.  
 
-O que existe em comum é “desescolarização” da escola: primeiro, pela mudança do aprendizado para vários espaços de aprendizados; segundo, pelo alinhamento do currículo à experiência vivida dos educandos; terceiro, pelo trabalho de educadores leigos instruídos, que atuam como professores e educandos e que, ocasionalmente, substituem professores academicamente treinados.". 
+	O que existe em comum é “desescolarização” da escola: primeiro, pela mudança do aprendizado para vários espaços de aprendizados; segundo, pelo alinhamento do currículo à experiência vivida dos educandos; terceiro, pelo trabalho de educadores leigos instruídos, que atuam como professores e educandos e que, ocasionalmente, substituem professores academicamente treinados.". 
 
 	Espaços de aprendizado - Não tentar manter as crianças longe de situações conflituosas, mas torná-las indivíduos atraídos para áreas de resolução de conflitos. 
 
