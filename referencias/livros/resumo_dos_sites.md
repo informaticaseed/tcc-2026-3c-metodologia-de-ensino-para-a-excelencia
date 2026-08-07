@@ -65,3 +65,11 @@
   Ranking das melhores universidades de 2026. 
 
 ---
+
+## Melhores universidades do mundo: as top 10 de 2024
+
+  Faz um ranking das melhores universidades do mundo e explica quais os critérios para construir essa lista. 
+
+---
+
+##
