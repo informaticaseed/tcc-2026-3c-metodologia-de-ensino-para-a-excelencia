@@ -772,3 +772,41 @@ Cátedra Paulo Freire: nossa tarefa de revivê-lo e recriá-lo (Ana Maria Araúj
 ---
 
 ## (Páginas 226-240)
+
+Um Espaço Acadêmico para Estudar e Pesquisar o Pensamento de Paulo Freire: A Cátedra Paulo Freire da Puc-SP (Ana Maria Saul) 
+
+	A atualidade do pensamento de Paulo Freire. 
+
+	"A vida e a obra de Freire estão inscritas no imaginário pedagógico do século XX, constituindo uma referência obrigatória para várias gerações de educadores. [...] As propostas por ele lançadas foram sendo apropriadas por grupos distintos, que as relocalizaram em vários contextos sociais e políticos. [...] A partir de uma concepção educativa própria, que cruza a teoria social, o compromisso moral e a participação política, Paulo Freire é, ele próprio, um patrimônio incontornável da reflexão pedagógica atual. A sua obra funciona com uma espécie de consciência crítica, que nos põe em guarda contra a despolitização do pensamento educativo e da reflexão pedagógica.". 
+
+	stricto sensu - “em sentido específico”. 
+
+	lato sensu - “em sentido amplo”. 
+
+	“Paulo, você se considera um clássico? E, se assim o for, o que pensa da frase de Millôr Fernandes: Clássico é um escritor que não se contentou em chatear apenas os seus contemporâneos?”. 
+
+	"Sou um clássico sim. Não porque subjetiva e presunçosamente deste modo me considere, mas porque, como clássico sou considerado por todas aquelas e todos aqueles que encontram em minha obra um instrumento para enfrentar um clássico problema: a existência de opressores e oprimidos. Por isso, enquanto esse problema persistir, quero continuar chateando, incomodando e fustigando os que, contemporâneos meus ou não, defendam a permanência das desigualdades.". 
+
+  
+
+	A Cátedra Paulo Freire da Pontifícia Universidade Católica de São Paulo. 
+
+	"Quanto aos outros, os que põem em prática a minha prática, que se esforcem por recriá-la, repensando também meu pensamento. E ao fazê-lo, que tenham em mente que nenhuma prática educativa se dá no ar, mas num contexto concreto, histórico, social, cultural, econômico, político, não necessariamente idêntico.". 
+
+	O desenho e os procedimentos metodológicos da pesquisa. 
+
+	Considerações finais. 
+
+	Só prova a relevância na atualidade sobre o Paulo Freire. 
+
+ 
+
+	Referências - Pág.231 
+
+	Notas - Pág.233 
+
+	Biografia dos Autores - Pág.234 
+
+	Títulos de Paulo Freire editados pela Paz e Terra - Pág.249 
+
+	Pedagogia da libertação em Paulo Freire - Pág.251 
