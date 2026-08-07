@@ -36,3 +36,8 @@
 
 ---
 
+## Quais são as 3 universidades da América Latina entre as 100 melhores do mundo
+
+  O site desenvolve sobre as melhores universidades do mundo, onde há três representantes latino-americanos, sendo um deles brasileira. O ranking que o autor se baseia foi realizado em 2024. 
+  
+---
