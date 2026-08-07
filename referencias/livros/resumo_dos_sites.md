@@ -29,3 +29,10 @@
   Ranking Mundial das Universidades de 2026. 
 
 ---
+
+## As melhores universidades do mundo em 2025
+
+  Faz uma descrição das melhores universidades do mundo, apresentando a pontuação de dois Rankings realizados em 2025, escrevendo sobre a história e relevância delas. 
+
+---
+
