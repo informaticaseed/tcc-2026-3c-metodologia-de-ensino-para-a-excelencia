@@ -23,3 +23,9 @@
   Explica o que é a pedagogia EAD, as vantagens e desvantagens de trabalhar com essa metodologia, ferramentas e recursos para o ensino online e formas de desenvolver uma boa aula online. Além disso, orienta como estabelecer metas e objetivos para a aula online. 
 
 ---
+
+## QS World University Rankings 2026
+
+  Ranking Mundial das Universidades de 2026. 
+
+---
