@@ -60,4 +60,8 @@
 
 ---
 
-##
+## Times Higher Education World University Rankings 2026
+
+  Ranking das melhores universidades de 2026. 
+
+---
