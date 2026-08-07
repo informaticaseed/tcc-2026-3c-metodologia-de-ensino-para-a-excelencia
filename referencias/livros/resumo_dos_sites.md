@@ -72,4 +72,8 @@
 
 ---
 
-##
+## Cronograma de estudos: como montar um e qual sua importância
+
+  O autor instrui o leitor, para que ele consiga montar um cronograma de estudos. Além disso, explica importância dessa metodologia de ensino.
+
+---
