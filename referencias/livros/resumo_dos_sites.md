@@ -41,3 +41,9 @@
   O site desenvolve sobre as melhores universidades do mundo, onde há três representantes latino-americanos, sendo um deles brasileira. O ranking que o autor se baseia foi realizado em 2024. 
   
 ---
+
+## Ranking QS: Veja quais são as melhores universidades do mundo em cada disciplina
+
+  Apresenta quais são as melhores universidades do mundo em cada disciplina, mostrando um raking delas. 
+
+---
