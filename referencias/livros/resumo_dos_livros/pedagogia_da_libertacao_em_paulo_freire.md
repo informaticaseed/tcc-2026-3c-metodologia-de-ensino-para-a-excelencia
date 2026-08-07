@@ -22,22 +22,21 @@
 | 14 | Paulo Freire: Memórias Como Narrações Compartilhadas | Célia Linhares | 83 |
 | 15 | Uma Pedagogia do (Outro) Descobrimento | Danilo R. Streck | 87 |
 | 16 | A Pedagogia Antimétodo: Uma Perspectiva Freireana | Donaldo Macedo | 94 |
-| 17 | (escreva aqui) | | |
-| 18 | (escreva aqui) | | |
-| 19 | (escreva aqui) | | |
-| 20 | (escreva aqui) | | |
-| 21 | (escreva aqui) | | |
-| 22 | (escreva aqui) | | |
-| 23 | (escreva aqui) | | |
-| 24 | (escreva aqui) | | |
-| 25 | (escreva aqui) | | |
-| 26 | (escreva aqui) | | |
-| 27 | (escreva aqui) | | |
-| 28 | (escreva aqui) | | |
-| 29 | (escreva aqui) | | |
-| 30 | (escreva aqui) | | |
-| 31 | (escreva aqui) | | |
-| 32 | (escreva aqui) | | |
+| 17 | A Atualidade de Freire nos Cursos de Pedagogia | Fábio Manzini Camargo | 102 |
+| 18 | Paulo Freire, Ética e Teologia da Libertação | Frei Carlos Josaphat, OP | 108 |
+| 19 | Educação Libertadora e Globalização | Heinz-Peter Gerhardt | 118 |
+| 20 | A Educação do Núcleo de Educação Popular Paulo Freire - NEP/UEAPA: Contribuições à Formação do Educador | Ivanilde Apoluceno de Oliveira | 132 |
+| 21 | Paulo Freire, Um Clássico | Mário Sérgio Cortella | 143 |
+| 22 | Aspectos Semânticos e Pragmáticos da Pedagogia de Paulo Freire | Manfred Peters | 145 |
+| 23 | Paulo Freire em Tempos de Exclusão | Miguel G. Arroyo | 152 |
+| 24 | Paulo Freire: Aspectos de Seu Humanismo Radical | Paulo de Tarso Santos | 161 |
+| 25 | Uma Pedagogia da Possibilidade: Reflexões sobre a Politica Educacional de Paulo Freire | Peter McLaren | 165 |
+| 26 | Por que Paulo é o Principal Pedagogo na Atual Sociedade da Informação | Ramón Flecha | 185 |
+| 27 | Os Múltiplos Paulo Freire | Rosa María Torres | 190 |
+| 28 | Comunicação e Cultura no Fim do Século XX: A Atualidade de Paulo Freire | Venício A. de Lima | 204 |
+| 29 | Criação da Cátedra Paulo Freire Pelo Programa de pós-graduação em Educação- Currículo da Pontifícia Universidade Católica-SP | | 210|
+| 30 | Discursos da Aula Inaugural | | 213 |
+| 31 | Um Espaço para Estudar e Pesquisar o Pensamento de Paulo Freire: A Cátedra Paulo Freire da PUC-SP | Ana Maria Saul | 222 | 
 
 ---
 
