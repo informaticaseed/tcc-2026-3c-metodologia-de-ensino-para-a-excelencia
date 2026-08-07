@@ -9,19 +9,19 @@
 | 01 | A Pedagogia do Oprimido: Clandestina e Universal | Alípio Márcio Dias Casali | 16 |
 | 02 | Sobre a Pedagogia do Oprimido | Ana Mae Barbosa | 21 |
 | 03 | A Pedagogia do Oprimido Como Parte da "Pedagogia do Oprimido" de Paulo Freire | Ana Maria Araújo Freire | 23 |
-| 04 | (escreva aqui) | | |
-| 05 | (escreva aqui) | | |
-| 06 | (escreva aqui) | | |
-| 07 | (escreva aqui) | | |
-| 08 | (escreva aqui) | | |
-| 09 | (escreva aqui) | | |
-| 10 | (escreva aqui) | | |
-| 11 | (escreva aqui) | | |
-| 12 | (escreva aqui) | | |
-| 13 | (escreva aqui) | | |
-| 14 | (escreva aqui) | | |
-| 15 | (escreva aqui) | | |
-| 16 | (escreva aqui) | | |
+| 04 | Pedagogia do Oprimido: Um Projeto Coletivo | Balduíno Antonio Andreola | 31 |
+| 05 | Recordando o Legado da Pedagogia do Oprimido | Henry A. Giroux | 36 |
+| 06 | Uma Pedagogia da Esperança ou Trinta Anos Depois da Pedagogia do Oprimido de Paulo Freire | Joachim Dabisch | 41 |
+| 07 | A Pedagogia do Oprimido na Alemanha | Joachim Schroeder | 46 |
+| 08 | Reflexões Sobre a Pedagogia do Oprimido de Paulo Freire | Maxine Greene | 62 |
+| 09 | Considerações Sobre a Pedagogia do Oprimido | Renate Nestvogel | 64 |
+| 10 | Trinta Anos de Pedagogia do Oprimido | Renate Zwicker-Pelzer | 66 |
+| 11 | O Legado de Paulo Freire | Arve Brunvoll | 72 |
+| 12 | Pedagogia Como Currículo da Práxis | Antonio Fernando Gouvêa da Silva | 73 |
+| 13 | Aproximando-me | Arantxa Ugartetxea | 80 |
+| 14 | Paulo Freire: Memórias Como Narrações Compartilhadas | Célia Linhares | 83 |
+| 15 | Uma Pedagogia do (Outro) Descobrimento | Danilo R. Streck | 87 |
+| 16 | A Pedagogia Antimétodo: Uma Perspectiva Freireana | Donaldo Macedo | 94 |
 | 17 | (escreva aqui) | | |
 | 18 | (escreva aqui) | | |
 | 19 | (escreva aqui) | | |
