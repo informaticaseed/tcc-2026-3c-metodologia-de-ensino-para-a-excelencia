@@ -1,7 +1,7 @@
 # Acompanhamento Quinzenal — Prof. Rafael
-**Grupo:** [Nome do Grupo]
-**Turma:** 3A / 3B / 3C
-**Repositório:** [link]
+**Grupo:** Metodologia de ensino para a excelencia
+**Turma:**  3C
+
 
 ---
 
@@ -11,9 +11,15 @@
 
 | Integrante | O que se comprometeu a fazer |
 |-----------|------------------------------|
-| (nome 1) | |
-| (nome 2) | |
-| (nome 3) | |
+| João |banco de dados: análise e professor |
+| Luiz Eduardo Damacena | backend: gerar análise; CRUD de professor |
+| Guilherme Martins | Frontend: gerar resultado de análise e mostrar resultados e CRUD de professor |
+
+Backlog: 
+- relatório: referencial teórico, metodologia, 
+- frontend: CRUD aluno, CRUD de professor, gerar resultado de análise e mostrar resultados
+- backend: CRUD aluno, CRUD de professor, gerar análise
+- banco de dados:  aluno,  professor, análise
 
 ### Verificação em 08/08
 
