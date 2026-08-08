@@ -76,3 +76,9 @@ Capítulo 3: "A dialogicidade: essência da educação como prática da liberdad
 	"Não há o diálogo verdadeiro se não há nos seus sujeitos um pensar verdadeiro. Pensar crítico." Mais uma vez, a educação pelo diálogo verdadeiro deve prezar pelo pensamento crítico dos educandos, já que não há diálogo se não há pensamento crítico.
 
 
+Capítulo 4: "A teoria da ação antidialógica"
+
+
+	"Os homens são seres da práxis. Seres do quefazer, diferente dos animais, seres do puro fazer." Os animais estão imersos no ambiente, enquanto o ser humano vive em um ambiente e reage ao ambiente, está inserido nele. Os homens veem sua realidade, refletem sobre ela, a compreendem e tem o poder para transformá-la, diferente dos animais, que fazem parte da própria realidade. Isto é o que faz do ser humano um ser da práxis.
+	"O esforço revolucionário de transformação radical" das estruturas opressoras, não pode ter em sua liderança, homens do quefazer e nas massas oprimidas, homens reduzidos ao puro fazer. A revolução deve ser realizada de igual para igual, não é possivel tomar os oprimidos como meros "fazedores" de suas ideias.
+	"O que não se pode realizar, na práxis revolucionária, é a divisão absurda entre a práxis da liderança e a das massas oprimidas, de forma que a destas fosse a de apenas seguir as determinações da liderança." Ignorar a práxis dos oprimidos é os oprimir. Pois o opressor, para dominar as massas, nega às massas sua práxis verdadeira. Nega o direito de fala, de pensar.
