@@ -84,4 +84,10 @@
 
 ---
 
+## Gestão do tempo: conheça técnicas para melhorar sua produtividade
+
+  O artigo apresenta técnicas e ferramentas para melhorar a sua produtividade através da gestão de tempo. Alguns exemplos de ferramentas de gestão de tempo são: Google Keep, Be Focused e Todoist.
+
+---
+
 ##
