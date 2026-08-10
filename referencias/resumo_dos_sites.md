@@ -77,3 +77,11 @@
   O autor instrui o leitor, para que ele consiga montar um cronograma de estudos. Além disso, explica importância dessa metodologia de ensino.
 
 ---
+
+## Veja como aplicar o método de estudo de Harvard
+
+  O artigo apresenta argumentos do porque o leitor deveria utilizar do método de estudo de Harvard, apresenta os fundamentos do método, maneiras de aplicá-la a sua rotina e faz sugestões para maximizar a eficácia do método.
+
+---
+
+##
