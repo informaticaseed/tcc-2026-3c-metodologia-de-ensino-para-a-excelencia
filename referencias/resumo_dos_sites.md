@@ -96,4 +96,6 @@
 
 ---
 
-##
+## A proposta de Harvard para uma educação para compreensão
+
+  
