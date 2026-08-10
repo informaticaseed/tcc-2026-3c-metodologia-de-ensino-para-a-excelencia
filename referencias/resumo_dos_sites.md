@@ -90,4 +90,10 @@
 
 ---
 
+## Conheça 4 metodologias ativas que estão transformando a educação superior
+
+  A "Blog Mackenzie" apresenta quatro metodologias ativas, sendo elas: Ensino por pares; sala de aula invertida; aprendizado baseado em projetos e gameficação.
+
+---
+
 ##
