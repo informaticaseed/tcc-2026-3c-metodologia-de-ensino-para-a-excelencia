@@ -120,4 +120,10 @@
 
 ---
 
+## Aluna-prodígio de Harvard e Yale dá 10 dicas para ser mais eficiente nos estudos
+
+  O artigo apresenta 10 dicas para que o leitor seja mais eficiente nos estudos.
+
+---
+
 ##
