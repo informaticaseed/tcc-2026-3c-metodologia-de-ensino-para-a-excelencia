@@ -102,5 +102,16 @@
 
 ---
 
+## O Método de Estudo de Caso de Harvard mediado pela Sala de Aula Invertida na mobilização de conhecimentos no ensino-aprendizado de Química
+
+  Este trabalho realizou uma apresentação, pela aplicação de um Minicurso, do método de estudo de casos de Harvard como promotor de uma aprendizagem ativa pela aplicação e análise de casos baseados em eventos reais a futuros professores química e outros graduandos da UFCG. Também investigou a viabilidade de utilização dos mapas conceituais e do Facebook como ferramentas de apoio didático ao ensino por meio de casos, mediado pela sala de aula invertida. A temática abordada no caso, estruturado para este estudo, se relacionou ao contexto regional dos próprios discentes. Tanto os Mapas Conceituais como o Facebook apresentaram resultados condizentes com o esperado de suas aplicações.
+
+---
+
+## Estudo de Harvard mostra por que metodologias ativas funcionam melhor
+
+  Estudo de Harvard mostra por que metodologias ativas funcionam melhor.
+
+---
+
 ##
-  
