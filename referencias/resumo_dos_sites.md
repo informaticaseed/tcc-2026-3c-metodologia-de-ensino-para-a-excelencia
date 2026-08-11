@@ -98,4 +98,9 @@
 
 ## A proposta de Harvard para uma educação para compreensão
 
+  O artigo trabalha sobre a metodologia do projeto zero, onde o projeto tem o foco de ensinar o educador a ensinar. A metodologia trabalha a compreensão do professor.
+
+---
+
+##
   
