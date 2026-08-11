@@ -150,8 +150,16 @@
   
 ---
 
-##
+## 'É preciso desenvolver o método de acordo com o aluno', diz ex-reitora do MIT
 
   O artigo apresenta uma entrevista feita com Christine Ortiz, uma ex-reitora do MIT.
 
 ---
+
+## Project Access
+
+  Página oficial do projeto.
+
+---
+
+##
