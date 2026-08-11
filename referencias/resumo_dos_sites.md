@@ -114,4 +114,10 @@
 
 ---
 
+## Sucesso de Harvard vem do uso dos estudos de caso
+
+  Sucesso de Harvard vem do uso dos estudos de caso.
+
+---
+
 ##
