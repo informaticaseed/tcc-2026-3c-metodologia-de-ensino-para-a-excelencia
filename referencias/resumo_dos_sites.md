@@ -151,3 +151,7 @@
 ---
 
 ##
+
+  O artigo apresenta uma entrevista feita com Christine Ortiz, uma ex-reitora do MIT.
+
+---
