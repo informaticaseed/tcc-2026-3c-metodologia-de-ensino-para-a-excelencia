@@ -78,6 +78,123 @@
 
 ---
 
+## Cambridge Primary: um guia para os pais
+
+  Aborda os métodos pedagógicos utilizados pela Cambridge, onde se preza pela auto-estima, responsabilidade e curiosidade dos alunos.
+  
+---
+
+## University of Cambridge
+
+  Apresenta a Universidade de Cambridge, seus cursos, edifícios e como funciona o processo de inscrição.
+  
+---
+
+## Curso com metodologia de Stanford acelera aprendizado de alunos
+
+  Duas escolas municipais de Cotia (SP) adaptaram a abordagem de ensino criada pela professora Jo Boaler, obtendo um desempenho correspondente ao padrão norte-americano.
+  
+---
+
+## Tudo o que você precisa saber sobre a University Stanford, umas das instituições mais renomadas do mundo!
+
+  Aborda informações essênciais para jovens brasileiros que pretendem estudar em Stanford.
+  
+---
+
+## Como funciona o primeiro curso em VR da Stanford University?
+
+  Aborda como técnologia de VR pode ajudar em cursos que seriam impráticos na realidade, como aeronáutica e oceanografia.
+  
+---
+
+## Universidade Stanford: segunda melhor dos Estados Unidos
+
+  Conta um pouco sobre a história da universidade, seus cursos, vantagens e como estudar lá.
+  
+---
+
+## Os caminhos da aprendizagem: como o cérebro funciona?
+
+  Estudo para copreender como o aprendizado funciona de um ponto de vista da neurociência e como otimisá-lo.
+  
+---
+
+## Quanto é o valor do salário mínimo em 2026? Veja o histórico
+
+  Aborda como funciona a lei do salário mínimo, histórico de reajustes e como ele impacta na vida do povo brasileiro.
+  
+---
+
+## Cinco cidades concentram quase 50% da extrema pobreza no DF
+
+  Mostra o mapa da pobreza no DF em 2021 durante a pandemia da Covid-19.
+  
+---
+
+## Paciente é chamada para consulta pelo SUS onze anos após ter morrido
+
+  Caso de Dona Zilá, em Alvorada na Região Metropolitana de Porto Alegre. Dona Zilá passou seus dois últimos anos de vida na fila de espera do SUS.
+  
+---
+
+## Course Directory - Postgraduate Study
+
+  Página não encontrada.
+
+---
+
+## Conheça as vantagens do método Cambridge de ensino de inglês
+
+  Método Cambridge, método de ensino de inglês que traz autonomia e confiança ao estudante para as situação do dia a dia, com o foco nas competência linguísticas como escrever, ler, audição e fala em situações reais, proporcionado uma rica experiência para os alunos e professores. Com professores qualificados e que buscam constante avaliação dos alunos e que possuem experiencias internacionais, com matéria didático novo e elaborado por especialistas que tenha conteúdo de temas do cotidiano, com ferramentas e infraestrutura para aulas mais interativas, com avaliações constantes do desempenho dos alunos sempre apresentando seus erros e como melhorar.
+
+---
+
+## Ensino, aprendizagem e avaliação
+
+  O site separa em 4 níveis de aprendizado dos alunos. Baseados neles o professor pode levar a aula com maior eficiência avaliando, nível do ambiente de sala, dificuldades dos alunos, seleção de materiais, planejamento das aulas, aprendizagem dos alunos e o vinculo dos alunos sobre o planejamento oferecido.
+
+---
+
+## Metodologia de Cambridge English
+
+  Metodologia deles é apresentada como forma de excelência de ensino, com orientação de nível internacional profundo, oferecendo valores aos professores, para a aprendizagem de idiomas para o bem da sociedade como um todo, com mais de 100 anos de experiencia e mais de 4 milhões de pessoas no mundo realizando seus exames. Com inovação nos serviços como testes adaptativos no computador, aprendizagem combinada, orientação na aprendizagem, gerenciamento dos sistemas de ensino e desenvolvimento profissional dos professores.
+
+---
+
+## Qualificações Cambridge English para escolas
+
+  Em suma o mesmo apresentado no site anterior mas aplicado nas escolas, qualificando os professores, colocando testes e orientação do aprendizado.
+
+---
+
+## Universidade de Cambridge
+
+  Veja como estudar no Reino Unido: Um site dedicado a explicar sobre a faculdade, trazendo ótimos pontos porem nada de sua metodologia, apresentando preço dos cursos disponíveis e como entrar na faculdade levantando pontos importantes para a inscrição e qualidades da infraestrutura do ensino e a faculdade.
+  
+---
+
+## Desvendando o Sucesso do Projeto Bilíngue
+
+  Metodologia Cambridge e a Parceria Família-Escola: Aqui cita as mesmas coisas dos sites anteriores a metodologia de Cambridge. Adicionando dessas vez a importância da família nesse processo de aprendizagem, como a interação dos pais durantes atividades, ajuda em deveres de casa ou a realização do uso da língua inglesa em jogos, filmes e conversa entre os familiares.
+
+---
+
+## Cambridge: tudo sobre a universidade de Isaac Newton e Charles Darwin
+
+  Cita apenas a historia a universidade e a quantidade de alunos, concursados, que se graduaram e se pós graduaram. Nada de relevante na metodologia.
+
+---
+
+## Cambridge Primary: um guia para os pais
+
+  Apresenta as mesmas coisas apenas em formato de propaganda para a instituição deles, citando os porquês es benefícios de colocar o seu filho no ensino deles.
+
+---
+
+## Propects
+
+  Nada de relevante novamente, apenas repetindo o que já foi dito. 
 ## Veja como aplicar o método de estudo de Harvard
 
   O artigo apresenta argumentos do porque o leitor deveria utilizar do método de estudo de Harvard, apresenta os fundamentos do método, maneiras de aplicá-la a sua rotina e faz sugestões para maximizar a eficácia do método.
