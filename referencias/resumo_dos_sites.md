@@ -195,5 +195,110 @@
 ## Propects
 
   Nada de relevante novamente, apenas repetindo o que já foi dito. 
+## Veja como aplicar o método de estudo de Harvard
+
+  O artigo apresenta argumentos do porque o leitor deveria utilizar do método de estudo de Harvard, apresenta os fundamentos do método, maneiras de aplicá-la a sua rotina e faz sugestões para maximizar a eficácia do método.
+
+---
+
+## Gestão do tempo: conheça técnicas para melhorar sua produtividade
+
+  O artigo apresenta técnicas e ferramentas para melhorar a sua produtividade através da gestão de tempo. Alguns exemplos de ferramentas de gestão de tempo são: Google Keep, Be Focused e Todoist.
+
+---
+
+## Conheça 4 metodologias ativas que estão transformando a educação superior
+
+  A "Blog Mackenzie" apresenta quatro metodologias ativas, sendo elas: Ensino por pares; sala de aula invertida; aprendizado baseado em projetos e gameficação.
+
+---
+
+## A proposta de Harvard para uma educação para compreensão
+
+  O artigo trabalha sobre a metodologia do projeto zero, onde o projeto tem o foco de ensinar o educador a ensinar. A metodologia trabalha a compreensão do professor.
+
+---
+
+## O Método de Estudo de Caso de Harvard mediado pela Sala de Aula Invertida na mobilização de conhecimentos no ensino-aprendizado de Química
+
+  Este trabalho realizou uma apresentação, pela aplicação de um Minicurso, do método de estudo de casos de Harvard como promotor de uma aprendizagem ativa pela aplicação e análise de casos baseados em eventos reais a futuros professores química e outros graduandos da UFCG. Também investigou a viabilidade de utilização dos mapas conceituais e do Facebook como ferramentas de apoio didático ao ensino por meio de casos, mediado pela sala de aula invertida. A temática abordada no caso, estruturado para este estudo, se relacionou ao contexto regional dos próprios discentes. Tanto os Mapas Conceituais como o Facebook apresentaram resultados condizentes com o esperado de suas aplicações.
+
+---
+
+## Estudo de Harvard mostra por que metodologias ativas funcionam melhor
+
+  Estudo de Harvard mostra por que metodologias ativas funcionam melhor.
+
+---
+
+## Sucesso de Harvard vem do uso dos estudos de caso
+
+  Sucesso de Harvard vem do uso dos estudos de caso.
+
+---
+
+## Aluna-prodígio de Harvard e Yale dá 10 dicas para ser mais eficiente nos estudos
+
+  O artigo apresenta 10 dicas para que o leitor seja mais eficiente nos estudos.
+
+---
+
+## Project Zero
+
+  Site oficial do "Project Zero"
+
+---
+
+## MIT Professional Education
+
+  Site oficial do MIT, fazendo a propaganda da universidade.
+
+---
+
+## Massachusetts Institute of Technology (MIT): a universidade que já formou mais de 100 prêmios Nobel
+
+  Esse site foi feito para promover o MIT, apresentando ex-alunos famosos, prêmios entre outros motivos.
+
+---
+
+## MIT: como entrar no Massachusetts Institute of Technology
+
+  O site promove o MIT, apresentando história e fundação, como é o campus da instituição e programas de estudo.
+  
+---
+
+## 'É preciso desenvolver o método de acordo com o aluno', diz ex-reitora do MIT
+
+  O artigo apresenta uma entrevista feita com Christine Ortiz, uma ex-reitora do MIT.
+
+---
+
+## Project Access
+
+  Página oficial do projeto.
+
+---
+
+## Conheça o Imperial College London, referência em ciência e medicina
+
+  O site promove o Imperial College London, apresentando as informações básicas sobre a instituição.
+
+---
+
+## Imperial College London: a melhor universidade de Londres
+
+  O site promove o Imperial College London, apresentando as informações técnicas e mais quantitativa sobre a instituição.
+
+---
+
+## Educations.com - Imperial College London
+
+  O site promove o Imperial College London, apresentando as informações básicas sobre a instituição.
+
+---
+
+## IDP Hotcourses
+
+  O site promove o Imperial College London, apresentando as informações básicas sobre a instituição.
 
 ---
