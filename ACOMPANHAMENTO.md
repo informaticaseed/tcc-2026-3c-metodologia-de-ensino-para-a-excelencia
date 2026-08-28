@@ -36,13 +36,13 @@ Backlog:
 
 ## Quinzena 2 — 10/08 a 22/08
 
-### Compromissos assumidos em 10/08
+### Compromissos assumidos em 28/08
 
 | Integrante | O que se comprometeu a fazer |
 |-----------|------------------------------|
-| (nome 1) | |
-| (nome 2) | |
-| (nome 3) | |
+| João |DDL do banco de dados |
+| Luiz Eduardo Damacena | integração do backend e frontend com base no DDL do banco de dados do João, deixando funcional o site em um primeiro momento |
+| Guilherme Martins | Acompanhar o frontend ajudando o Luiz|
 
 ### Verificação em 22/08
 
