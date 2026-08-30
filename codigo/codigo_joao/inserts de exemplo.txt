@@ -1,0 +1,53 @@
+-- 1) Alunos
+INSERT INTO alunos (id, nome_completo, email, serie, turma)
+VALUES
+  (1, 'Ana Clara Souza', 'ana.clara@example.com', '8º ano', 'A'),
+  (2, 'Bruno Henrique Lima', 'bruno.lima@example.com', '9º ano', 'B'),
+  (3, 'Carla Mendes Pereira', 'carla.pereira@example.com', '1º ano EM', 'C');
+
+-- 2) Dados socioeconômicos
+INSERT INTO dados_socioeconomicos (
+  aluno_id, renda_familiar, trabalha_alem_de_estudar, horas_trabalho_semana,
+  escolaridade_pais_responsaveis, tem_internet_casa, tem_computador_casa
+)
+VALUES
+  (1, 'até 2 salários mínimos', FALSE, NULL, 'Ensino médio completo', TRUE, TRUE),
+  (2, 'entre 2 e 4 salários mínimos', TRUE, 20, 'Ensino fundamental completo', TRUE, FALSE),
+  (3, 'acima de 4 salários mínimos', FALSE, NULL, 'Ensino superior completo', TRUE, TRUE);
+
+-- 3) Contexto cultural
+INSERT INTO contexto_cultural (
+  aluno_id, atividades_culturais, tradicao_cultural_comunitaria, papel_familia_comunidade_formacao
+)
+VALUES
+  (1, 'Leitura, música e esportes', 'Festa junina da comunidade', 'Incentiva os estudos e a participação em eventos locais'),
+  (2, 'Futebol e música', 'Culturas de origem familiar nordestina', 'A família valoriza o trabalho e a cooperação'),
+  (3, 'Teatro, leitura e dança', 'Participação em grupos culturais da igreja', 'Apoia a criatividade e a continuidade dos estudos');
+
+-- 4) Dimensão política
+INSERT INTO dimensao_politica (
+  aluno_id, acompanha_noticias_politica_sociedade, participou_movimento_social,
+  papel_educacao_transformacao_social
+)
+VALUES
+  (1, TRUE, FALSE, 'A educação ajuda a formar cidadãos críticos e conscientes'),
+  (2, FALSE, TRUE, 'A educação pode melhorar oportunidades e reduzir desigualdades'),
+  (3, TRUE, TRUE, 'A escola é fundamental para transformar a sociedade por meio do conhecimento');
+
+-- 5) Experiências escolares
+INSERT INTO experiencias_escolares (
+  aluno_id, relacao_professores, opiniao_e_ouvida_na_escola, dificuldades_aprendizado
+)
+VALUES
+  (1, 'Boa e respeitosa', TRUE, 'Falta de tempo para estudar em casa'),
+  (2, 'Razoável, com alguns conflitos', FALSE, 'Dificuldade em matemática e falta de materiais'),
+  (3, 'Muito boa e acolhedora', TRUE, 'Metodologias muito rápidas em algumas disciplinas');
+
+-- 6) Expectativas e sonhos
+INSERT INTO expectativas_sonhos (
+  aluno_id, objetivos_pessoais_profissionais, apoio_que_a_escola_deveria_oferecer
+)
+VALUES
+  (1, 'Entrar na universidade e trabalhar com saúde', 'Mais orientação vocacional e reforço escolar'),
+  (2, 'Concluir os estudos e abrir um negócio próprio', 'Cursos técnicos e apoio para conciliar estudo e trabalho'),
+  (3, 'Seguir carreira na área de tecnologia', 'Projetos, laboratório de informática e orientação profissional');
