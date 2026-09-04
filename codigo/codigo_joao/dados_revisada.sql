@@ -66,7 +66,7 @@ VALUES
   );
 
 -- 5) Alunos entregam suas respostas para esse Pedido de Diagnóstico
-INSERT INTO respostas_diagnostico (pedido_id, aluno_id)
+INSERT INTO diagnosis_answer (order_id, student_id)
 VALUES
   (
     (SELECT id FROM diagnostic_requests WHERE title = 'Diagnóstico Inicial 2026 - 1º Bimestre' LIMIT 1),
@@ -80,146 +80,146 @@ VALUES
     (SELECT id FROM diagnostic_requests WHERE title = 'Diagnóstico Inicial 2026 - 1º Bimestre' LIMIT 1),
     (SELECT id FROM students WHERE email = 'carla.pereira@escola.com')
   )
-ON CONFLICT (pedido_id, aluno_id) DO NOTHING;
+ON CONFLICT (order_id, student_id) DO NOTHING;
 
 -- 6) Inserir Dimensão: Dados Socioeconômicos
-INSERT INTO dados_socioeconomicos (
-  resposta_id, renda_familiar, trabalha_alem_de_estudar, horas_trabalho_semana,
-  escolaridade_pais_responsaveis, tem_internet_casa, tem_computador_casa
+INSERT INTO socioeconomic_data (
+  answer_id, family_income, works_besides_studying, horas_trabalho_semana,
+  parents_education, has_internet_at_home, has_computer_at_home
 )
 VALUES
   (
-    (SELECT r.id FROM respostas_diagnostico r 
-     JOIN students a ON r.aluno_id = a.id 
-     JOIN diagnostic_requests p ON r.pedido_id = p.id 
+    (SELECT r.id FROM diagnosis_answer r 
+     JOIN students a ON r.student_id = a.id 
+     JOIN diagnostic_requests p ON r.order_id = p.id 
      WHERE a.email = 'ana.clara@escola.com' AND p.title = 'Diagnóstico Inicial 2026 - 1º Bimestre'),
     'até 2 salários mínimos', FALSE, NULL, 'Ensino médio completo', TRUE, TRUE
   ),
   (
-    (SELECT r.id FROM respostas_diagnostico r 
-     JOIN students a ON r.aluno_id = a.id 
-     JOIN diagnostic_requests p ON r.pedido_id = p.id 
+    (SELECT r.id FROM diagnosis_answer r 
+     JOIN students a ON r.student_id = a.id 
+     JOIN diagnostic_requests p ON r.order_id = p.id 
      WHERE a.email = 'bruno.lima@escola.com' AND p.title = 'Diagnóstico Inicial 2026 - 1º Bimestre'),
     'entre 2 e 4 salários mínimos', TRUE, 20, 'Ensino fundamental completo', TRUE, FALSE
   ),
   (
-    (SELECT r.id FROM respostas_diagnostico r 
-     JOIN students a ON r.aluno_id = a.id 
-     JOIN diagnostic_requests p ON r.pedido_id = p.id 
+    (SELECT r.id FROM diagnosis_answer r 
+     JOIN students a ON r.student_id = a.id 
+     JOIN diagnostic_requests p ON r.order_id = p.id 
      WHERE a.email = 'carla.pereira@escola.com' AND p.title = 'Diagnóstico Inicial 2026 - 1º Bimestre'),
     'acima de 4 salários mínimos', FALSE, NULL, 'Ensino superior completo', TRUE, TRUE
   )
-ON CONFLICT (resposta_id) DO NOTHING;
+ON CONFLICT (answer_id) DO NOTHING;
 
 -- 7) Inserir Dimensão: Contexto Cultural
-INSERT INTO contexto_cultural (
-  resposta_id, atividades_culturais, tradicao_cultural_comunitaria, papel_familia_comunidade_formacao
+INSERT INTO cultural_context (
+  answer_id, atividades_culturais, community_cultural_tradition, role_family_community_training
 )
 VALUES
   (
-    (SELECT r.id FROM respostas_diagnostico r 
-     JOIN students a ON r.aluno_id = a.id 
-     JOIN diagnostic_requests p ON r.pedido_id = p.id 
+    (SELECT r.id FROM diagnosis_answer r 
+     JOIN students a ON r.student_id = a.id 
+     JOIN diagnostic_requests p ON r.order_id = p.id 
      WHERE a.email = 'ana.clara@escola.com' AND p.title = 'Diagnóstico Inicial 2026 - 1º Bimestre'),
     'Leitura, música e esportes', 'Festa junina da comunidade', 'Incentiva os estudos e a participação em eventos locais'
   ),
   (
-    (SELECT r.id FROM respostas_diagnostico r 
-     JOIN students a ON r.aluno_id = a.id 
-     JOIN diagnostic_requests p ON r.pedido_id = p.id 
+    (SELECT r.id FROM diagnosis_answer r 
+     JOIN students a ON r.student_id = a.id 
+     JOIN diagnostic_requests p ON r.order_id = p.id 
      WHERE a.email = 'bruno.lima@escola.com' AND p.title = 'Diagnóstico Inicial 2026 - 1º Bimestre'),
     'Futebol e música', 'Culturas de origem familiar nordestina', 'A família valoriza o trabalho e a cooperação'
   ),
   (
-    (SELECT r.id FROM respostas_diagnostico r 
-     JOIN students a ON r.aluno_id = a.id 
-     JOIN diagnostic_requests p ON r.pedido_id = p.id 
+    (SELECT r.id FROM diagnosis_answer r 
+     JOIN students a ON r.student_id = a.id 
+     JOIN diagnostic_requests p ON r.order_id = p.id 
      WHERE a.email = 'carla.pereira@escola.com' AND p.title = 'Diagnóstico Inicial 2026 - 1º Bimestre'),
     'Teatro, leitura e dança', 'Participação em grupos culturais da igreja', 'Apoia a criatividade e a continuidade dos estudos'
   )
-ON CONFLICT (resposta_id) DO NOTHING;
+ON CONFLICT (answer_id) DO NOTHING;
 
 -- 8) Inserir Dimensão: Dimensão Política
-INSERT INTO dimensao_politica (
-  resposta_id, acompanha_noticias_politica_sociedade, participou_movimento_social,
-  papel_educacao_transformacao_social
+INSERT INTO political_dimension (
+  answer_id, follows_politics_society_news, participated_in_social_movement,
+  role_education_social_transformation
 )
 VALUES
   (
-    (SELECT r.id FROM respostas_diagnostico r 
-     JOIN students a ON r.aluno_id = a.id 
-     JOIN diagnostic_requests p ON r.pedido_id = p.id 
+    (SELECT r.id FROM diagnosis_answer r 
+     JOIN students a ON r.student_id = a.id 
+     JOIN diagnostic_requests p ON r.order_id = p.id 
      WHERE a.email = 'ana.clara@escola.com' AND p.title = 'Diagnóstico Inicial 2026 - 1º Bimestre'),
     TRUE, FALSE, 'A educação ajuda a formar cidadãos críticos e conscientes'
   ),
   (
-    (SELECT r.id FROM respostas_diagnostico r 
-     JOIN students a ON r.aluno_id = a.id 
-     JOIN diagnostic_requests p ON r.pedido_id = p.id 
+    (SELECT r.id FROM diagnosis_answer r 
+     JOIN students a ON r.student_id = a.id 
+     JOIN diagnostic_requests p ON r.order_id = p.id 
      WHERE a.email = 'bruno.lima@escola.com' AND p.title = 'Diagnóstico Inicial 2026 - 1º Bimestre'),
     FALSE, TRUE, 'A educação pode melhorar oportunidades e reduzir desigualdades'
   ),
   (
-    (SELECT r.id FROM respostas_diagnostico r 
-     JOIN students a ON r.aluno_id = a.id 
-     JOIN diagnostic_requests p ON r.pedido_id = p.id 
+    (SELECT r.id FROM diagnosis_answer r 
+     JOIN students a ON r.student_id = a.id 
+     JOIN diagnostic_requests p ON r.order_id = p.id 
      WHERE a.email = 'carla.pereira@escola.com' AND p.title = 'Diagnóstico Inicial 2026 - 1º Bimestre'),
     TRUE, TRUE, 'A escola é fundamental para transformar a sociedade por meio do conhecimento'
   )
-ON CONFLICT (resposta_id) DO NOTHING;
+ON CONFLICT (answer_id) DO NOTHING;
 
 -- 9) Inserir Dimensão: Experiências Escolares
-INSERT INTO experiencias_escolares (
-  resposta_id, relacao_professores, opiniao_e_ouvida_na_escola, dificuldades_aprendizado
+INSERT INTO school_experiences (
+  answer_id, teachers_relations, opinion_is_heard_at_school, learning_difficulties
 )
 VALUES
   (
-    (SELECT r.id FROM respostas_diagnostico r 
-     JOIN students a ON r.aluno_id = a.id 
-     JOIN diagnostic_requests p ON r.pedido_id = p.id 
+    (SELECT r.id FROM diagnosis_answer r 
+     JOIN students a ON r.student_id = a.id 
+     JOIN diagnostic_requests p ON r.order_id = p.id 
      WHERE a.email = 'ana.clara@escola.com' AND p.title = 'Diagnóstico Inicial 2026 - 1º Bimestre'),
     'Boa e respeitosa', TRUE, 'Falta de tempo para estudar em casa'
   ),
   (
-    (SELECT r.id FROM respostas_diagnostico r 
-     JOIN students a ON r.aluno_id = a.id 
-     JOIN diagnostic_requests p ON r.pedido_id = p.id 
+    (SELECT r.id FROM diagnosis_answer r 
+     JOIN students a ON r.student_id = a.id 
+     JOIN diagnostic_requests p ON r.order_id = p.id 
      WHERE a.email = 'bruno.lima@escola.com' AND p.title = 'Diagnóstico Inicial 2026 - 1º Bimestre'),
     'Razoável, com alguns conflitos', FALSE, 'Dificuldade em matemática e falta de materiais'
   ),
   (
-    (SELECT r.id FROM respostas_diagnostico r 
-     JOIN students a ON r.aluno_id = a.id 
-     JOIN diagnostic_requests p ON r.pedido_id = p.id 
+    (SELECT r.id FROM diagnosis_answer r 
+     JOIN students a ON r.student_id = a.id 
+     JOIN diagnostic_requests p ON r.order_id = p.id 
      WHERE a.email = 'carla.pereira@escola.com' AND p.title = 'Diagnóstico Inicial 2026 - 1º Bimestre'),
     'Muito boa e acolhedora', TRUE, 'Metodologias muito rápidas em algumas disciplinas'
   )
-ON CONFLICT (resposta_id) DO NOTHING;
+ON CONFLICT (answer_id) DO NOTHING;
 
 -- 10) Inserir Dimensão: Expectativas e Sonhos
-INSERT INTO expectativas_sonhos (
-  resposta_id, objetivos_pessoais_profissionais, apoio_que_a_escola_deveria_oferecer
+INSERT INTO expectations_dreams (
+  answer_id, personal_professional_goals, support_that_the_school_should_offer
 )
 VALUES
   (
-    (SELECT r.id FROM respostas_diagnostico r 
-     JOIN students a ON r.aluno_id = a.id 
-     JOIN diagnostic_requests p ON r.pedido_id = p.id 
+    (SELECT r.id FROM diagnosis_answer r 
+     JOIN students a ON r.student_id = a.id 
+     JOIN diagnostic_requests p ON r.order_id = p.id 
      WHERE a.email = 'ana.clara@escola.com' AND p.title = 'Diagnóstico Inicial 2026 - 1º Bimestre'),
     'Entrar na universidade e trabalhar com saúde', 'Mais orientação vocacional e reforço escolar'
   ),
   (
-    (SELECT r.id FROM respostas_diagnostico r 
-     JOIN students a ON r.aluno_id = a.id 
-     JOIN diagnostic_requests p ON r.pedido_id = p.id 
+    (SELECT r.id FROM diagnosis_answer r 
+     JOIN students a ON r.student_id = a.id 
+     JOIN diagnostic_requests p ON r.order_id = p.id 
      WHERE a.email = 'bruno.lima@escola.com' AND p.title = 'Diagnóstico Inicial 2026 - 1º Bimestre'),
     'Concluir os estudos e abrir um negócio próprio', 'Cursos técnicos e apoio para conciliar estudo e trabalho'
   ),
   (
-    (SELECT r.id FROM respostas_diagnostico r 
-     JOIN students a ON r.aluno_id = a.id 
-     JOIN diagnostic_requests p ON r.pedido_id = p.id 
+    (SELECT r.id FROM diagnosis_answer r 
+     JOIN students a ON r.student_id = a.id 
+     JOIN diagnostic_requests p ON r.order_id = p.id 
      WHERE a.email = 'carla.pereira@escola.com' AND p.title = 'Diagnóstico Inicial 2026 - 1º Bimestre'),
     'Seguir carreira na área de tecnologia', 'Projetos, laboratório de informática e orientação profissional'
   )
-ON CONFLICT (resposta_id) DO NOTHING;
+ON CONFLICT (answer_id) DO NOTHING;
