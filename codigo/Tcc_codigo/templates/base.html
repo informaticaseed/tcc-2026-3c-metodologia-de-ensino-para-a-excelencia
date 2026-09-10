@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Plataforma Educacional{% endblock %} | EduMetodologias</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Estilo Customizado -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+    <!-- NAVBAR PRINCIPAL -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+                <i class="bi bi-mortarboard-fill"></i>
+                <span>EduMetodologias</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto align-items-center gap-2">
+                    {% if session.get('user_id') %}
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold text-secondary" href="{{ url_for('dashboard') }}">
+                                <i class="bi bi-speedometer2 me-1"></i> Painel
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="badge badge-custom 
+                                    {% if session.get('user_perfil') == 'admin' %}badge-admin
+                                    {% elif session.get('user_perfil') == 'professor' %}badge-professor
+                                    {% else %}badge-estudante{% endif %}">
+                                    <i class="bi 
+                                        {% if session.get('user_perfil') == 'admin' %}bi-shield-check
+                                        {% elif session.get('user_perfil') == 'professor' %}bi-person-video3
+                                        {% else %}bi-backpack{% endif %}">
+                                    </i>
+                                    {{ session.get('user_perfil')|capitalize }}
+                                </span>
+                                <span class="fw-medium text-dark">{{ session.get('user_nome') }}</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 mt-2">
+                                <li class="px-3 py-2 border-bottom">
+                                    <small class="text-muted d-block">Conectado como</small>
+                                    <span class="fw-semibold small text-truncate d-block">{{ session.get('user_email') }}</span>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-danger py-2" href="{{ url_for('logout') }}">
+                                        <i class="bi bi-box-arrow-right me-2"></i> Sair da Conta
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium {% if request.endpoint == 'login' %}active text-primary fw-semibold{% endif %}" href="{{ url_for('login') }}">
+                                <i class="bi bi-box-arrow-in-right me-1"></i> Entrar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary btn-sm px-3" href="{{ url_for('cadastro') }}">
+                                <i class="bi bi-person-plus-fill me-1"></i> Criar Conta
+                            </a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MENSAGENS FLASH -->
+    <div class="container mt-3">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show shadow-sm d-flex align-items-center gap-2 fade-in" role="alert">
+                        <i class="bi 
+                            {% if category == 'success' %}bi-check-circle-fill text-success fs-5
+                            {% elif category == 'danger' %}bi-exclamation-triangle-fill text-danger fs-5
+                            {% elif category == 'warning' %}bi-exclamation-circle-fill text-warning fs-5
+                            {% else %}bi-info-circle-fill text-primary fs-5{% endif %}">
+                        </i>
+                        <div class="flex-grow-1">{{ message }}</div>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container text-center">
+            <p class="mb-1 fw-medium text-dark">
+                <i class="bi bi-lightbulb-fill text-warning me-1"></i>
+                Plataforma de Metodologias Eficazes de Ensino-Aprendizagem
+            </p>
+            <p class="mb-0 small text-muted">
+                Ambiente de Inovação Pedagógica • Administradores, Professores e Estudantes &copy; {{ ano_atual }}
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Script Principal -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block extra_scripts %}{% endblock %}
+</body>
+</html>
+
