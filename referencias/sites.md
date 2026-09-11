@@ -132,7 +132,6 @@
 | Desvendando o Sucesso do Projeto Bilíngue: Metodologia Cambridge e a Parceria Família-Escola | https://www.colegioestillo.com.br/desvendando-o-sucesso-do-projeto-bilingue-metodologia-cambridge-e-a-parceria-familia-escola/ |
 | Cambridge: tudo sobre a universidade de Isaac Newton e Charles Darwin | https://www.estudarfora.org.br/universidade-de-cambridge/ |
 | Cambridge Primary: um guia para os pais | https://www.cambridgeinternational.org/Images/467520-cambridge-primary-a-guide-for-parents-portuguese-.pdf |
-|  | https://www.prospects.ac.uk/universities/university-of-cambridge-3692?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrGwAtQU8Yh7thV2vjf8iVAR20pad_d8goRlqC5xZvAlXFH554-5zz8hoCrFUQAvD_BwE |
 | Propects | https://www.prospects.ac.uk/universities/university-of-cambridge-3692?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrGwAtQU8Yh7thV2vjf8iVAR20pad_d8goRlqC5xZvAlXFH554-5zz8hoCrFUQAvD_BwE |
 
 **Objetivo:** (a definir)

@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block title %}Cadastro de Usuário{% endblock %}
+
+{% block content %}
+<div class="auth-wrapper">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="auth-card fade-in">
+                    
+                    <!-- CABEÇALHO DO CARD -->
+                    <div class="auth-header">
+                        <div class="mb-2">
+                            <span class="badge bg-white text-primary fw-bold px-3 py-1 rounded-pill">
+                                <i class="bi bi-mortarboard me-1"></i> Nova Conta
+                            </span>
+                        </div>
+                        <h3>Criar Nova Conta</h3>
+                        <p>Plataforma de Metodologias Eficazes de Ensino-Aprendizagem</p>
+                    </div>
+
+                    <!-- CORPO DO FORMULÁRIO -->
+                    <div class="auth-body">
+                        <form method="POST" action="{{ url_for('cadastro') }}" novalidate>
+                            
+                            <!-- SELEÇÃO DE PERFIL / PAPEL -->
+                            <div class="mb-4">
+                                <label class="form-label d-flex justify-content-between">
+                                    <span>Selecione seu Perfil de Acesso:</span>
+                                    <span class="text-danger small">*</span>
+                                </label>
+
+                                <div class="role-picker">
+                                    <div class="role-option {% if perfil == 'estudante' or not perfil %}active{% endif %}" data-role="estudante">
+                                        <i class="bi bi-backpack text-primary"></i>
+                                        <span>Estudante</span>
+                                    </div>
+                                    <div class="role-option {% if perfil == 'professor' %}active{% endif %}" data-role="professor">
+                                        <i class="bi bi-person-video3 text-success"></i>
+                                        <span>Professor</span>
+                                    </div>
+                                    <div class="role-option {% if perfil == 'admin' %}active{% endif %}" data-role="admin">
+                                        <i class="bi bi-shield-check text-purple" style="color: #6d28d9;"></i>
+                                        <span>Admin</span>
+                                    </div>
+                                </div>
+
+                                <!-- Input oculto sincronizado com os botões visuais -->
+                                <select id="perfil-select" name="perfil" class="form-select d-none" required>
+                                    <option value="estudante" {% if perfil == 'estudante' or not perfil %}selected{% endif %}>Estudante</option>
+                                    <option value="professor" {% if perfil == 'professor' %}selected{% endif %}>Professor</option>
+                                    <option value="admin" {% if perfil == 'admin' %}selected{% endif %}>Administrador</option>
+                                </select>
+                            </div>
+
+                            <!-- NOME COMPLETO -->
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome Completo</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                                    <input type="text" class="form-control" id="nome" name="nome" value="{{ nome or '' }}" placeholder="Ex: Ana Maria dos Santos" required autofocus>
+                                </div>
+                            </div>
+
+                            <!-- E-MAIL -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Endereço de E-mail</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                                    <input type="email" class="form-control" id="email" name="email" value="{{ email or '' }}" placeholder="Ex: seuemail@educacao.com" required>
+                                </div>
+                            </div>
+
+                            <!-- CPF -->
+                            <div class="mb-3">
+                                <label for="cpf" class="form-label">CPF (Cadastro de Pessoa Física)</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-card-text"></i></span>
+                                    <input type="text" class="form-control cpf-mask" id="cpf" name="cpf" value="{{ cpf or '' }}" placeholder="000.000.000-00" maxlength="14" required>
+                                </div>
+                                <div class="form-text text-muted small">Usado para identificação única institucional.</div>
+                            </div>
+
+                            <!-- SENHA E CONFIRMAÇÃO EM DUAS COLUNAS -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="senha" class="form-label">Senha</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                                        <input type="password" class="form-control" id="senha" name="senha" placeholder="Mínimo 6 dígitos" required>
+                                        <button class="btn btn-outline-secondary toggle-password-btn" type="button" data-target="senha">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="confirma_senha" class="form-label">Confirmar Senha</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-shield-lock-fill"></i></span>
+                                        <input type="password" class="form-control" id="confirma_senha" name="confirma_senha" placeholder="Repita a senha" required>
+                                        <button class="btn btn-outline-secondary toggle-password-btn" type="button" data-target="confirma_senha">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="senha-match-feedback" class="form-text mb-3"></div>
+
+                            <!-- BOTÃO DE CADASTRO -->
+                            <div class="d-grid gap-2 mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg shadow-sm">
+                                    <i class="bi bi-check-circle-fill me-2"></i> Finalizar Cadastro
+                                </button>
+                            </div>
+
+                            <!-- LINK PARA LOGIN -->
+                            <div class="text-center mt-4 pt-2 border-top">
+                                <p class="text-muted mb-0 small">
+                                    Já tem uma conta na plataforma? 
+                                    <a href="{{ url_for('login') }}" class="text-primary fw-bold text-decoration-none ms-1">
+                                        Fazer Login <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </p>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
