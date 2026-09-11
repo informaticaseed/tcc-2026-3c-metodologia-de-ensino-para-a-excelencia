@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Terminal</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            background: #0c0c0c;
+            color: #ddd;
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 15px;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        #terminal {
+            flex: 1;
+            overflow-y: auto;
+            padding: 15px;
+
+            white-space: pre-wrap;
+        }
+
+        #input-line {
+            display: flex;
+            padding: 10px 15px;
+
+            border-top: 1px solid #333;
+        }
+
+        #prompt {
+            color: #00ff66;
+            margin-right: 8px;
+        }
+
+        #command {
+            flex: 1;
+
+            background: none;
+            border: none;
+            outline: none;
+
+            color: #fff;
+
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        .input {
+            color: #00ff66;
+        }
+
+        .error {
+            color: #ff5555;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="terminal">
+PostgreSQL Web Terminal
+Type a command and press Enter.
+
+</div>
+
+<div id="input-line">
+    <span id="prompt">db&gt;</span>
+
+    <input
+        id="command"
+        type="text"
+        autocomplete="off"
+        autofocus
+        placeholder=""
+    >
+</div>
+
+<script>
+
+const terminal = document.getElementById("terminal");
+const command = document.getElementById("command");
+
+
+command.addEventListener("keydown", async function(event) {
+
+    // Enter = execute
+    if (event.key !== "Enter")
+        return;
+
+    event.preventDefault();
+
+    const text = command.value;
+
+    if (!text.trim())
+        return;
+
+    // Show command in terminal
+    terminal.innerHTML +=
+        `<span class="input">db&gt; ${escapeHTML(text)}</span>\n`;
+
+    command.value = "";
+
+    // Send plain text to Flask
+    try {
+
+        const response = await fetch("/db/execute", {
+            method: "POST",
+
+            headers: {
+                "Content-Type": "text/plain"
+            },
+
+            body: text
+        });
+
+        // Receive plain text
+        const result = await response.text();
+
+        terminal.innerHTML +=
+            escapeHTML(result) + "\n";
+
+    }
+    catch (error) {
+
+        terminal.innerHTML +=
+            `<span class="error">${escapeHTML(error.toString())}</span>\n`;
+
+    }
+
+    terminal.scrollTop = terminal.scrollHeight;
+
+});
+
+
+function escapeHTML(text) {
+
+    return text
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;");
+
+}
+
+</script>
+
+</body>
+</html>

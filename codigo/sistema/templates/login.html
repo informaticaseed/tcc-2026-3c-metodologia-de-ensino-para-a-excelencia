@@ -1,30 +1,108 @@
-<!DOCTYPE html>
-<html>
+{% extends "base.html" %}
 
-<head>
-    <title>Login</title>
-</head>
+{% block title %}Acesso à Plataforma{% endblock %}
 
-<body>
+{% block content %}
+<div class="auth-wrapper">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="auth-card fade-in">
+                    
+                    <!-- CABEÇALHO DO LOGIN -->
+                    <div class="auth-header">
+                        <div class="mb-2">
+                            <span class="badge bg-white text-primary fw-bold px-3 py-1 rounded-pill">
+                                <i class="bi bi-shield-lock me-1"></i> Portal de Acesso
+                            </span>
+                        </div>
+                        <h3>Entrar na Plataforma</h3>
+                        <p>Acesse o ambiente de metodologias de ensino</p>
+                    </div>
 
-    <h1>Login</h1>
+                    <!-- CORPO DO FORMULÁRIO -->
+                    <div class="auth-body">
+                        <form method="POST" action="{{ url_for('login') }}" novalidate>
+                            
+                            <!-- IDENTIFICADOR (EMAIL OU CPF) -->
+                            <div class="mb-3">
+                                <label for="identificador" class="form-label">E-mail ou CPF</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-person-badge-fill"></i></span>
+                                    <input type="text" class="form-control" id="identificador" name="identificador" value="{{ identificador or '' }}" placeholder="exemplo@email.com ou 000.000.000-00" required autofocus>
+                                </div>
+                                <div class="form-text text-muted small">Você pode digitar seu e-mail cadastrado ou seu CPF.</div>
+                            </div>
 
-    <form method="POST">
+                            <!-- SENHA -->
+                            <div class="mb-3">
+                                <label for="senha" class="form-label d-flex justify-content-between">
+                                    <span>Senha de Acesso</span>
+                                </label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                                    <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
+                                    <button class="btn btn-outline-secondary toggle-password-btn" type="button" data-target="senha">
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
 
-        <label>Username:</label>
-        <input type="text" name="username">
+                            <!-- BOTÃO DE LOGIN -->
+                            <div class="d-grid gap-2 mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg shadow-sm">
+                                    <i class="bi bi-box-arrow-in-right me-2"></i> Acessar Painel
+                                </button>
+                            </div>
 
-        <br><br>
+                            <!-- LINK PARA CADASTRO -->
+                            <div class="text-center mt-4 pt-2 border-top">
+                                <p class="text-muted mb-0 small">
+                                    Não possui cadastro na plataforma? 
+                                    <a href="{{ url_for('cadastro') }}" class="text-primary fw-bold text-decoration-none ms-1">
+                                        Cadastre-se agora <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </p>
+                            </div>
 
-        <label>Password:</label>
-        <input type="password" name="password">
+                        </form>
+                    </div>
+                </div>
 
-        <br><br>
+                <!-- CARTÃO INFORMATIVO COM CONTAS DE DEMONSTRAÇÃO (Útil para testes do TCC/Banca) -->
+                <div class="card mt-3 border-0 bg-light-subtle shadow-sm rounded-4 p-3">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <i class="bi bi-info-circle-fill text-primary"></i>
+                        <span class="fw-bold small text-dark">Contas para Teste Rápido (TCC / Demonstração):</span>
+                    </div>
+                    <div class="row g-2 text-start">
+                        <div class="col-12 col-sm-4">
+                            <div class="p-2 border rounded bg-white small">
+                                <span class="badge badge-custom badge-admin d-block text-center mb-1"><i class="bi bi-shield-check"></i> Admin</span>
+                                <div class="text-truncate text-muted" style="font-size: 0.75rem;">admin@metodologias.com</div>
+                                <div class="text-dark fw-bold" style="font-size: 0.75rem;">Senha: <code>admin123</code></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="p-2 border rounded bg-white small">
+                                <span class="badge badge-custom badge-professor d-block text-center mb-1"><i class="bi bi-person-video3"></i> Professor</span>
+                                <div class="text-truncate text-muted" style="font-size: 0.75rem;">carlos.professor@...</div>
+                                <div class="text-dark fw-bold" style="font-size: 0.75rem;">Senha: <code>prof123</code></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="p-2 border rounded bg-white small">
+                                <span class="badge badge-custom badge-estudante d-block text-center mb-1"><i class="bi bi-backpack"></i> Estudante</span>
+                                <div class="text-truncate text-muted" style="font-size: 0.75rem;">mariana.estudante@...</div>
+                                <div class="text-dark fw-bold" style="font-size: 0.75rem;">Senha: <code>aluno123</code></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <button type="submit">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
 
-    </form>
-
-</body>
-
-</html>

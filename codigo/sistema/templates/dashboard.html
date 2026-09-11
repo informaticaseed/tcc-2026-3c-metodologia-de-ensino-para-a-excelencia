@@ -1,0 +1,264 @@
+{% extends "base.html" %}
+
+{% block title %}Painel - {{ usuario.perfil|capitalize }}{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    
+    <!-- BANNER HERO DE BOAS-VINDAS -->
+    <div class="hero-welcome fade-in">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <span class="badge badge-custom 
+                        {% if usuario.perfil == 'admin' %}badge-admin bg-white
+                        {% elif usuario.perfil == 'professor' %}badge-professor bg-white
+                        {% else %}badge-estudante bg-white{% endif %}">
+                        <i class="bi 
+                            {% if usuario.perfil == 'admin' %}bi-shield-check text-purple
+                            {% elif usuario.perfil == 'professor' %}bi-person-video3 text-success
+                            {% else %}bi-backpack text-primary{% endif %}">
+                        </i>
+                        Espaço do {{ usuario.perfil|capitalize }}
+                    </span>
+                    <span class="text-white-50 small">| Plataforma de Ensino-Aprendizagem</span>
+                </div>
+                <h2 class="fw-bold text-white mb-2">Olá, {{ usuario.nome }}!</h2>
+                <p class="text-white-50 mb-3">
+                    Bem-vindo(a) ao seu ambiente centralizado de exploração e aplicação de metodologias ativas e eficazes de aprendizagem.
+                </p>
+                <div class="d-flex flex-wrap gap-3 text-white-50 small">
+                    <div><i class="bi bi-envelope me-1"></i> {{ usuario.email }}</div>
+                    <div><i class="bi bi-card-text me-1"></i> CPF: {{ formatar_cpf(usuario.cpf) }}</div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                <a href="{{ url_for('logout') }}" class="btn btn-outline-light btn-sm px-3">
+                    <i class="bi bi-box-arrow-right me-1"></i> Encerrar Sessão
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO ESPECÍFICA: ADMINISTRADOR -->
+    {% if usuario.perfil == 'admin' %}
+    <div class="mb-5 fade-in">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+            <h4 class="fw-bold mb-0 text-dark"><i class="bi bi-speedometer2 text-primary me-2"></i>Visão Geral do Sistema (Admin)</h4>
+            <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Gestão Geral</span>
+        </div>
+
+        <!-- CARDS DE ESTATÍSTICAS -->
+        <div class="row g-3 mb-4">
+            <div class="col-md-4">
+                <div class="stat-box">
+                    <div class="stat-icon bg-primary-subtle text-primary">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div>
+                        <div class="text-muted small fw-semibold">Total de Usuários</div>
+                        <h3 class="fw-bold mb-0 text-dark">{{ total_usuarios }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-box">
+                    <div class="stat-icon bg-success-subtle text-success">
+                        <i class="bi bi-person-video3"></i>
+                    </div>
+                    <div>
+                        <div class="text-muted small fw-semibold">Professores</div>
+                        <h3 class="fw-bold mb-0 text-dark">{{ total_professores }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-box">
+                    <div class="stat-icon bg-info-subtle text-info">
+                        <i class="bi bi-backpack-fill"></i>
+                    </div>
+                    <div>
+                        <div class="text-muted small fw-semibold">Estudantes</div>
+                        <h3 class="fw-bold mb-0 text-dark">{{ total_estudantes }}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TABELA DE USUÁRIOS CADASTRADOS -->
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+            <div class="card-header bg-white py-3 border-bottom d-flex align-items-center justify-content-between">
+                <h5 class="fw-bold mb-0 text-dark"><i class="bi bi-table me-2 text-primary"></i>Usuários Registrados na Base de Dados</h5>
+                <span class="badge bg-secondary-subtle text-secondary">{{ lista_usuarios|length }} cadastrados</span>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th class="ps-3">ID</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>CPF</th>
+                            <th>Perfil</th>
+                            <th>Data de Cadastro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for user in lista_usuarios %}
+                        <tr>
+                            <td class="ps-3 fw-bold text-muted">#{{ user.id }}</td>
+                            <td class="fw-semibold text-dark">{{ user.nome }}</td>
+                            <td>{{ user.email }}</td>
+                            <td><code>{{ formatar_cpf(user.cpf) }}</code></td>
+                            <td>
+                                <span class="badge badge-custom 
+                                    {% if user.perfil == 'admin' %}badge-admin
+                                    {% elif user.perfil == 'professor' %}badge-professor
+                                    {% else %}badge-estudante{% endif %}">
+                                    {{ user.perfil|capitalize }}
+                                </span>
+                            </td>
+                            <td class="text-muted small">{{ user.criado_em }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- SEÇÃO ESPECÍFICA: PROFESSOR -->
+    {% if usuario.perfil == 'professor' %}
+    <div class="mb-5 fade-in">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+            <h4 class="fw-bold mb-0 text-dark"><i class="bi bi-journal-bookmark-fill text-success me-2"></i>Ferramentas Pedagógicas do Docente</h4>
+            <span class="badge bg-success-subtle text-success px-3 py-2 rounded-pill">Área do Professor</span>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 p-3 h-100 bg-white">
+                    <div class="d-flex align-items-center gap-3 mb-2">
+                        <div class="stat-icon bg-success-subtle text-success"><i class="bi bi-plus-circle-fill"></i></div>
+                        <h6 class="fw-bold mb-0">Criar Roteiro de Aula</h6>
+                    </div>
+                    <p class="text-muted small mb-3">Estruture sequências didáticas utilizando Problem Based Learning ou Gamificação.</p>
+                    <button class="btn btn-outline-success btn-sm mt-auto" onclick="alert('Funcionalidade de exemplo: Criar Roteiro Didático!');">
+                        <i class="bi bi-pencil-square me-1"></i> Novo Roteiro
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 p-3 h-100 bg-white">
+                    <div class="d-flex align-items-center gap-3 mb-2">
+                        <div class="stat-icon bg-primary-subtle text-primary"><i class="bi bi-bar-chart-line-fill"></i></div>
+                        <h6 class="fw-bold mb-0">Avaliação Formativa</h6>
+                    </div>
+                    <p class="text-muted small mb-3">Acompanhe métricas de engajamento e fixação conceitual dos estudantes.</p>
+                    <button class="btn btn-outline-primary btn-sm mt-auto" onclick="alert('Funcionalidade de exemplo: Relatórios Formativos!');">
+                        <i class="bi bi-graph-up me-1"></i> Ver Desempenho
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 p-3 h-100 bg-white">
+                    <div class="d-flex align-items-center gap-3 mb-2">
+                        <div class="stat-icon bg-warning-subtle text-warning"><i class="bi bi-folder-symlink-fill"></i></div>
+                        <h6 class="fw-bold mb-0">Banco de Estudos de Caso</h6>
+                    </div>
+                    <p class="text-muted small mb-3">Acesse e compartilhe desafios do mundo real para aplicação em sala.</p>
+                    <button class="btn btn-outline-warning btn-sm mt-auto" onclick="alert('Funcionalidade de exemplo: Repositório de Casos!');">
+                        <i class="bi bi-search me-1"></i> Explorar Casos
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- SEÇÃO ESPECÍFICA: ESTUDANTE -->
+    {% if usuario.perfil == 'estudante' %}
+    <div class="mb-5 fade-in">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+            <h4 class="fw-bold mb-0 text-dark"><i class="bi bi-mortarboard-fill text-primary me-2"></i>Sua Jornada de Aprendizagem</h4>
+            <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Área do Estudante</span>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 p-3 h-100 bg-white">
+                    <div class="d-flex align-items-center gap-3 mb-2">
+                        <div class="stat-icon bg-primary-subtle text-primary"><i class="bi bi-play-circle-fill"></i></div>
+                        <h6 class="fw-bold mb-0">Trilha de Pré-Aula</h6>
+                    </div>
+                    <p class="text-muted small mb-3">Materiais e vídeos curtos para preparação antes do debate em grupo.</p>
+                    <button class="btn btn-outline-primary btn-sm mt-auto" onclick="alert('Funcionalidade de exemplo: Conteúdo Pré-Aula!');">
+                        <i class="bi bi-arrow-right-circle me-1"></i> Continuar Estudos
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 p-3 h-100 bg-white">
+                    <div class="d-flex align-items-center gap-3 mb-2">
+                        <div class="stat-icon bg-warning-subtle text-warning"><i class="bi bi-trophy-fill"></i></div>
+                        <h6 class="fw-bold mb-0">Missões & Desafios</h6>
+                    </div>
+                    <p class="text-muted small mb-3">Participe de desafios gamificados e colabore com a sua equipe.</p>
+                    <button class="btn btn-outline-warning btn-sm mt-auto" onclick="alert('Funcionalidade de exemplo: Missões Gamificadas!');">
+                        <i class="bi bi-controller me-1"></i> Ver Desafios
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 p-3 h-100 bg-white">
+                    <div class="d-flex align-items-center gap-3 mb-2">
+                        <div class="stat-icon bg-info-subtle text-info"><i class="bi bi-chat-dots-fill"></i></div>
+                        <h6 class="fw-bold mb-0">Debates em Pares</h6>
+                    </div>
+                    <p class="text-muted small mb-3">Troque experiências e resolva dúvidas conceituais com seus colegas.</p>
+                    <button class="btn btn-outline-info btn-sm mt-auto" onclick="alert('Funcionalidade de exemplo: Fórum de Pares!');">
+                        <i class="bi bi-people me-1"></i> Sala de Debate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- CATÁLOGO DE METODOLOGIAS ATIVAS (DISPONÍVEL PARA TODOS OS PERFIS) -->
+    <div class="fade-in">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+            <div>
+                <h4 class="fw-bold mb-1 text-dark"><i class="bi bi-stars text-warning me-2"></i>Metodologias Ativas de Ensino-Aprendizagem</h4>
+                <p class="text-muted small mb-0">Abordagens pedagógicas modernas para engajamento e construção ativa do conhecimento.</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            {% for met in metodologias %}
+            <div class="col-md-6 col-lg-4">
+                <div class="methodology-card">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="methodology-icon bg-{{ met.cor }}-subtle text-{{ met.cor }}">
+                            <i class="bi {{ met.icone }}"></i>
+                        </div>
+                        <span class="badge bg-{{ met.cor }}-subtle text-{{ met.cor }} rounded-pill small">
+                            {{ met.categoria }}
+                        </span>
+                    </div>
+                    <h5 class="fw-bold text-dark mb-2">{{ met.titulo }}</h5>
+                    <p class="text-muted small flex-grow-1 mb-3">{{ met.descricao }}</p>
+                    <div class="border-top pt-3 mt-auto d-flex justify-content-between align-items-center">
+                        <span class="text-muted small"><i class="bi bi-check2-circle text-success me-1"></i> Validada</span>
+                        <button class="btn btn-sm btn-outline-{{ met.cor }}" onclick="alert('Detalhes da metodologia: {{ met.titulo }}');">
+                            Ver Guia Prático <i class="bi bi-chevron-right ms-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
