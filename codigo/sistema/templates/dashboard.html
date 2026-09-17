@@ -29,7 +29,6 @@
                 </p>
                 <div class="d-flex flex-wrap gap-3 text-white-50 small">
                     <div><i class="bi bi-envelope me-1"></i> {{ usuario.email }}</div>
-                    <div><i class="bi bi-card-text me-1"></i> CPF: {{ formatar_cpf(usuario.cpf) }}</div>
                 </div>
             </div>
             <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
@@ -109,7 +108,6 @@
                             <td class="ps-3 fw-bold text-muted">#{{ user.id }}</td>
                             <td class="fw-semibold text-dark">{{ user.nome }}</td>
                             <td>{{ user.email }}</td>
-                            <td><code>{{ formatar_cpf(user.cpf) }}</code></td>
                             <td>
                                 <span class="badge badge-custom 
                                     {% if user.perfil == 'admin' %}badge-admin

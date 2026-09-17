@@ -1,15 +1,15 @@
 import database
 import bcrypt
 
-def get_user_uuid(username):
+def get_user_uuid(email):
     with database.get_connection() as conn:
         cursor = conn.execute(
             """
             SELECT id
             FROM sc_diagnostico_estudantil.usuarios
-            WHERE nome_usuario   = %s;
+            WHERE email   = %s;
             """,
-            (username,)
+            (email,)
         )
 
         uuid = cursor.fetchone()
@@ -20,7 +20,7 @@ def get_user_uuid(username):
         return uuid[0]
 
 def create_account(username, email, password):
-    if (get_user_uuid(username) is not None):
+    if (get_user_uuid(email) is not None):
         raise UserAlreadyExistsError("User already exists")
     
     passwd_hash = bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")  #Encripta a senha.
@@ -58,11 +58,11 @@ def delete_account(uuid):
             (uuid,)
         )
 
-def login(uuid, password):
+def authenticate_user(uuid, password):
     with database.get_connection() as conn:
             cursor = conn.execute(
                 """
-                SELECT senha
+                SELECT id, nome_usuario, email, papel, senha
                 FROM sc_diagnostico_estudantil.usuarios
                 WHERE id = %s
                 """,
@@ -70,10 +70,19 @@ def login(uuid, password):
             )
             result = cursor.fetchone()
     if result is None:
-        return False
-    passwrd_hash = result[0]
-    match = bcrypt.checkpw(password.encode("utf-8"), passwrd_hash.encode("utf-8"))
-    return match
+        return None
+
+    user_id, name, user_email, role, passwrd_hash = result
+
+    if not bcrypt.checkpw(password.encode("utf-8"), passwrd_hash.encode("utf-8")):
+        return None
+
+    return {
+        "id": user_id,
+        "nome": name,
+        "email": user_email,
+        "perfil": role
+    }
 
 class UserAlreadyExistsError(Exception):
     pass

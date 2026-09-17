@@ -40,17 +40,12 @@
                                         <i class="bi bi-person-video3 text-success"></i>
                                         <span>Professor</span>
                                     </div>
-                                    <div class="role-option {% if perfil == 'admin' %}active{% endif %}" data-role="admin">
-                                        <i class="bi bi-shield-check text-purple" style="color: #6d28d9;"></i>
-                                        <span>Admin</span>
-                                    </div>
                                 </div>
 
                                 <!-- Input oculto sincronizado com os botões visuais -->
                                 <select id="perfil-select" name="perfil" class="form-select d-none" required>
                                     <option value="estudante" {% if perfil == 'estudante' or not perfil %}selected{% endif %}>Estudante</option>
                                     <option value="professor" {% if perfil == 'professor' %}selected{% endif %}>Professor</option>
-                                    <option value="admin" {% if perfil == 'admin' %}selected{% endif %}>Administrador</option>
                                 </select>
                             </div>
 
@@ -70,16 +65,6 @@
                                     <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
                                     <input type="email" class="form-control" id="email" name="email" value="{{ email or '' }}" placeholder="Ex: seuemail@educacao.com" required>
                                 </div>
-                            </div>
-
-                            <!-- CPF -->
-                            <div class="mb-3">
-                                <label for="cpf" class="form-label">CPF (Cadastro de Pessoa Física)</label>
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="bi bi-card-text"></i></span>
-                                    <input type="text" class="form-control cpf-mask" id="cpf" name="cpf" value="{{ cpf or '' }}" placeholder="000.000.000-00" maxlength="14" required>
-                                </div>
-                                <div class="form-text text-muted small">Usado para identificação única institucional.</div>
                             </div>
 
                             <!-- SENHA E CONFIRMAÇÃO EM DUAS COLUNAS -->
