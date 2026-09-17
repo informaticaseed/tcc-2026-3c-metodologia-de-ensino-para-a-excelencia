@@ -30,7 +30,7 @@ def cadastro():
         except auth.UserAlreadyExistsError:
              flash("Esse usuário já existe!", "danger")
 
-        return redirect(url_for('login'))
+        return redirect(url_for('login', identificador=email))
 
 
     return render_template("cadastro.html")
@@ -122,10 +122,15 @@ def login():
         session['user_email'] = user['email']
         session['user_perfil'] = user['perfil']
         
-        flash(f"Bem-vindo(a), {email}! Acesso concedido.", 'success')
+        flash(f"Bem-vindo(a), {user['nome']}! Acesso concedido.", 'success')
         return redirect(url_for('dashboard')) 
          
-    return render_template("login.html")
+    identificador = request.args.get('identificador', '')
+
+    return render_template(
+        'login.html',
+        identificador=identificador
+    )
 
 @app.route('/logout')
 def logout():

@@ -6,7 +6,7 @@ def get_user_uuid(email):
         cursor = conn.execute(
             """
             SELECT id
-            FROM sc_diagnostico_estudantil.usuarios
+            FROM users
             WHERE email   = %s;
             """,
             (email,)
@@ -28,7 +28,7 @@ def create_account(username, email, password):
     with database.get_connection() as conn:
         cursor = conn.execute(
             """
-            INSERT INTO sc_diagnostico_estudantil.usuarios (nome_usuario, email, senha, papel)
+            INSERT INTO users (name_user, email, password, function)
             VALUES (%s, %s, %s, 'aluno');
             """,
             (username.strip().upper(), email, passwd_hash,)
@@ -52,7 +52,7 @@ def delete_account(uuid):
     with database.get_connection() as conn:
         cursor = conn.execute(
             """
-            DELETE FROM sc_diagnostico_estudantil.usuarios
+            DELETE FROM users
             WHERE id = %s;
             """,
             (uuid,)
@@ -62,8 +62,8 @@ def authenticate_user(uuid, password):
     with database.get_connection() as conn:
             cursor = conn.execute(
                 """
-                SELECT id, nome_usuario, email, papel, senha
-                FROM sc_diagnostico_estudantil.usuarios
+                SELECT id, name_user, email, function, password
+                FROM users
                 WHERE id = %s
                 """,
                 (uuid,)
