@@ -8,6 +8,7 @@ psql = subprocess.Popen(
     [
         r"psql",
         "-U", "postgres",
+        "-d", "sistema",
     ],
     stdin=subprocess.PIPE,
     stdout=subprocess.PIPE,

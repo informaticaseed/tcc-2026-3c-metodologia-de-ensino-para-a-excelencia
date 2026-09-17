@@ -2,7 +2,11 @@ import os                       #Acesso ao terminal do sistema
 import psycopg                  #Driver do PostgreSQL
 from dotenv import load_dotenv
 
-load_dotenv()
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ENV_FILE = os.path.join(BASE_DIR, ".env")
+
+load_dotenv(ENV_FILE)
 
 
 def get_connection():                   #Lê dados de .env e conecta ao servidor.
