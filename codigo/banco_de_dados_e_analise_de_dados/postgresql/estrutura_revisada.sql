@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS student (
 -- 6) Pedidos de Diagnóstico (Criados pelos Professores)
 CREATE TABLE IF NOT EXISTS diagnostic_requests (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    teacher_id BIGINT NOT NULL REFERENCES teacher(id) ON DELETE CASCADE,
+    teacher_id BIGINT NOT NULL REFERENCES teachers(id) ON DELETE CASCADE,
     title VARCHAR(200) NOT NULL,
     description TEXT,
     grade VARCHAR(50) NOT NULL,
@@ -120,8 +120,30 @@ CREATE TABLE IF NOT EXISTS expectations_dreams (
 );
 
 -- 9) Índices de Busca e Performance
-CREATE INDEX IF NOT EXISTS students_grade_class_idx ON alunos (grade, class);
+CREATE INDEX IF NOT EXISTS students_grade_class_idx ON student (grade, class);
 CREATE INDEX IF NOT EXISTS orders_status_idx ON diagnostic_requests (status);
 CREATE INDEX IF NOT EXISTS order_series_class_idx ON diagnostic_requests (grade, class);
 CREATE INDEX IF NOT EXISTS student_answers_idx ON diagnosis_answer (student_id);
 CREATE INDEX IF NOT EXISTS order_responses_idx ON diagnosis_answer (order_id);
+
+-- 10) Tabela de Resultados Analíticos (Data Mart / Machine Learning)
+-- Armazena os indicadores multidimensionais calculados, clusterização e projeção PCA gerados pela análise de dados
+CREATE TABLE IF NOT EXISTS student_analytics (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    answer_id BIGINT NOT NULL UNIQUE REFERENCES diagnosis_answer(id) ON DELETE CASCADE,
+    idx_socioeconomic_digital NUMERIC(4,2) NOT NULL,
+    idx_work_overload NUMERIC(4,2) NOT NULL,
+    idx_school_bonding NUMERIC(4,2) NOT NULL,
+    idx_political_engagement NUMERIC(4,2) NOT NULL,
+    idx_cultural_capital NUMERIC(4,2) NOT NULL,
+    cluster_id INTEGER NOT NULL,
+    pedagogical_profile VARCHAR(150) NOT NULL,
+    pca_1 NUMERIC(6,3),
+    pca_2 NUMERIC(6,3),
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+-- Índices para buscas e relatórios analíticos
+CREATE INDEX IF NOT EXISTS student_analytics_answer_idx ON student_analytics (answer_id);
+CREATE INDEX IF NOT EXISTS student_analytics_cluster_idx ON student_analytics (cluster_id);
