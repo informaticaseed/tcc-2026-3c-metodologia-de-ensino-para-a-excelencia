@@ -46,48 +46,6 @@ def dashboard():
     }
 
     metodologias = [
-            {
-                'titulo': 'Aprendizagem Baseada em Problemas (PBL)',
-                'categoria': 'Colaborativa / Investigativa',
-                'descricao': 'Os alunos aprendem os temas curriculares ao resolver problemas do mundo real em equipes.',
-                'icone': 'bi-puzzle',
-                'cor': 'primary'
-            },
-            {
-                'titulo': 'Sala de Aula Invertida (Flipped Classroom)',
-                'categoria': 'Autonomia / Pré-aula',
-                'descricao': 'O conteúdo teórico é absorvido previamente em casa e a sala de aula torna-se espaço de debate prático.',
-                'icone': 'bi-arrow-repeat',
-                'cor': 'success'
-            },
-            {
-                'titulo': 'Gamificação no Ensino',
-                'categoria': 'Engajamento e Recompensas',
-                'descricao': 'Uso de mecânicas de jogos (pontos, fases, desafios) para potencializar a retenção e o foco.',
-                'icone': 'bi-controller',
-                'cor': 'warning'
-            },
-            {
-                'titulo': 'Instrução por Pares (Peer Instruction)',
-                'categoria': 'Interação / Feedback',
-                'descricao': 'Debates estruturados entre os próprios estudantes para consolidação de conceitos críticos.',
-                'icone': 'bi-people',
-                'cor': 'info'
-            },
-            {
-                'titulo': 'Design Thinking na Educação',
-                'categoria': 'Criatividade / Empatia',
-                'descricao': 'Processo centrado no ser humano para criação de soluções pedagógicas inovadoras.',
-                'icone': 'bi-lightbulb',
-                'cor': 'danger'
-            },
-            {
-                'titulo': 'Microlearning e Pílulas de Conteúdo',
-                'categoria': 'Agilidade / Retenção',
-                'descricao': 'Aulas curtas, focadas e dinâmicas para fixação rápida com recursos multimídia.',
-                'icone': 'bi-phone',
-                'cor': 'secondary'
-            }
         ]
 
     return render_template(

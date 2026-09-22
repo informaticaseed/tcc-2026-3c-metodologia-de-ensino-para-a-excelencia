@@ -1,5 +1,5 @@
 import os                       #Acesso ao terminal do sistema
-import psycopg                  #Driver do PostgreSQL
+import psycopg2                  #Driver do PostgreSQL
 from dotenv import load_dotenv
 
 
@@ -10,7 +10,7 @@ load_dotenv(ENV_FILE)
 
 
 def get_connection():
-    conn = psycopg.connect(
+    conn = psycopg2.connect(
         host=os.getenv("DB_HOST"),
         port=os.getenv("DB_PORT"),
         dbname=os.getenv("DB_NAME"),
