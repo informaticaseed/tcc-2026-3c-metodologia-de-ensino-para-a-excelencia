@@ -3,7 +3,7 @@
 SET search_path TO sc_student_diagnosis, public;
 
 -- 1) USUÁRIOS
-INSERT INTO users (name_user, email, password, function) VALUES
+INSERT INTO users (username, email, password, function) VALUES
   ('admin_jose', 'jose.admin@escola.com', 'hash_admin', 'admin'),
   ('prof_maria', 'maria.prof@escola.com', 'hash_prof', 'professor'),
   ('henrygabriel_sousa', 'henrygabriel.sousa@escola.com', 'hash_aluno', 'aluno'),

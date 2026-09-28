@@ -11,10 +11,10 @@ CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 -- 3) Tabela de Autenticação / Usuários
 CREATE TABLE IF NOT EXISTS users (
     id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-    name_user VARCHAR(100) NOT NULL UNIQUE,
+    username VARCHAR(40) NOT NULL UNIQUE,
     email VARCHAR(255) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL,
-    function VARCHAR(50) NOT NULL CHECK (function IN ('aluno', 'professor', 'admin')),
+    password VARCHAR(60) NOT NULL,
+    function VARCHAR(10) NOT NULL CHECK (function IN ('aluno', 'professor', 'admin')),
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
