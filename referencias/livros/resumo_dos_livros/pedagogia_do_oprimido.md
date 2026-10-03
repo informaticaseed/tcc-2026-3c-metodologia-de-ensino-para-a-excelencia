@@ -17,7 +17,7 @@
 
 ## 📖 Primeiras Palavras
 
-> **Bloco de resumo:** páginas 1–15
+> **Bloco de resumo:** páginas 24–29
 
 O livro foi escrito após observações durante **5 anos de exílio** (Brasil estava no período da Ditadura Militar).
 
@@ -34,6 +34,8 @@ A sectarização, irreal e irracional, transforma a realidade em uma falsa reali
 ---
 
 # Capítulo 1 — Justificativa da pedagogia do oprimido
+
+> **Bloco de resumo:** páginas 31–58
 
 ### Humanização e desumanização
 
@@ -62,6 +64,8 @@ Os opressores, apesar de sua força, não têm poder para libertar nem aos oprim
 ---
 
 # Capítulo 2 — A concepção “bancária” da educação
+
+> **Bloco de resumo:** páginas 63–83
 
 > **A concepção “bancária” da educação como instrumento da opressão. Seus pressupostos, sua crítica**
 
@@ -112,6 +116,8 @@ A razão deste modelo é **limitar o conhecimento do oprimido** e **“transform
 
 # Capítulo 3 — A dialogicidade
 
+> **Bloco de resumo:** páginas 86–128
+
 > **A dialogicidade: essência da educação como prática da liberdade**
 
 > “Quando tentamos um adentramento no diálogo como fenômeno humano, se nos revela algo que já poderemos dizer ser ele mesmo: a palavra. Mas, ao encontrarmos a palavra, na análise do diálogo, como algo mais que um meio para que ele se faça, se nos impõe buscar, também, seus elementos constitutivos.”
@@ -135,6 +141,8 @@ Mais uma vez, a educação pelo diálogo verdadeiro deve prezar pelo **pensament
 ---
 
 # Capítulo 4 — A teoria da ação antidialógica
+
+> **Bloco de resumo:** páginas 134–196
 
 > **A teoria da ação antidialógica**
 
