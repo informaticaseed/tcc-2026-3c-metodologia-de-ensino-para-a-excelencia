@@ -1,0 +1,281 @@
+{% extends "base.html" %}
+
+{% block title %}Painel - {{ usuario.perfil|capitalize }}{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    
+    <!-- BANNER HERO DE BOAS-VINDAS -->
+    <div class="hero-welcome fade-in">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <span class="badge badge-custom 
+                        {% if usuario.perfil == 'admin' %}badge-admin bg-white
+                        {% elif usuario.perfil == 'professor' %}badge-professor bg-white
+                        {% else %}badge-estudante bg-white{% endif %}">
+                        <i class="bi 
+                            {% if usuario.perfil == 'admin' %}bi-shield-check text-purple
+                            {% elif usuario.perfil == 'professor' %}bi-person-video3 text-success
+                            {% else %}bi-backpack text-primary{% endif %}">
+                        </i>
+                        Espaço do {{ usuario.perfil|capitalize }}
+                    </span>
+                    <span class="text-white-50 small">| Plataforma de Ensino-Aprendizagem</span>
+                </div>
+                <h2 class="fw-bold text-white mb-2">Olá, {{ usuario.nome }}!</h2>
+                <p class="text-white-50 mb-3">
+                    Bem-vindo(a) ao seu ambiente centralizado de exploração e aplicação de metodologias ativas e eficazes de aprendizagem.
+                </p>
+                <div class="d-flex flex-wrap gap-3 text-white-50 small">
+                    <div><i class="bi bi-envelope me-1"></i> {{ usuario.email }}</div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                <a href="{{ url_for('logout') }}" class="btn btn-outline-light btn-sm px-3">
+                    <i class="bi bi-box-arrow-right me-1"></i> Encerrar Sessão
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO ESPECÍFICA: ADMINISTRADOR -->
+    {% if usuario.perfil == 'admin' %}
+    <div class="mb-5 fade-in">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+            <h4 class="fw-bold mb-0 text-dark"><i class="bi bi-speedometer2 text-primary me-2"></i>Visão Geral do Sistema (Admin)</h4>
+            <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Gestão Geral</span>
+        </div>
+
+        <!-- CARDS DE ESTATÍSTICAS -->
+        <div class="row g-3 mb-4">
+            <div class="col-md-4">
+                <div class="stat-box">
+                    <div class="stat-icon bg-primary-subtle text-primary">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div>
+                        <div class="text-muted small fw-semibold">Total de Usuários</div>
+                        <h3 class="fw-bold mb-0 text-dark">{{ total_usuarios }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-box">
+                    <div class="stat-icon bg-success-subtle text-success">
+                        <i class="bi bi-person-video3"></i>
+                    </div>
+                    <div>
+                        <div class="text-muted small fw-semibold">Professores</div>
+                        <h3 class="fw-bold mb-0 text-dark">{{ total_professores }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-box">
+                    <div class="stat-icon bg-info-subtle text-info">
+                        <i class="bi bi-backpack-fill"></i>
+                    </div>
+                    <div>
+                        <div class="text-muted small fw-semibold">Estudantes</div>
+                        <h3 class="fw-bold mb-0 text-dark">{{ total_estudantes }}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TABELA DE USUÁRIOS CADASTRADOS -->
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+            <div class="card-header bg-white py-3 border-bottom d-flex align-items-center justify-content-between">
+                <h5 class="fw-bold mb-0 text-dark"><i class="bi bi-table me-2 text-primary"></i>Usuários Registrados na Base de Dados</h5>
+                <span class="badge bg-secondary-subtle text-secondary" id="admin-user-count">Mostrando {{ lista_usuarios|length }} de {{ lista_usuarios|length }} cadastrados</span>
+            </div>
+
+            <!-- BARRA DE PESQUISA E FILTROS DINÂMICOS (ADMIN) -->
+            <div class="p-3 bg-light border-bottom">
+                <div class="row g-2 align-items-center">
+                    <div class="col-12 col-md-7">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text bg-white"><i class="bi bi-search text-muted"></i></span>
+                            <input type="text" id="filtro-admin-busca" class="form-control" placeholder="Buscar por nome ou e-mail...">
+                        </div>
+                    </div>
+                    <div class="col-8 col-md-4">
+                        <select id="filtro-admin-perfil" class="form-select form-select-sm">
+                            <option value="">Todos os Perfis</option>
+                            <option value="admin">Administrador</option>
+                            <option value="professor">Professor</option>
+                            <option value="aluno">Aluno / Estudante</option>
+                        </select>
+                    </div>
+                    <div class="col-4 col-md-1 text-end">
+                        <button id="btn-admin-limpar" class="btn btn-outline-secondary btn-sm w-100" title="Limpar filtros">
+                            <i class="bi bi-x-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0" id="tabela-admin-usuarios">
+                    <thead class="table-light">
+                        <tr>
+                            <th class="ps-3">ID</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Perfil</th>
+                            <th>Data de Cadastro</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-admin-usuarios">
+                        {% for user in lista_usuarios %}
+                        <tr class="linha-admin-user" 
+                            data-nome="{{ user.nome|lower }}" 
+                            data-email="{{ user.email|lower }}" 
+                            data-perfil="{{ user.perfil|lower }}">
+                            <td class="ps-3 fw-bold text-muted">#{{ user.id }}</td>
+                            <td class="fw-semibold text-dark">{{ user.nome }}</td>
+                            <td>{{ user.email }}</td>
+                            <td>
+                                <span class="badge badge-custom 
+                                    {% if user.perfil == 'admin' %}badge-admin
+                                    {% elif user.perfil == 'professor' %}badge-professor
+                                    {% else %}badge-estudante{% endif %}">
+                                    {{ user.perfil|capitalize }}
+                                </span>
+                            </td>
+                            <td class="text-muted small">{{ user.criado_em }}</td>
+                        </tr>
+                        {% endfor %}
+                        <tr id="sem-usuarios-admin" style="display: none;">
+                            <td colspan="5" class="text-center py-4 text-muted">
+                                <i class="bi bi-person-x fs-3 d-block mb-2 text-secondary"></i>
+                                Nenhum usuário encontrado com os filtros informados.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- SEÇÃO ESPECÍFICA: PROFESSOR -->
+    {% if usuario.perfil == 'professor' %}
+    <div class="mb-5 fade-in">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+            <h4 class="fw-bold mb-0 text-dark"><i class="bi bi-journal-bookmark-fill text-success me-2"></i>Ferramentas Pedagógicas do Docente</h4>
+            <span class="badge bg-success-subtle text-success px-3 py-2 rounded-pill">Área do Professor</span>
+        </div>
+        <div class="row g-3">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="stat-icon bg-primary-subtle text-primary fs-4 p-3 rounded-circle"><i class="bi bi-bar-chart-line-fill"></i></div>
+                        <div>
+                            <h5 class="fw-bold mb-1 text-dark">Avaliação Formativa & Diagnóstico</h5>
+                            <span class="badge bg-primary-subtle text-primary">Inteligência de Dados</span>
+                        </div>
+                    </div>
+                    <p class="text-muted mb-4">Acesse os relatórios diagnósticos, clusters estatísticos por Machine Learning (K-Means/PCA) e a distribuição dos perfis estudantis por turma para orientar o planejamento didático.</p>
+                    <div>
+                        <a href="{{ url_for('resultados') }}" class="btn btn-primary btn-md px-4 shadow-sm">
+                            <i class="bi bi-graph-up-arrow me-2"></i> Abrir Painel de Resultados Analíticos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- SEÇÃO ESPECÍFICA: ESTUDANTE -->
+    {% if usuario.perfil in ['estudante', 'aluno'] %}
+    <div class="mb-5 fade-in">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+            <h4 class="fw-bold mb-0 text-dark"><i class="bi bi-mortarboard-fill text-primary me-2"></i>Sua Jornada de Aprendizagem</h4>
+            <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">Área do Estudante</span>
+        </div>
+        <div class="row g-3">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="stat-icon bg-primary-subtle text-primary fs-4 p-3 rounded-circle"><i class="bi bi-ui-checks"></i></div>
+                        <div>
+                            <h5 class="fw-bold mb-1 text-dark">Questionário Diagnóstico Inicial</h5>
+                            <span class="badge bg-success-subtle text-success">Disponível</span>
+                        </div>
+                    </div>
+                    <p class="text-muted mb-4">Responda ao questionário socioeconômico e cultural para que seus professores possam personalizar as metodologias de ensino de acordo com as necessidades e aspirações da turma.</p>
+                    <div>
+                        <a href="{{ url_for('questionario') }}" class="btn btn-primary btn-md px-4 shadow-sm">
+                            <i class="bi bi-pencil-square me-2"></i> Responder Questionário
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+
+{% if usuario.perfil == 'admin' %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const inputBusca = document.getElementById('filtro-admin-busca');
+    const selectPerfil = document.getElementById('filtro-admin-perfil');
+    const btnLimpar = document.getElementById('btn-admin-limpar');
+    const linhas = document.querySelectorAll('.linha-admin-user');
+    const semUsuarios = document.getElementById('sem-usuarios-admin');
+    const countBadge = document.getElementById('admin-user-count');
+    const totalUsuarios = linhas.length;
+
+    function normalizar(texto) {
+        return texto.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+    }
+
+    function filtrarUsuarios() {
+        const termoBusca = normalizar(inputBusca.value);
+        const perfilSelecionado = normalizar(selectPerfil.value);
+
+        let visiveis = 0;
+
+        linhas.forEach(linha => {
+            const nome = normalizar(linha.getAttribute('data-nome') || '');
+            const email = normalizar(linha.getAttribute('data-email') || '');
+            const perfil = normalizar(linha.getAttribute('data-perfil') || '');
+
+            const matchBusca = !termoBusca || nome.includes(termoBusca) || email.includes(termoBusca);
+            const matchPerfil = !perfilSelecionado || perfil === perfilSelecionado;
+
+            if (matchBusca && matchPerfil) {
+                linha.style.display = '';
+                visiveis++;
+            } else {
+                linha.style.display = 'none';
+            }
+        });
+
+        if (visiveis === 0) {
+            semUsuarios.style.display = '';
+        } else {
+            semUsuarios.style.display = 'none';
+        }
+
+        countBadge.textContent = `Mostrando ${visiveis} de ${totalUsuarios} cadastrados`;
+    }
+
+    inputBusca.addEventListener('input', filtrarUsuarios);
+    selectPerfil.addEventListener('change', filtrarUsuarios);
+
+    btnLimpar.addEventListener('click', function() {
+        inputBusca.value = '';
+        selectPerfil.value = '';
+        filtrarUsuarios();
+    });
+});
+</script>
+{% endif %}
+{% endblock %}
+
