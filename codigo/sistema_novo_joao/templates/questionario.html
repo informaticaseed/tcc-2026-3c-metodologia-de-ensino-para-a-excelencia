@@ -1,0 +1,365 @@
+{% extends "base.html" %}
+
+{% block title %}Questionário Diagnóstico Estudantil{% endblock %}
+
+{% block extra_head %}
+<style>
+    .questionnaire-card {
+        border: none;
+        border-radius: 1.25rem;
+        background: #fff;
+        box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+    }
+    .section-header {
+        border-bottom: 2px solid #f1f3f5;
+        padding-bottom: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+    .section-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.75rem;
+        font-size: 1.1rem;
+    }
+    .form-label {
+        font-weight: 600;
+        color: #212529;
+    }
+    .helper-text {
+        font-size: 0.85rem;
+        color: #6c757d;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+
+    <!-- CABEÇALHO DO QUESTIONÁRIO -->
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card questionnaire-card p-4 p-md-5 mb-4 border-top border-primary border-4">
+                
+                {% if pedido.respondido %}
+                <div class="alert alert-success d-flex align-items-center gap-3 p-3 rounded-4 mb-4">
+                    <i class="bi bi-check-circle-fill fs-2"></i>
+                    <div>
+                        <h5 class="fw-bold mb-1">Diagnóstico Já Respondido!</h5>
+                        <p class="mb-0 small">Você já enviou suas respostas para este questionário em <strong>{{ pedido.data_envio }}</strong>. Caso envie novamente abaixo, suas informações serão atualizadas no sistema.</p>
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <span class="badge bg-primary-subtle text-primary px-3 py-1 rounded-pill fw-semibold">
+                        <i class="bi bi-mortarboard-fill me-1"></i> Espaço do Estudante
+                    </span>
+                    <span class="text-muted small">| Diagnóstico Pedagógico</span>
+                </div>
+                <h2 class="fw-bold text-dark mb-2">{{ pedido.titulo }}</h2>
+                <p class="text-muted mb-4">{{ pedido.descricao or 'Por favor, responda com sinceridade às questões a seguir. Seus dados serão utilizados para orientar práticas pedagógicas mais personalizadas e inclusivas.' }}</p>
+
+                <!-- FORMULÁRIO COMPLETO -->
+                <form method="POST" action="{{ url_for('questionario') }}">
+                    <input type="hidden" name="order_id" value="{{ pedido.id }}">
+
+                    <!-- SEÇÃO 1: DADOS PESSOAIS -->
+                    <div class="mb-5">
+                        <div class="section-header d-flex align-items-center">
+                            <div class="section-icon bg-primary-subtle text-primary">
+                                <i class="bi bi-person-badge"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark mb-0">1. Dados Pessoais</h5>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Qual é o seu nome completo? <span class="text-danger">*</span></label>
+                                <input type="text" name="nome_completo" class="form-control" value="{{ aluno.nome or session.get('user_nome', '') }}" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Qual o seu email? <span class="text-danger">*</span></label>
+                                <input type="email" name="email" class="form-control bg-light" value="{{ aluno.email or session.get('user_email', '') }}" readonly>
+                                <span class="helper-text">E-mail vinculado à sua conta no sistema.</span>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Qual é a sua série? <span class="text-danger">*</span></label>
+                                <select name="serie" class="form-select" required>
+                                    <option value="8º ano" {% if aluno.grade == '8º ano' %}selected{% endif %}>8º ano</option>
+                                    <option value="9º ano" {% if aluno.grade == '9º ano' %}selected{% endif %}>9º ano</option>
+                                    <option value="1º ano EM" {% if aluno.grade == '1º ano EM' %}selected{% endif %}>1º ano do Ensino Médio</option>
+                                    <option value="2º ano EM" {% if aluno.grade == '2º ano EM' %}selected{% endif %}>2º ano do Ensino Médio</option>
+                                    <option value="3º ano EM" {% if aluno.grade == '3º ano EM' %}selected{% endif %}>3º ano do Ensino Médio</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Qual é a sua turma? <span class="text-danger">*</span></label>
+                                <select name="turma" class="form-select" required>
+                                    <option value="A" {% if aluno.class == 'A' %}selected{% endif %}>A</option>
+                                    <option value="B" {% if aluno.class == 'B' %}selected{% endif %}>B</option>
+                                    <option value="C" {% if aluno.class == 'C' %}selected{% endif %}>C</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 2: DADOS SOCIOECONÔMICOS -->
+                    <div class="mb-5">
+                        <div class="section-header d-flex align-items-center">
+                            <div class="section-icon bg-success-subtle text-success">
+                                <i class="bi bi-cash-stack"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark mb-0">2. Dados Socioeconômicos</h5>
+                        </div>
+
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Qual é a renda aproximada da sua família? <span class="text-danger">*</span></label>
+                                <select name="family_income" class="form-select" required>
+                                    <option value="até 1 salário mínimo">Até 1 salário mínimo</option>
+                                    <option value="entre 1 e 2 salários mínimos">Entre 1 e 2 salários mínimos</option>
+                                    <option value="entre 2 e 4 salários mínimos" selected>Entre 2 e 4 salários mínimos</option>
+                                    <option value="entre 4 e 6 salários mínimos">Entre 4 e 6 salários mínimos</option>
+                                    <option value="acima de 6 salários mínimos">Acima de 6 salários mínimos</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Qual é a escolaridade dos seus pais ou responsáveis? <span class="text-danger">*</span></label>
+                                <select name="parents_education" class="form-select" required>
+                                    <option value="sem escolaridade">Sem escolaridade / Não alfabetizado</option>
+                                    <option value="ensino fundamental incompleto">Ensino Fundamental Incompleto</option>
+                                    <option value="ensino fundamental completo">Ensino Fundamental Completo</option>
+                                    <option value="ensino médio completo" selected>Ensino Médio Completo</option>
+                                    <option value="ensino superior incompleto">Ensino Superior Incompleto</option>
+                                    <option value="ensino superior completo">Ensino Superior Completo</option>
+                                    <option value="pós-graduação">Pós-Graduação</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mb-3">
+                            <div class="col-12">
+                                <label class="form-label">Você trabalha além de estudar? Se sim, quantas horas por semana? <span class="text-danger">*</span></label>
+                                <div class="row g-2 align-items-center">
+                                    <div class="col-auto">
+                                        <div class="d-flex gap-4 mt-1">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="works_besides_studying" id="trab_nao" value="nao" checked onchange="toggleWorkHours(false)">
+                                                <label class="form-check-label" for="trab_nao">Não, apenas estudo</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="works_besides_studying" id="trab_sim" value="sim" onchange="toggleWorkHours(true)">
+                                                <label class="form-check-label" for="trab_sim">Sim, trabalho</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5" id="div_work_hours" style="display: none;">
+                                        <div class="input-group input-group-sm">
+                                            <span class="input-group-text">Horas/semana</span>
+                                            <input type="number" name="work_hours_per_week" class="form-control" placeholder="Ex: 20 ou 40" min="0" max="60" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label class="form-label">Você tem acesso à internet e computador em casa? <span class="text-danger">*</span></label>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="border rounded-3 p-3 bg-light">
+                                            <span class="d-block fw-semibold small mb-2"><i class="bi bi-wifi me-1"></i> Acesso à Internet:</span>
+                                            <div class="d-flex gap-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="has_internet_at_home" id="net_sim" value="sim" checked>
+                                                    <label class="form-check-label" for="net_sim">Sim</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="has_internet_at_home" id="net_nao" value="nao">
+                                                    <label class="form-check-label" for="net_nao">Não</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="border rounded-3 p-3 bg-light">
+                                            <span class="d-block fw-semibold small mb-2"><i class="bi bi-laptop me-1"></i> Computador ou Notebook:</span>
+                                            <div class="d-flex gap-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="has_computer_at_home" id="pc_sim" value="sim" checked>
+                                                    <label class="form-check-label" for="pc_sim">Sim</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="has_computer_at_home" id="pc_nao" value="nao">
+                                                    <label class="form-check-label" for="pc_nao">Não</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 3: CONTEXTO CULTURAL -->
+                    <div class="mb-5">
+                        <div class="section-header d-flex align-items-center">
+                            <div class="section-icon bg-info-subtle text-info">
+                                <i class="bi bi-palette"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark mb-0">3. Contexto Cultural</h5>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Quais atividades culturais você costuma participar (música, teatro, esportes, leitura etc.)? <span class="text-danger">*</span></label>
+                            <input type="text" name="cultural_activities" class="form-control" placeholder="Ex: Pratico futebol, gosto de ler ficção científica, toco violão, cinema..." required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Você se identifica com alguma tradição cultural ou comunitária específica?</label>
+                            <textarea name="community_cultural_tradition" class="form-control" rows="2" placeholder="Ex: Tradições religiosas, festividades folclóricas locais, cultura hip-hop, atividades de bairro..."></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Qual é o papel da sua família ou comunidade na sua formação?</label>
+                            <textarea name="role_family_community_training" class="form-control" rows="2" placeholder="Ex: Apoio emocional, transmissão de valores morais e incentivo para continuar estudando..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 4: DIMENSÃO POLÍTICA -->
+                    <div class="mb-5">
+                        <div class="section-header d-flex align-items-center">
+                            <div class="section-icon bg-secondary-subtle text-dark">
+                                <i class="bi bi-megaphone"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark mb-0">4. Dimensão Política</h5>
+                        </div>
+
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Você acompanha notícias sobre política e sociedade?</label>
+                                <div class="d-flex gap-4 mt-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="follows_politics_society_news" id="pol_sim" value="sim">
+                                        <label class="form-check-label" for="pol_sim">Sim, frequentemente</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="follows_politics_society_news" id="pol_nao" value="nao" checked>
+                                        <label class="form-check-label" for="pol_nao">Raramente / Não</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Já participou de algum movimento estudantil, comunitário ou social?</label>
+                                <div class="d-flex gap-4 mt-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="participated_in_social_movement" id="mov_sim" value="sim">
+                                        <label class="form-check-label" for="mov_sim">Sim</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="participated_in_social_movement" id="mov_nao" value="nao" checked>
+                                        <label class="form-check-label" for="mov_nao">Não</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Como você entende o papel da educação na transformação da sociedade?</label>
+                            <textarea name="role_education_social_transformation" class="form-control" rows="2" placeholder="Ex: É a ferramenta fundamental para reduzir desigualdades, formar pensamento crítico e abrir portas profissionais."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 5: EXPERIÊNCIAS ESCOLARES -->
+                    <div class="mb-5">
+                        <div class="section-header d-flex align-items-center">
+                            <div class="section-icon bg-warning-subtle text-warning">
+                                <i class="bi bi-book"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark mb-0">5. Experiências Escolares</h5>
+                        </div>
+
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Como você avalia sua relação com os professores? <span class="text-danger">*</span></label>
+                                <select name="teachers_relations" class="form-select" required>
+                                    <option value="Muito boa e acolhedora">Muito boa, empática e acolhedora</option>
+                                    <option value="Boa e respeitosa" selected>Boa e respeitosa</option>
+                                    <option value="Razoável / Distante">Razoável / Distante</option>
+                                    <option value="Difícil / Pouco diálogo">Difícil / Pouco diálogo ou conflituosa</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Você sente que sua opinião é ouvida na escola? <span class="text-danger">*</span></label>
+                                <div class="d-flex gap-4 mt-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="opinion_is_heard_at_school" id="op_sim" value="sim" checked>
+                                        <label class="form-check-label" for="op_sim">Sim, me sinto ouvido(a)</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="opinion_is_heard_at_school" id="op_nao" value="nao">
+                                        <label class="form-check-label" for="op_nao">Não com frequência</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Quais dificuldades você encontra para aprender (materiais, tempo, metodologia)?</label>
+                            <textarea name="learning_difficulties" class="form-control" rows="2" placeholder="Ex: Falta de tempo por conta do trabalho, metodologias puramente expositivas, dificuldade com materiais teóricos longos..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÃO 6: EXPECTATIVAS E SONHOS -->
+                    <div class="mb-5">
+                        <div class="section-header d-flex align-items-center">
+                            <div class="section-icon bg-danger-subtle text-danger">
+                                <i class="bi bi-stars"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark mb-0">6. Expectativas e Sonhos</h5>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Quais são seus objetivos pessoais e profissionais para o futuro? <span class="text-danger">*</span></label>
+                            <textarea name="personal_professional_goals" class="form-control" rows="2" placeholder="Ex: Ingressar em um curso superior na área de tecnologia, alcançar estabilidade financeira e ajudar minha família..." required></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">O que você gostaria que a escola oferecesse para apoiar seus sonhos? <span class="text-danger">*</span></label>
+                            <textarea name="support_that_the_school_should_offer" class="form-control" rows="2" placeholder="Ex: Mais projetos práticos em equipe, orientação vocacional, aulas interativas com metodologias ativas..." required></textarea>
+                        </div>
+                    </div>
+
+                    <!-- BOTÕES DE SUBMISSÃO -->
+                    <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                        <a href="{{ url_for('dashboard') }}" class="btn btn-outline-secondary">
+                            <i class="bi bi-arrow-left me-1"></i> Cancelar
+                        </a>
+                        <button type="submit" class="btn btn-primary btn-lg px-4 shadow-sm">
+                            <i class="bi bi-send-check-fill me-2"></i> Enviar Respostas do Diagnóstico
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+function toggleWorkHours(isWorking) {
+    const div = document.getElementById('div_work_hours');
+    if (isWorking) {
+        div.style.display = 'block';
+    } else {
+        div.style.display = 'none';
+    }
+}
+</script>
+{% endblock %}
