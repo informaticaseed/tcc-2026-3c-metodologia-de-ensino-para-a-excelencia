@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+
+{% block title %}Primeiro Acesso / Ativação de Conta{% endblock %}
+
+{% block content %}
+<div class="auth-wrapper">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="auth-card fade-in">
+                    
+                    <!-- CABEÇALHO DO CARD -->
+                    <div class="auth-header">
+                        <div class="mb-2">
+                            <span class="badge bg-white text-primary fw-bold px-3 py-1 rounded-pill">
+                                <i class="bi bi-shield-check me-1"></i> Primeiro Acesso
+                            </span>
+                        </div>
+                        <h3>{% if step == '2' %}Criar Senha de Acesso{% else %}Ativar Minha Conta{% endif %}</h3>
+                        <p>{% if step == '2' %}Defina suas credenciais pessoais{% else %}Validação com a base institucional{% endif %}</p>
+                    </div>
+
+                    <!-- CORPO DO FORMULÁRIO -->
+                    <div class="auth-body">
+                        
+                        <!-- ========================================== -->
+                        <!-- ETAPA 1: LOCALIZAR PRÉ-CADASTRO PELO CPF  -->
+                        <!-- ========================================== -->
+                        {% if step != '2' %}
+                        <form method="POST" action="{{ url_for('cadastro') }}">
+                            <input type="hidden" name="step" value="1">
+                            
+                            <div class="alert alert-light border small text-muted mb-4">
+                                <i class="bi bi-info-circle-fill text-primary me-1"></i>
+                                Seus dados já foram registrados pela instituição. Digite seu CPF e data de nascimento para ativar o acesso.
+                            </div>
+
+                            <!-- CPF -->
+                            <div class="mb-3">
+                                <label for="cpf" class="form-label">Número do CPF</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-person-vcard"></i></span>
+                                    <input type="text" class="form-control" id="cpf" name="cpf" 
+                                           value="{{ cpf or '' }}" placeholder="000.000.000-00" 
+                                           maxlength="14" required autofocus autocomplete="off">
+                                </div>
+                                <div class="form-text">Apenas números ou com pontos e traço.</div>
+                            </div>
+
+                            <!-- DATA DE NASCIMENTO -->
+                            <div class="mb-4">
+                                <label for="data_nasc" class="form-label">Data de Nascimento</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-calendar-event"></i></span>
+                                    <input type="date" class="form-control" id="data_nasc" name="data_nasc" 
+                                           value="{{ data_nasc or '' }}" required>
+                                </div>
+                            </div>
+
+                            <!-- BOTÃO DE LOCALIZAR -->
+                            <div class="d-grid gap-2 mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg shadow-sm">
+                                    <i class="bi bi-search me-2"></i> Localizar Meu Cadastro
+                                </button>
+                            </div>
+
+                            <!-- LINK PARA QUEM JÁ TEM SENHA -->
+                            <div class="text-center mt-4 pt-3 border-top">
+                                <p class="text-muted mb-0 small">
+                                    Já ativou sua conta anteriormente? 
+                                    <a href="{{ url_for('login') }}" class="text-primary fw-bold text-decoration-none ms-1">
+                                        Fazer Login <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </form>
+
+                        <!-- ========================================== -->
+                        <!-- ETAPA 2: CADASTRO DE SENHA PESSOAL        -->
+                        <!-- ========================================== -->
+                        {% else %}
+                        <form method="POST" action="{{ url_for('cadastro') }}">
+                            <input type="hidden" name="step" value="2">
+                            <input type="hidden" name="user_id" value="{{ aluno.user_id }}">
+
+                            <!-- RESUMO DO REGISTRO LOCALIZADO -->
+                            <div class="card border-success bg-light mb-4 shadow-sm">
+                                <div class="card-body py-3">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="bi bi-check-circle-fill text-success fs-5 me-2"></i>
+                                        <span class="fw-bold text-success">Cadastro Confirmado!</span>
+                                    </div>
+                                    <h6 class="mb-1 text-dark">{{ aluno.nome }}</h6>
+                                    <div class="small text-muted">
+                                        {% if aluno.papel == 'aluno' %}
+                                            <span class="badge bg-primary text-white me-1">Estudante</span>
+                                            <span>Turma: <strong>{{ aluno.grade }} {{ aluno.turma }}</strong></span>
+                                        {% else %}
+                                            <span class="badge bg-success text-white me-1">Docente</span>
+                                        {% endif %}
+                                        {% if aluno.escola %}
+                                            <div class="mt-1"><i class="bi bi-building me-1"></i>{{ aluno.escola }}</div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- E-MAIL (OPCIONAL/EDITÁVEL) -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail de Contato</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                    <input type="email" class="form-control" id="email" name="email" 
+                                           placeholder="seuemail@exemplo.com">
+                                </div>
+                                <div class="form-text">Para recuperação de senha e notificações.</div>
+                            </div>
+
+                            <!-- SENHA E CONFIRMAÇÃO -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="senha" class="form-label">Nova Senha</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                                        <input type="password" class="form-control" id="senha" name="senha" 
+                                               placeholder="Mínimo 6 dígitos" required>
+                                        <button class="btn btn-outline-secondary toggle-password-btn" type="button" data-target="senha">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="confirma_senha" class="form-label">Confirmar Senha</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-shield-lock-fill"></i></span>
+                                        <input type="password" class="form-control" id="confirma_senha" name="confirma_senha" 
+                                               placeholder="Repita a senha" required>
+                                        <button class="btn btn-outline-secondary toggle-password-btn" type="button" data-target="confirma_senha">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BOTÃO DE ATIVAÇÃO FINAL -->
+                            <div class="d-grid gap-2 mt-4">
+                                <button type="submit" class="btn btn-success btn-lg shadow-sm">
+                                    <i class="bi bi-check-lg me-2"></i> Concluir Ativação da Conta
+                                </button>
+                                <a href="{{ url_for('cadastro') }}" class="btn btn-link text-muted btn-sm mt-2">
+                                    <i class="bi bi-arrow-left me-1"></i> Voltar e verificar outro CPF
+                                </a>
+                            </div>
+                        </form>
+                        {% endif %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
