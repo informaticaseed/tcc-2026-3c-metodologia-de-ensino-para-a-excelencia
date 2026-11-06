@@ -1,0 +1,240 @@
+{% extends "base.html" %}
+
+{% block title %}Minhas Respostas{% endblock %}
+
+{% block extra_head %}
+<style>
+    .resposta-card {
+        border: none;
+        border-radius: 1.25rem;
+        background: #fff;
+        box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+    }
+    .resposta-secao {
+        border-left: 4px solid #0d6efd;
+        background: #f8f9fa;
+        border-radius: 0.75rem;
+        padding: 1rem 1.25rem;
+    }
+    .resposta-secao h6 {
+        color: #0d6efd;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+    }
+    .resposta-rotulo {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: #6c757d;
+        font-weight: 700;
+        margin-bottom: 0.15rem;
+    }
+    .resposta-valor {
+        color: #212529;
+        margin-bottom: 0.85rem;
+    }
+    .accordion-button:not(.collapsed) {
+        background: #f1f7ff;
+        color: #0d6efd;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+
+            <!-- CABEÇALHO -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+                <div>
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="badge bg-primary-subtle text-primary px-3 py-1 rounded-pill fw-semibold">
+                            <i class="bi bi-mortarboard-fill me-1"></i> Espaço do Estudante
+                        </span>
+                    </div>
+                    <h2 class="fw-bold text-dark mb-1">Minhas Respostas</h2>
+                    <p class="text-muted mb-0">
+                        {% if respostas %}
+                            Você já respondeu <strong>{{ respostas|length }}</strong>
+                            diagnóstico{{ 's' if respostas|length != 1 else '' }}.
+                            Consulte abaixo o que foi enviado.
+                        {% else %}
+                            Você ainda não respondeu nenhum diagnóstico.
+                        {% endif %}
+                    </p>
+                </div>
+                <div class="d-flex gap-2">
+                    <a href="{{ url_for('dashboard') }}" class="btn btn-outline-secondary">
+                        <i class="bi bi-speedometer2 me-1"></i> Painel
+                    </a>
+                    <a href="{{ url_for('questionario') }}" class="btn btn-primary">
+                        <i class="bi bi-pencil-square me-1"></i> Responder Diagnósticos
+                    </a>
+                </div>
+            </div>
+
+            {% if respostas %}
+            <div class="accordion d-flex flex-column gap-3" id="accordionRespostas">
+                {% for r in respostas %}
+                <div class="accordion-item resposta-card border-0 overflow-hidden">
+                    <h2 class="accordion-header" id="heading{{ r.answer_id }}">
+                        <button class="accordion-button {% if not loop.first %}collapsed{% endif %} py-3"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#resposta{{ r.answer_id }}"
+                                aria-expanded="{{ 'true' if loop.first else 'false' }}"
+                                aria-controls="resposta{{ r.answer_id }}">
+                            <div class="d-flex flex-column flex-md-row align-items-md-center gap-2 w-100 me-3">
+                                <span class="fw-bold fs-6">{{ r.titulo }}</span>
+                                <span class="badge bg-primary-subtle text-primary">{{ r.serie }} · Turma {{ r.turma }}</span>
+                                {% if r.status_pedido == 'aberto' %}
+                                <span class="badge bg-success-subtle text-success">Aberto</span>
+                                {% else %}
+                                <span class="badge bg-secondary-subtle text-secondary">Encerrado</span>
+                                {% endif %}
+                                <span class="small text-muted ms-md-auto">
+                                    <i class="bi bi-send-check me-1"></i>{{ r.data_envio }}
+                                </span>
+                            </div>
+                        </button>
+                    </h2>
+
+                    <div id="resposta{{ r.answer_id }}"
+                         class="accordion-collapse collapse {% if loop.first %}show{% endif %}"
+                         aria-labelledby="heading{{ r.answer_id }}"
+                         data-bs-parent="#accordionRespostas">
+                        <div class="accordion-body p-4">
+
+                            <div class="mb-4">
+                                <p class="text-muted mb-2">
+                                    {{ r.descricao or 'Diagnóstico pedagógico respondido por você.' }}
+                                </p>
+                                <div class="small text-muted d-flex flex-wrap gap-3">
+                                    <span><i class="bi bi-person-video3 me-1"></i>{{ r.professor }}</span>
+                                    <span><i class="bi bi-building me-1"></i>{{ r.escola }}</span>
+                                </div>
+                            </div>
+
+                            <!-- DADOS SOCIOECONÔMICOS -->
+                            <div class="resposta-secao mb-3">
+                                <h6><i class="bi bi-cash-stack me-1"></i> Dados Socioeconômicos</h6>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="resposta-rotulo">Renda familiar</div>
+                                        <div class="resposta-valor">{{ r.renda_familiar or 'Não informado' }}</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="resposta-rotulo">Escolaridade dos pais/responsáveis</div>
+                                        <div class="resposta-valor">{{ r.escolaridade_pais or 'Não informado' }}</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="resposta-rotulo">Trabalha além de estudar</div>
+                                        <div class="resposta-valor">
+                                            {% if r.trabalha %}
+                                                Sim{% if r.horas_trabalho %} — {{ r.horas_trabalho }} horas por semana{% endif %}
+                                            {% else %}
+                                                Não, apenas estuda
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="resposta-rotulo">Acesso à internet em casa</div>
+                                        <div class="resposta-valor">
+                                            {% if r.internet is none %}Não informado{% elif r.internet %}Sim{% else %}Não{% endif %}
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="resposta-rotulo">Computador ou notebook em casa</div>
+                                        <div class="resposta-valor">
+                                            {% if r.computador is none %}Não informado{% elif r.computador %}Sim{% else %}Não{% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CONTEXTO CULTURAL -->
+                            <div class="resposta-secao mb-3">
+                                <h6><i class="bi bi-palette me-1"></i> Contexto Cultural</h6>
+                                <div class="resposta-rotulo">Atividades culturais</div>
+                                <div class="resposta-valor">{{ r.atividades_culturais or 'Não informado' }}</div>
+
+                                <div class="resposta-rotulo">Tradição cultural ou comunitária</div>
+                                <div class="resposta-valor">{{ r.tradicao_cultural or 'Não informado' }}</div>
+
+                                <div class="resposta-rotulo">Papel da família/comunidade na formação</div>
+                                <div class="resposta-valor mb-0">{{ r.papel_familia or 'Não informado' }}</div>
+                            </div>
+
+                            <!-- EXPERIÊNCIAS ESCOLARES -->
+                            <div class="resposta-secao mb-3">
+                                <h6><i class="bi bi-book me-1"></i> Experiências Escolares</h6>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="resposta-rotulo">Relação com os professores</div>
+                                        <div class="resposta-valor">{{ r.relacao_professores or 'Não informado' }}</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="resposta-rotulo">Sente que a opinião é ouvida na escola</div>
+                                        <div class="resposta-valor">
+                                            {% if r.opiniao_ouvida is none %}Não informado{% elif r.opiniao_ouvida %}Sim{% else %}Não com frequência{% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="resposta-rotulo">Dificuldades para aprender</div>
+                                <div class="resposta-valor mb-0">{{ r.dificuldades or 'Não informado' }}</div>
+                            </div>
+
+                            <!-- EXPECTATIVAS E SONHOS -->
+                            <div class="resposta-secao mb-4">
+                                <h6><i class="bi bi-stars me-1"></i> Expectativas e Sonhos</h6>
+                                <div class="resposta-rotulo">Objetivos pessoais e profissionais</div>
+                                <div class="resposta-valor">{{ r.objetivos or 'Não informado' }}</div>
+
+                                <div class="resposta-rotulo">Apoio que a escola deveria oferecer</div>
+                                <div class="resposta-valor mb-0">{{ r.apoio_escola or 'Não informado' }}</div>
+                            </div>
+
+                            <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 pt-3 border-top">
+                                <span class="small text-muted">
+                                    <i class="bi bi-clock-history me-1"></i>
+                                    Última atualização: {{ r.data_envio }}
+                                </span>
+                                {% if r.order_id in pedidos_abertos %}
+                                <a href="{{ url_for('questionario', pedido_id=r.order_id) }}" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-pencil-square me-1"></i> Atualizar respostas
+                                </a>
+                                {% else %}
+                                <span class="badge bg-secondary-subtle text-secondary px-3 py-2">
+                                    <i class="bi bi-lock-fill me-1"></i> Encerrado — somente consulta
+                                </span>
+                                {% endif %}
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="card resposta-card p-5 text-center">
+                <div class="mb-3">
+                    <i class="bi bi-file-earmark-text text-muted" style="font-size: 3rem;"></i>
+                </div>
+                <h4 class="fw-bold text-dark">Nenhuma resposta registrada</h4>
+                <p class="text-muted mb-4">
+                    Quando você responder a um diagnóstico, suas respostas aparecerão aqui
+                    para consulta e atualização.
+                </p>
+                <div>
+                    <a href="{{ url_for('questionario') }}" class="btn btn-primary px-4">
+                        <i class="bi bi-pencil-square me-1"></i> Ver diagnósticos disponíveis
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+{% endblock %}
