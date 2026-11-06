@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+{% block title %}Instituições de Ensino{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+
+    <!-- CABEÇALHO -->
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4 fade-in">
+        <div>
+            <a href="{{ url_for('dashboard') }}" class="text-decoration-none text-muted small">
+                <i class="bi bi-arrow-left me-1"></i> Voltar ao painel
+            </a>
+            <h2 class="fw-bold text-dark mb-1 mt-2">
+                <i class="bi bi-buildings-fill text-primary me-2"></i>
+                Instituições de Ensino
+            </h2>
+            <p class="text-muted mb-0">
+                Cada administrador institucional deve estar vinculado a uma destas instituições.
+            </p>
+        </div>
+        <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">
+            <i class="bi bi-shield-lock me-1"></i> Superadmin
+        </span>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- FORMULÁRIO -->
+        <div class="col-12 col-lg-4">
+            <div class="card border-0 shadow-sm rounded-4">
+                <div class="card-header bg-white py-3 border-bottom">
+                    <h5 class="fw-bold mb-0 text-dark">
+                        <i class="bi bi-plus-circle-fill text-success me-2"></i>
+                        Nova instituição
+                    </h5>
+                </div>
+                <div class="card-body p-4">
+                    <form method="POST" action="{{ url_for('admin_escolas') }}" autocomplete="off">
+                        <div class="mb-3">
+                            <label for="name" class="form-label fw-semibold">
+                                Nome da instituição <span class="text-danger">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                name="name"
+                                maxlength="255"
+                                placeholder="Ex.: Escola Estadual Dom Pedro II"
+                                required
+                            >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inep_code" class="form-label fw-semibold">
+                                Código INEP
+                            </label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="inep_code"
+                                name="inep_code"
+                                maxlength="20"
+                                placeholder="Obrigatório"
+                            >
+                            <div class="form-text">
+                                Código único da instituição. Não pode repetir.
+                            </div>
+                        </div>
+
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-success btn-lg shadow-sm">
+                                <i class="bi bi-check-circle-fill me-2"></i>
+                                Cadastrar instituição
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- LISTA -->
+        <div class="col-12 col-lg-8">
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                <div class="card-header bg-white py-3 border-bottom d-flex align-items-center justify-content-between">
+                    <h5 class="fw-bold mb-0 text-dark">
+                        <i class="bi bi-table text-primary me-2"></i>
+                        Instituições cadastradas
+                    </h5>
+                    <span class="badge bg-secondary-subtle text-secondary">
+                        {{ escolas|length }} registro(s)
+                    </span>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th class="ps-3">#</th>
+                                <th>Instituição</th>
+                                <th>INEP</th>
+                                <th>Admins</th>
+                                <th>Professores</th>
+                                <th>Estudantes</th>
+                                <th class="pe-3">Cadastro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for escola in escolas %}
+                            <tr>
+                                <td class="ps-3 fw-bold text-muted">#{{ escola.id }}</td>
+                                <td class="fw-semibold text-dark">{{ escola.nome }}</td>
+                                <td class="small">{{ escola.inep or '-' }}</td>
+                                <td>
+                                    <span class="badge bg-primary-subtle text-primary">{{ escola.admins }}</span>
+                                </td>
+                                <td>
+                                    <span class="badge bg-success-subtle text-success">{{ escola.professores }}</span>
+                                </td>
+                                <td>
+                                    <span class="badge bg-info-subtle text-info">{{ escola.estudantes }}</span>
+                                </td>
+                                <td class="small text-muted pe-3">{{ escola.criada_em or '-' }}</td>
+                            </tr>
+                            {% else %}
+                            <tr>
+                                <td colspan="7" class="text-center py-5 text-muted">
+                                    <i class="bi bi-buildings fs-2 d-block mb-2 text-secondary"></i>
+                                    Nenhuma instituição cadastrada.
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
