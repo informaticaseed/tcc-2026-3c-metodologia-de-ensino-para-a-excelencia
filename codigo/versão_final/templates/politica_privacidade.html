@@ -1,0 +1,403 @@
+{% extends "base.html" %}
+
+{% block title %}Política de Privacidade{% endblock %}
+
+{% block content %}
+<div class="legal-wrapper">
+    <div class="container">
+        <div class="legal-card fade-in">
+
+            <div class="legal-hero legal-hero-privacy">
+                <span class="badge legal-badge mb-2">
+                    <i class="bi bi-shield-lock me-1"></i> Proteção de dados
+                </span>
+                <h1>Política de Privacidade</h1>
+                <p class="mb-2">
+                    Como a plataforma EduMetodologias trata dados pessoais de
+                    estudantes, professores e gestores, em conformidade com a
+                    LGPD.
+                </p>
+                <div class="legal-meta">
+                    <span><i class="bi bi-tag me-1"></i> Versão {{ politica_versao }}</span>
+                    <span><i class="bi bi-calendar-check me-1"></i> Vigência: {{ politica_vigencia }}</span>
+                    <span><i class="bi bi-envelope me-1"></i> {{ lgpd_contato }}</span>
+                </div>
+            </div>
+
+            <div class="legal-body">
+
+                <div class="legal-summary">
+                    <h2 class="h6 fw-bold mb-2">
+                        <i class="bi bi-chat-heart text-primary me-1"></i>
+                        Em palavras simples
+                    </h2>
+                    <ul class="mb-0 small">
+                        <li>Coletamos apenas o necessário para o diagnóstico pedagógico.</li>
+                        <li>Seus dados são usados para ajudar a escola a ensinar melhor.</li>
+                        <li>Professores veem apenas os pedidos de diagnóstico que criaram.</li>
+                        <li>Os resultados são de uso interno e pedagógico.</li>
+                        <li>Você e seu responsável podem pedir acesso, correção ou exclusão.</li>
+                        <li>Não vendemos dados e não usamos para publicidade.</li>
+                    </ul>
+                </div>
+
+                <nav class="legal-toc" aria-label="Índice da Política de Privacidade">
+                    <strong class="d-block mb-2 text-dark">Nesta página</strong>
+                    <a href="#controlador">1. Controlador e contato</a>
+                    <a href="#dados">2. Quais dados coletamos</a>
+                    <a href="#finalidades">3. Finalidades e bases legais</a>
+                    <a href="#menores">4. Crianças e adolescentes</a>
+                    <a href="#compartilhamento">5. Compartilhamento</a>
+                    <a href="#seguranca">6. Segurança</a>
+                    <a href="#retencao">7. Retenção e exclusão</a>
+                    <a href="#direitos">8. Seus direitos</a>
+                    <a href="#cookies">9. Cookies</a>
+                    <a href="#alteracoes">10. Alterações</a>
+                    <a href="#anpd">11. Autoridade e contato</a>
+                </nav>
+
+                <section id="controlador" class="legal-section">
+                    <h2>1. Quem é o controlador e como falar conosco</h2>
+                    <p>
+                        A <strong>instituição de ensino</strong> que disponibiliza
+                        a plataforma é a controladora dos dados pessoais tratados
+                        no contexto escolar. Ela define as finalidades e os meios
+                        do tratamento, observando a LGPD e as normas educacionais.
+                    </p>
+                    <p>
+                        A equipe responsável pela manutenção técnica da
+                        plataforma atua como <strong>operadora</strong>, seguindo
+                        as instruções da instituição e adotando medidas de
+                        segurança e confidencialidade.
+                    </p>
+                    <p class="mb-0">
+                        <strong>Encarregado de Proteção de Dados:</strong>
+                        {{ lgpd_encarregado }}<br>
+                        <strong>E-mail:</strong>
+                        <a href="mailto:{{ lgpd_contato }}">{{ lgpd_contato }}</a>
+                    </p>
+                </section>
+
+                <section id="dados" class="legal-section">
+                    <h2>2. Quais dados coletamos</h2>
+                    <p>
+                        A plataforma coleta apenas os dados necessários para as
+                        finalidades pedagógicas descritas nesta Política. As
+                        categorias são:
+                    </p>
+
+                    <div class="table-responsive legal-table">
+                        <table class="table table-sm align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Categoria</th>
+                                    <th>Exemplos</th>
+                                    <th>Origem</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Cadastro e vínculo</strong></td>
+                                    <td>Nome completo, e-mail, código de acesso, senha (armazenada com hash), perfil, escola, série e turma.</td>
+                                    <td>Instituição, professor, gestor ou próprio usuário.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Respostas do diagnóstico</strong></td>
+                                    <td>Renda familiar declarada, jornada de trabalho, escolaridade dos pais, acesso a internet e computador, atividades culturais, vínculos escolares, dificuldades de aprendizagem, objetivos e apoio esperado da escola.</td>
+                                    <td>Estudante, no questionário.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Registros de uso</strong></td>
+                                    <td>Data e hora de cadastro, atualização de perfil e envio de respostas, além de identificadores internos dos registros.</td>
+                                    <td>Coleta automática durante o uso.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="mb-2"><strong>O que não coletamos intencionalmente:</strong></p>
+                    <ul class="mb-0">
+                        <li>CPF, RG, documentos de identificação, biometria ou foto;</li>
+                        <li>geolocalização precisa, dados de saúde, religião, orientação sexual ou opinião política;</li>
+                        <li>dados de pagamento ou publicidade;</li>
+                        <li>dados de navegação para fins comerciais.</li>
+                    </ul>
+                </section>
+
+                <section id="finalidades" class="legal-section">
+                    <h2>3. Finalidades e bases legais</h2>
+                    <p>
+                        Cada tratamento tem uma finalidade específica e uma base
+                        legal adequada. A tabela abaixo resume as hipóteses
+                        aplicáveis. A base legal institucional pode variar
+                        conforme a rede de ensino e a legislação aplicável; o
+                        aceite dos Termos não é, por si só, a base legal do
+                        tratamento obrigatório.
+                    </p>
+
+                    <div class="table-responsive legal-table">
+                        <table class="table table-sm align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Finalidade</th>
+                                    <th>Base legal principal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cadastrar, autenticar e manter o vínculo escolar do usuário.</td>
+                                    <td>Execução de políticas públicas de educação (Art. 7º, III) e cumprimento de obrigação legal ou regulatória (Art. 7º, II).</td>
+                                </tr>
+                                <tr>
+                                    <td>Aplicar questionários pedagógicos e gerar indicadores para apoio ao ensino.</td>
+                                    <td>Execução de políticas públicas de educação (Art. 7º, III), com observância do melhor interesse da criança e do adolescente (Art. 14).</td>
+                                </tr>
+                                <tr>
+                                    <td>Produzir relatórios e gráficos agregados para professores e gestores.</td>
+                                    <td>Execução de políticas públicas de educação (Art. 7º, III). O acesso é restrito aos professores responsáveis pelos pedidos.</td>
+                                </tr>
+                                <tr>
+                                    <td>Informar o titular e obter a confirmação de leitura dos documentos no primeiro acesso.</td>
+                                    <td>Cumprimento do dever de informação (Arts. 8º e 9º).</td>
+                                </tr>
+                                <tr>
+                                    <td>Garantir a segurança da conta e a integridade dos dados.</td>
+                                    <td>Cumprimento de obrigação legal e regulatória (Art. 7º, II) e legítimo interesse na segurança da informação (Art. 7º, IX), com salvaguardas para menores.</td>
+                                </tr>
+                                <tr>
+                                    <td>Atender requisições de autoridades públicas e exercer direitos em processo.</td>
+                                    <td>Cumprimento de obrigação legal ou regulatória (Art. 7º, II) e exercício regular de direitos (Art. 7º, VI).</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="legal-note">
+                        <i class="bi bi-info-circle-fill me-1"></i>
+                        <strong>Aceite não é base legal.</strong> A confirmação de
+                        leitura dos Termos e da Política no primeiro acesso atende
+                        ao dever de informação. A base legal do tratamento
+                        escolar é definida pela instituição, conforme a
+                        legislação aplicável, e não pelo clique no aceite.
+                    </div>
+                </section>
+
+                <section id="menores" class="legal-section">
+                    <h2>4. Proteção de crianças e adolescentes</h2>
+                    <p>
+                        O tratamento de dados de crianças e adolescentes deve
+                        atender ao <strong>melhor interesse</strong> e ser
+                        limitado ao necessário. A plataforma adota as seguintes
+                        salvaguardas:
+                    </p>
+                    <ul>
+                        <li>
+                            linguagem simples e adequada à faixa etária nas telas
+                            e nos documentos;
+                        </li>
+                        <li>
+                            coleta mínima, sem dados sensíveis ou desnecessários;
+                        </li>
+                        <li>
+                            acesso do professor restrito aos pedidos de
+                            diagnóstico que ele próprio criou;
+                        </li>
+                        <li>
+                            uso dos resultados apenas em contexto pedagógico, com
+                            orientação para não divulgar informações individuais;
+                        </li>
+                        <li>
+                            possibilidade de o responsável legal exercer os
+                            direitos do estudante.
+                        </li>
+                    </ul>
+                    <p class="mb-0">
+                        Para estudantes menores de 18 anos, recomenda-se que o
+                        responsável legal acompanhe o uso da plataforma e exerça
+                        os direitos do estudante. Quando a legislação exigir
+                        consentimento específico, a instituição deverá coletá-lo
+                        em documento próprio, de forma destacada e revogável.
+                    </p>
+                </section>
+
+                <section id="compartilhamento" class="legal-section">
+                    <h2>5. Compartilhamento de dados</h2>
+                    <p>
+                        A plataforma <strong>não vende</strong> dados pessoais e
+                        <strong>não os utiliza para publicidade</strong>. O
+                        compartilhamento ocorre apenas quando necessário para as
+                        finalidades desta Política:
+                    </p>
+                    <ul>
+                        <li>
+                            com a instituição de ensino e os profissionais
+                            autorizados, para acompanhamento pedagógico;
+                        </li>
+                        <li>
+                            com prestadores de serviços de hospedagem,
+                            manutenção e segurança, sob contrato e dever de
+                            confidencialidade;
+                        </li>
+                        <li>
+                            com autoridades públicas, mediante base legal e
+                            requisição formal;
+                        </li>
+                        <li>
+                            em caso de reorganização institucional, com
+                            continuidade das mesmas finalidades e garantias.
+                        </li>
+                    </ul>
+                    <p class="mb-0">
+                        Não há transferência internacional de dados por padrão.
+                        Caso um fornecedor de infraestrutura esteja fora do
+                        Brasil, a instituição adotará as salvaguardas exigidas
+                        pela LGPD e informará os titulares.
+                    </p>
+                </section>
+
+                <section id="seguranca" class="legal-section">
+                    <h2>6. Como protegemos os dados</h2>
+                    <ul>
+                        <li>senhas definitivas armazenadas com hash bcrypt; a senha temporária é substituída no primeiro acesso;</li>
+                        <li>controle de acesso por perfil, com validação no servidor;</li>
+                        <li>professores acessam somente os pedidos de diagnóstico que criaram;</li>
+                        <li>relatórios e gráficos armazenados fora da pasta pública;</li>
+                        <li>segregação de dados por instituição de ensino;</li>
+                        <li>recomendação de conexão HTTPS e backups com rotação;</li>
+                        <li>procedimentos de resposta a incidentes e comunicação à ANPD e aos titulares quando aplicável.</li>
+                    </ul>
+                    <p class="mb-0">
+                        Nenhum sistema é totalmente imune a incidentes. Em caso de
+                        incidente de segurança relevante, a instituição adotará
+                        as medidas de contenção, avaliação de risco e comunicação
+                        previstas na LGPD.
+                    </p>
+                </section>
+
+                <section id="retencao" class="legal-section">
+                    <h2>7. Por quanto tempo mantemos os dados</h2>
+                    <p>
+                        Os dados são mantidos pelo tempo necessário às finalidades
+                        e aos prazos legais. Depois disso, são eliminados ou
+                        anonimizados, salvo hipótese legal de conservação.
+                    </p>
+
+                    <div class="table-responsive legal-table">
+                        <table class="table table-sm align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Categoria</th>
+                                    <th>Prazo de retenção</th>
+                                    <th>Procedimento</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cadastro, credenciais e vínculo escolar</td>
+                                    <td>Durante o vínculo e por até 5 anos após o encerramento ou o fim do ano letivo, o que ocorrer por último.</td>
+                                    <td>Anonimização ou exclusão dos identificadores.</td>
+                                </tr>
+                                <tr>
+                                    <td>Respostas do questionário</td>
+                                    <td>Durante o ano letivo e por até 5 anos após o encerramento do vínculo, salvo prazo legal específico.</td>
+                                    <td>Exclusão ou anonimização por rotina de manutenção.</td>
+                                </tr>
+                                <tr>
+                                    <td>Backups</td>
+                                    <td>Até 90 dias, com rotação automática.</td>
+                                    <td>Exclusão ao final do ciclo; reaplicação de exclusões após restauração.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="mb-0">
+                        A exclusão ou anonimização deve ser solicitada à
+                        instituição de ensino, que definirá o procedimento
+                        conforme seus prazos de arquivo escolar e as hipóteses
+                        legais de conservação.
+                    </p>
+                </section>
+
+                <section id="direitos" class="legal-section">
+                    <h2>8. Seus direitos como titular</h2>
+                    <p>
+                        Nos termos do Art. 18 da LGPD, você (ou seu responsável
+                        legal) pode solicitar:
+                    </p>
+                    <ul>
+                        <li>confirmação da existência de tratamento;</li>
+                        <li>acesso aos dados pessoais;</li>
+                        <li>correção de dados incompletos, inexatos ou desatualizados;</li>
+                        <li>anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade;</li>
+                        <li>portabilidade dos dados, observados os segredos comerciais e industriais;</li>
+                        <li>eliminação dos dados tratados com consentimento, ressalvadas as hipóteses legais de conservação;</li>
+                        <li>informação sobre compartilhamento de dados;</li>
+                        <li>revogação do consentimento, quando a base legal for o consentimento;</li>
+                        <li>oposição a tratamento realizado em desconformidade com a LGPD;</li>
+                        <li>revisão de decisões automatizadas, quando houver.</li>
+                    </ul>
+                    <p>
+                        Para exercer seus direitos, procure a instituição de
+                        ensino ou envie e-mail para
+                        <a href="mailto:{{ lgpd_contato }}">{{ lgpd_contato }}</a>.
+                        A solicitação pode exigir confirmação de identidade para
+                        proteger o próprio titular. O prazo de resposta é de até
+                        15 dias, prorrogável mediante justificativa.
+                    </p>
+                    <p class="mb-0">
+                        Estudantes menores de 18 anos podem ser representados
+                        pelo responsável legal. Se a solicitação envolver dados
+                        de outro estudante, o pedido será recusado para proteger
+                        a privacidade de terceiros.
+                    </p>
+                </section>
+
+                <section id="cookies" class="legal-section">
+                    <h2>9. Cookies e tecnologias similares</h2>
+                    <p class="mb-0">
+                        A plataforma utiliza apenas cookies essenciais de sessão,
+                        necessários para autenticação e segurança. Não utilizamos
+                        cookies de publicidade, rastreamento comportamental ou
+                        compartilhamento com redes sociais. O encerramento da
+                        sessão ou o logout remove o cookie de sessão.
+                    </p>
+                </section>
+
+                <section id="alteracoes" class="legal-section">
+                    <h2>10. Alterações desta Política</h2>
+                    <p class="mb-0">
+                        Esta Política pode ser atualizada para refletir mudanças
+                        legais, técnicas ou pedagógicas. A versão vigente e a data
+                        de vigência são exibidas no topo desta página. Alterações
+                        relevantes serão comunicadas à comunidade escolar.
+                    </p>
+                </section>
+
+                <section id="anpd" class="legal-section">
+                    <h2>11. Autoridade Nacional e contato</h2>
+                    <p>
+                        Se você não estiver satisfeito com a resposta da
+                        instituição, pode peticionar à Autoridade Nacional de
+                        Proteção de Dados (ANPD):
+                        <a href="https://www.gov.br/anpd" target="_blank" rel="noopener">www.gov.br/anpd</a>.
+                    </p>
+                    <p class="mb-0">
+                        <strong>Encarregado:</strong> {{ lgpd_encarregado }}<br>
+                        <strong>E-mail:</strong>
+                        <a href="mailto:{{ lgpd_contato }}">{{ lgpd_contato }}</a>
+                    </p>
+                </section>
+
+                <div class="legal-footer">
+                    <span><i class="bi bi-shield-lock me-1"></i> Política de Privacidade — versão {{ politica_versao }}</span>
+                    <a href="{{ url_for('termos_uso') }}">
+                        Termos de Uso <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

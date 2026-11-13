@@ -1,0 +1,63 @@
+{
+  "order_id": 7,
+  "signature": "737c83aa74f915d22a1e75a32a142aeff354a83ca209c347453dd2f293060a63",
+  "generated_at": "2026-11-12T11:54:52",
+  "answers": 3,
+  "summary": {
+    "students": [
+      {
+        "id": 26,
+        "nome": "Henry Gabriel Alves Sousa",
+        "serie": "1º ano EM",
+        "turma": "A",
+        "idx_socio": 3.43,
+        "idx_trabalho": 2.5,
+        "idx_vinculo": 0.0,
+        "idx_cultural": 5.0,
+        "cluster_id": 1,
+        "perfil": "Perfil Trabalhador / Vulnerabilidade Econômica",
+        "pca_1": -2.684,
+        "pca_2": 0.008
+      },
+      {
+        "id": 25,
+        "nome": "João Lucas Sousa Caldeira",
+        "serie": "1º ano EM",
+        "turma": "A",
+        "idx_socio": 7.43,
+        "idx_trabalho": 0.0,
+        "idx_vinculo": 5.33,
+        "idx_cultural": 7.5,
+        "cluster_id": 0,
+        "perfil": "Perfil Engajado / Participativo e Cultural",
+        "pca_1": 1.321,
+        "pca_2": -0.775
+      },
+      {
+        "id": 22,
+        "nome": "Yan da Cruz Câmara",
+        "serie": "1º ano EM",
+        "turma": "A",
+        "idx_socio": 5.73,
+        "idx_trabalho": 0.0,
+        "idx_vinculo": 10.0,
+        "idx_cultural": 7.5,
+        "cluster_id": 2,
+        "perfil": "Perfil Engajado / Participativo e Cultural",
+        "pca_1": 1.363,
+        "pca_2": 0.767
+      }
+    ],
+    "total_diagnosticados": 3,
+    "medias": {
+      "socio": 5.53,
+      "trabalho": 0.83,
+      "vinculo": 5.11,
+      "cultural": 6.67
+    },
+    "perfis_count": {
+      "Perfil Trabalhador / Vulnerabilidade Econômica": 1,
+      "Perfil Engajado / Participativo e Cultural": 2
+    }
+  }
+}

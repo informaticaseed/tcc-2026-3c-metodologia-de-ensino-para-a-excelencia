@@ -1,0 +1,63 @@
+{
+  "order_id": 8,
+  "signature": "00ced48062fd520dfbd46fd138687c9169ac37d5b78f4a7710d6be06385746bb",
+  "generated_at": "2026-11-11T09:33:16",
+  "answers": 3,
+  "summary": {
+    "students": [
+      {
+        "id": 20,
+        "nome": "Francisco Cunha da Conceição",
+        "serie": "2º ano EM",
+        "turma": "B",
+        "idx_socio": 5.3,
+        "idx_trabalho": 0.0,
+        "idx_vinculo": 7.0,
+        "idx_cultural": 5.0,
+        "cluster_id": 1,
+        "perfil": "Perfil em Desenvolvimento (Grupo 2)",
+        "pca_1": -2.188,
+        "pca_2": 0.232
+      },
+      {
+        "id": 24,
+        "nome": "Lavínia Andrade Alves",
+        "serie": "2º ano EM",
+        "turma": "B",
+        "idx_socio": 7.43,
+        "idx_trabalho": 0.0,
+        "idx_vinculo": 10.0,
+        "idx_cultural": 7.5,
+        "cluster_id": 0,
+        "perfil": "Perfil Engajado / Participativo e Cultural",
+        "pca_1": 1.57,
+        "pca_2": 0.685
+      },
+      {
+        "id": 19,
+        "nome": "Zoe Borges Pastor",
+        "serie": "2º ano EM",
+        "turma": "B",
+        "idx_socio": 5.71,
+        "idx_trabalho": 0.0,
+        "idx_vinculo": 10.0,
+        "idx_cultural": 7.5,
+        "cluster_id": 2,
+        "perfil": "Perfil Engajado / Participativo e Cultural",
+        "pca_1": 0.618,
+        "pca_2": -0.918
+      }
+    ],
+    "total_diagnosticados": 3,
+    "medias": {
+      "socio": 6.15,
+      "trabalho": 0.0,
+      "vinculo": 9.0,
+      "cultural": 6.67
+    },
+    "perfis_count": {
+      "Perfil em Desenvolvimento (Grupo 2)": 1,
+      "Perfil Engajado / Participativo e Cultural": 2
+    }
+  }
+}

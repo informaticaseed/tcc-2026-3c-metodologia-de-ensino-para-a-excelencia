@@ -1,0 +1,404 @@
+{% extends "base.html" %}
+
+{% block title %}Resultados do Diagnóstico Estudantil{% endblock %}
+
+{% block extra_head %}
+<style>
+    .analytics-card {
+        border: none;
+        border-radius: 1rem;
+        background: #fff;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .metric-badge {
+        font-size: 0.85rem;
+        padding: 0.35rem 0.65rem;
+        border-radius: 50rem;
+    }
+    .img-report-container {
+        border-radius: 0.75rem;
+        overflow: hidden;
+        border: 1px solid #e9ecef;
+        background: #f8f9fa;
+        text-align: center;
+    }
+    .img-report-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+    .img-report-container:hover img {
+        transform: scale(1.02);
+    }
+    .profile-pill {
+        display: inline-block;
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.3rem 0.6rem;
+        border-radius: 50rem;
+    }
+    .profile-worker {
+        background-color: #ffe5d0;
+        color: #d9480f;
+    }
+    .profile-development {
+        background-color: #e7f5ff;
+        color: #1971c2;
+    }
+    .index-bar {
+        height: 6px;
+        border-radius: 3px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+
+    <!-- CABEÇALHO DA PÁGINA -->
+    <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-4">
+        <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+                <span class="badge bg-success-subtle text-success px-3 py-1 rounded-pill fw-semibold">
+                    <i class="bi bi-cpu-fill me-1"></i> Machine Learning & Estatística
+                </span>
+                <span class="text-muted small">TCC - Metodologias de Ensino para a Excelência</span>
+            </div>
+            <h2 class="fw-bold text-dark mb-1">Diagnóstico Estudantil por Pedido</h2>
+            <p class="text-muted mb-0">
+                Resultados calculados exclusivamente com as respostas de cada pedido de
+                diagnóstico, agrupando os estudantes com K-Means e PCA.
+            </p>
+        </div>
+        <div class="d-flex gap-2">
+            <a href="{{ url_for('dashboard') }}" class="btn btn-outline-secondary btn-sm px-3 shadow-sm">
+                <i class="bi bi-arrow-left me-1"></i> Voltar ao Painel
+            </a>
+        </div>
+    </div>
+
+    {% if not pedidos %}
+    <!-- NENHUM PEDIDO CRIADO -->
+    <div class="card border-0 shadow-sm rounded-4">
+        <div class="card-body p-5 text-center">
+            <i class="bi bi-clipboard-x fs-1 text-secondary d-block mb-3"></i>
+            <h4 class="fw-bold text-dark">Nenhum pedido de diagnóstico criado</h4>
+            <p class="text-muted mb-4">
+                Crie um pedido de diagnóstico para uma de suas turmas. Assim que os
+                estudantes responderem, os resultados aparecerão aqui separados por pedido.
+            </p>
+            <a href="{{ url_for('pedido_diagnostico') }}" class="btn btn-success px-4 shadow-sm">
+                <i class="bi bi-plus-circle me-2"></i> Criar Pedido de Diagnóstico
+            </a>
+        </div>
+    </div>
+    {% else %}
+
+    <!-- SELETOR DE PEDIDO -->
+    <div class="analytics-card p-4 mb-4">
+        <form method="GET" action="{{ url_for('resultados') }}" class="row g-3 align-items-end">
+            <div class="col-12 col-lg-8">
+                <label for="pedido_id" class="form-label fw-semibold text-dark">
+                    <i class="bi bi-clipboard-data text-primary me-1"></i>
+                    Pedido de diagnóstico
+                </label>
+                <select id="pedido_id" name="pedido_id" class="form-select" onchange="this.form.submit()">
+                    {% for p in pedidos %}
+                    <option value="{{ p.id }}" {% if pedido and p.id == pedido.id %}selected{% endif %}>
+                        #{{ p.id }} - {{ p.titulo }} ({{ p.serie }} / {{ p.turma }}) - {{ p.respostas }} resposta(s){% if p.status == 'encerrado' %} - Encerrado{% elif p.status == 'aguardando' %} - Aguardando abertura{% endif %}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-12 col-lg-4 d-flex gap-2">
+                <button type="submit" class="btn btn-primary flex-grow-1">
+                    <i class="bi bi-arrow-repeat me-1"></i> Atualizar análise
+                </button>
+                <a href="{{ url_for('pedido_diagnostico') }}" class="btn btn-outline-success" title="Criar novo pedido">
+                    <i class="bi bi-plus-lg"></i>
+                </a>
+            </div>
+        </form>
+
+        {% if pedido %}
+        <hr class="my-3">
+        <div class="row g-3 small">
+            <div class="col-12 col-md-4">
+                <div class="text-muted fw-semibold">Escola</div>
+                <div class="text-dark fw-medium">{{ pedido.escola }}</div>
+            </div>
+            <div class="col-6 col-md-2">
+                <div class="text-muted fw-semibold">Série / Turma</div>
+                <div class="text-dark fw-medium">{{ pedido.serie }} / {{ pedido.turma }}</div>
+            </div>
+            <div class="col-6 col-md-2">
+                <div class="text-muted fw-semibold">Respostas</div>
+                <div class="text-dark fw-medium">{{ pedido.respostas }}</div>
+            </div>
+            <div class="col-6 col-md-2">
+                <div class="text-muted fw-semibold">Abertura</div>
+                <div class="text-dark fw-medium">{{ pedido.abertura or '-' }}</div>
+            </div>
+            <div class="col-6 col-md-2">
+                <div class="text-muted fw-semibold">Encerramento</div>
+                <div class="text-dark fw-medium">{{ pedido.encerramento or 'Sem prazo' }}</div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    {% if relatorios_erro %}
+    <div class="alert alert-warning d-flex align-items-start gap-2 shadow-sm">
+        <i class="bi bi-exclamation-triangle-fill fs-5"></i>
+        <div>{{ relatorios_erro }}</div>
+    </div>
+    {% endif %}
+
+    <!-- CARDS DE MÉTRICAS MÉDIAS (0 a 10) -->
+    <div class="row g-3 mb-4">
+        <div class="col-6 col-lg">
+            <div class="analytics-card p-3 h-100">
+                <span class="text-muted small d-block">Estudantes</span>
+                <h3 class="fw-bold text-dark mb-0">{{ summary.total_diagnosticados }}</h3>
+                <span class="text-muted small">
+                    <i class="bi bi-check-circle-fill text-success me-1"></i> Resultados do pedido
+                </span>
+            </div>
+        </div>
+        <div class="col-6 col-lg">
+            <div class="analytics-card p-3 h-100">
+                <span class="text-muted small d-block">Socioeconômico</span>
+                <h3 class="fw-bold text-primary mb-0">{{ summary.medias.socio }} <span class="small text-muted fs-6">/10</span></h3>
+                <div class="progress index-bar mt-2">
+                    <div class="progress-bar bg-primary" style="width: {{ summary.medias.socio * 10 }}%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg">
+            <div class="analytics-card p-3 h-100">
+                <span class="text-muted small d-block">Sobrecarga Trab.</span>
+                <h3 class="fw-bold text-danger mb-0">{{ summary.medias.trabalho }} <span class="small text-muted fs-6">/10</span></h3>
+                <div class="progress index-bar mt-2">
+                    <div class="progress-bar bg-danger" style="width: {{ summary.medias.trabalho * 10 }}%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg">
+            <div class="analytics-card p-3 h-100">
+                <span class="text-muted small d-block">Vínculo Escolar</span>
+                <h3 class="fw-bold text-success mb-0">{{ summary.medias.vinculo }} <span class="small text-muted fs-6">/10</span></h3>
+                <div class="progress index-bar mt-2">
+                    <div class="progress-bar bg-success" style="width: {{ summary.medias.vinculo * 10 }}%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg">
+            <div class="analytics-card p-3 h-100">
+                <span class="text-muted small d-block">Capital Cultural</span>
+                <h3 class="fw-bold text-info mb-0">{{ summary.medias.cultural }} <span class="small text-muted fs-6">/10</span></h3>
+                <div class="progress index-bar mt-2">
+                    <div class="progress-bar bg-info" style="width: {{ summary.medias.cultural * 10 }}%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO DE GRÁFICOS VISUAIS -->
+    <div class="row g-4 mb-5">
+        <!-- GRÁFICO 1: PCA & CLUSTERS -->
+        <div class="col-lg-6">
+            <div class="analytics-card p-4 h-100">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="fw-bold mb-0 text-dark">
+                        <i class="bi bi-diagram-3-fill text-primary me-2"></i>Mapeamento de Agrupamentos (PCA 2D)
+                    </h5>
+                    <span class="badge bg-primary-subtle text-primary rounded-pill small">K-Means</span>
+                </div>
+                <p class="text-muted small mb-3">Projeção bidimensional dos estudantes deste pedido no espaço vetorial pedagógico, destacando a dispersão e separação dos grupos.</p>
+                <div class="img-report-container shadow-sm">
+                    {% if relatorios.get('pca') %}
+                    <img src="{{ relatorios.pca }}" alt="Gráfico de PCA e Clusters do pedido" loading="lazy">
+                    {% else %}
+                    <div class="p-5 text-muted small">
+                        <i class="bi bi-image fs-2 d-block mb-2 text-secondary"></i>
+                        Relatório indisponível: este pedido ainda não possui respostas.
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- GRÁFICO 2: DIMENSÕES MÉDIAS -->
+        <div class="col-lg-6">
+            <div class="analytics-card p-4 h-100">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="fw-bold mb-0 text-dark">
+                        <i class="bi bi-radar text-success me-2"></i>Comparativo por Dimensões
+                    </h5>
+                    <span class="badge bg-success-subtle text-success rounded-pill small">Dimensões 0-10</span>
+                </div>
+                <p class="text-muted small mb-3">Média de pontuação em cada dimensão comparando os perfis diagnosticados neste pedido.</p>
+                <div class="img-report-container shadow-sm">
+                    {% if relatorios.get('dimensoes') %}
+                    <img src="{{ relatorios.dimensoes }}" alt="Dimensões por Cluster do pedido" loading="lazy">
+                    {% else %}
+                    <div class="p-5 text-muted small">
+                        <i class="bi bi-image fs-2 d-block mb-2 text-secondary"></i>
+                        Relatório indisponível: este pedido ainda não possui respostas.
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- GRÁFICO 3: ANÁLISE POR TURMA -->
+        <div class="col-lg-6">
+            <div class="analytics-card p-4 h-100">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="fw-bold mb-0 text-dark">
+                        <i class="bi bi-bar-chart-steps text-warning me-2"></i>Distribuição por Série e Turma
+                    </h5>
+                    <span class="badge bg-warning-subtle text-warning rounded-pill small">Por Turma</span>
+                </div>
+                <p class="text-muted small mb-3">Identificação da turma do pedido e das médias das dimensões diagnósticas.</p>
+                <div class="img-report-container shadow-sm">
+                    {% if relatorios.get('turma') %}
+                    <img src="{{ relatorios.turma }}" alt="Análise por Turma do pedido" loading="lazy">
+                    {% else %}
+                    <div class="p-5 text-muted small">
+                        <i class="bi bi-image fs-2 d-block mb-2 text-secondary"></i>
+                        Relatório indisponível: este pedido ainda não possui respostas.
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- GRÁFICO 4: NUVENS DE PALAVRAS TEMÁTICAS -->
+        <div class="col-lg-6">
+            <div class="analytics-card p-4 h-100">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="fw-bold mb-0 text-dark">
+                        <i class="bi bi-chat-quote-fill text-purple me-2"></i>Nuvens Temáticas (Voz do Estudante)
+                    </h5>
+                    <span class="badge bg-info-subtle text-info rounded-pill small">Processamento Textual</span>
+                </div>
+                <p class="text-muted small mb-3">Termos mais frequentes citados pelos alunos deste pedido em relação a objetivos de vida, apoio escolar e práticas culturais.</p>
+                <div class="img-report-container shadow-sm">
+                    {% if relatorios.get('nuvens') %}
+                    <img src="{{ relatorios.nuvens }}" alt="Nuvens de Palavras do pedido" loading="lazy">
+                    {% else %}
+                    <div class="p-5 text-muted small">
+                        <i class="bi bi-image fs-2 d-block mb-2 text-secondary"></i>
+                        Relatório indisponível: este pedido ainda não possui respostas.
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TABELA DETALHADA COM DADOS DO PEDIDO -->
+    <div class="analytics-card overflow-hidden mb-5">
+        <div class="p-4 border-bottom bg-white d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+            <div>
+                <h5 class="fw-bold text-dark mb-1">
+                    <i class="bi bi-table text-primary me-2"></i>Resultados Individuais do Pedido
+                </h5>
+                {% if pedido %}
+                <div class="text-muted small">
+                    Pedido #{{ pedido.id }} - {{ pedido.titulo }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-secondary-subtle text-secondary" id="count-badge">Mostrando {{ summary.students|length }} de {{ summary.students|length }} alunos</span>
+            </div>
+        </div>
+
+        <!-- BARRA DE PESQUISA E FILTROS DINÂMICOS -->
+        <div class="p-3 bg-light border-bottom">
+            <div class="row g-2 align-items-center">
+                <div class="col-12 col-md-7">
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-text bg-white"><i class="bi bi-search text-muted"></i></span>
+                        <input type="text" id="filtro-nome" class="form-control" placeholder="Buscar aluno por nome...">
+                    </div>
+                </div>
+                <div class="col-8 col-md-4">
+                    <select id="filtro-perfil" class="form-select form-select-sm">
+                        <option value="">Todos os Perfis</option>
+                        {% for perfil_nome in summary.perfis_count.keys() %}
+                            <option value="{{ perfil_nome }}">{{ perfil_nome }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-4 col-md-1 text-md-end">
+                    <button id="btn-limpar-filtros" class="btn btn-outline-secondary btn-sm w-100" title="Limpar filtros">
+                        <i class="bi bi-x-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0" id="tabela-estudantes">
+                <thead class="table-light">
+                    <tr>
+                        <th class="ps-4">Aluno</th>
+                        <th>Turma</th>
+                        <th>Socioeconômico</th>
+                        <th>Trabalho</th>
+                        <th>Vínculo</th>
+                        <th>Cultural</th>
+                        <th>Perfil Classificado</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-estudantes">
+                    {% for st in summary.students %}
+                    <tr class="linha-estudante"
+                        data-nome="{{ st.nome|lower }}"
+                        data-turma="{{ (st.serie ~ ' - ' ~ st.turma)|lower }}"
+                        data-perfil="{{ st.perfil|lower }}">
+                        <td class="ps-4 fw-semibold text-dark">{{ st.nome }}</td>
+                        <td><span class="badge bg-light text-dark border">{{ st.serie }} - {{ st.turma }}</span></td>
+                        <td><span class="fw-medium text-primary">{{ st.idx_socio }}</span></td>
+                        <td>
+                            {% if st.idx_trabalho >= 5.0 %}
+                                <span class="badge bg-danger-subtle text-danger">{{ st.idx_trabalho }}</span>
+                            {% else %}
+                                <span class="text-muted">{{ st.idx_trabalho }}</span>
+                            {% endif %}
+                        </td>
+                        <td><span class="fw-medium text-success">{{ st.idx_vinculo }}</span></td>
+                        <td><span class="fw-medium text-info">{{ st.idx_cultural }}</span></td>
+                        <td>
+                            {% if 'Trabalhador' in st.perfil %}
+                                <span class="profile-pill profile-worker"><i class="bi bi-briefcase-fill me-1"></i> {{ st.perfil }}</span>
+                            {% else %}
+                                <span class="profile-pill profile-development"><i class="bi bi-mortarboard-fill me-1"></i> {{ st.perfil }}</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    <tr id="sem-resultados" {% if summary.students %}style="display: none;"{% endif %}>
+                        <td colspan="7" class="text-center py-4 text-muted">
+                            <i class="bi bi-person-x fs-3 d-block mb-2 text-secondary"></i>
+                            {% if summary.students %}
+                            Nenhum estudante encontrado com os filtros selecionados.
+                            {% else %}
+                            Este pedido ainda não possui respostas analisadas.
+                            {% endif %}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    {% endif %}
+
+</div>
+{% endblock %}

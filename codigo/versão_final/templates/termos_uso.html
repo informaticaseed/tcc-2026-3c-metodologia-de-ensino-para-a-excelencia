@@ -1,0 +1,348 @@
+{% extends "base.html" %}
+
+{% block title %}Termos de Uso{% endblock %}
+
+{% block content %}
+<div class="legal-wrapper">
+    <div class="container">
+        <div class="legal-card fade-in">
+
+            <div class="legal-hero">
+                <span class="badge legal-badge mb-2">
+                    <i class="bi bi-file-earmark-text me-1"></i> Documento oficial
+                </span>
+                <h1>Termos de Uso</h1>
+                <p class="mb-2">
+                    Plataforma EduMetodologias — diagnóstico pedagógico e apoio a
+                    metodologias ativas de ensino-aprendizagem.
+                </p>
+                <div class="legal-meta">
+                    <span><i class="bi bi-tag me-1"></i> Versão {{ termos_versao }}</span>
+                    <span><i class="bi bi-calendar-check me-1"></i> Vigência: {{ termos_vigencia }}</span>
+                    <span><i class="bi bi-building me-1"></i> Controlador: instituição de ensino</span>
+                </div>
+            </div>
+
+            <div class="legal-body">
+
+                <div class="legal-summary">
+                    <h2 class="h6 fw-bold mb-2">
+                        <i class="bi bi-chat-heart text-primary me-1"></i>
+                        Em palavras simples
+                    </h2>
+                    <p class="mb-2">
+                        Esta plataforma ajuda a escola a entender melhor como os
+                        estudantes aprendem e vivem o ambiente escolar. Os
+                        resultados servem para melhorar o ensino, nunca para
+                        punir, expor ou rotular alguém.
+                    </p>
+                    <ul class="mb-0 small">
+                        <li>Cuide da sua senha e não compartilhe sua conta.</li>
+                        <li>Responda ao questionário com sinceridade.</li>
+                        <li>Os resultados são usados apenas para fins pedagógicos.</li>
+                        <li>Se você tem menos de 18 anos, seu responsável legal precisa autorizar o uso.</li>
+                    </ul>
+                </div>
+
+                <nav class="legal-toc" aria-label="Índice dos Termos de Uso">
+                    <strong class="d-block mb-2 text-dark">Nesta página</strong>
+                    <a href="#aceitacao">1. Aceitação</a>
+                    <a href="#publico">2. Público e menores</a>
+                    <a href="#servico">3. O que a plataforma faz</a>
+                    <a href="#conta">4. Conta e segurança</a>
+                    <a href="#professores">5. Responsabilidades do professor</a>
+                    <a href="#limitacoes">6. Limitações das análises</a>
+                    <a href="#condutas">7. Condutas proibidas</a>
+                    <a href="#privacidade">8. Privacidade</a>
+                    <a href="#encerramento">9. Suspensão e encerramento</a>
+                    <a href="#alteracoes">10. Alterações</a>
+                    <a href="#legislacao">11. Legislação aplicável</a>
+                    <a href="#contato">12. Contato</a>
+                </nav>
+
+                <section id="aceitacao" class="legal-section">
+                    <h2>1. Aceitação e identificação</h2>
+                    <p>
+                        Estes Termos de Uso regulam o acesso e a utilização da
+                        plataforma <strong>EduMetodologias</strong>, ambiente
+                        educacional de diagnóstico pedagógico e apoio a
+                        metodologias ativas. Ao ativar sua conta ou utilizar a
+                        plataforma, você declara que leu, compreendeu e aceita
+                        estes Termos.
+                    </p>
+                    <p class="mb-0">
+                        A instituição de ensino que disponibiliza a plataforma é
+                        a <strong>controladora</strong> dos dados pessoais
+                        tratados no contexto escolar. A equipe responsável pela
+                        manutenção técnica da plataforma atua como
+                        <strong>operadora</strong>, seguindo as instruções da
+                        instituição. O canal de privacidade é
+                        <a href="mailto:{{ lgpd_contato }}">{{ lgpd_contato }}</a>,
+                        sob responsabilidade do encarregado de proteção de dados
+                        indicado pela instituição.
+                    </p>
+                </section>
+
+                <section id="publico" class="legal-section">
+                    <h2>2. Público-alvo e proteção de crianças e adolescentes</h2>
+                    <p>
+                        A plataforma é destinada a estudantes do Ensino Médio,
+                        professores e gestores escolares. Como parte do público
+                        é formada por crianças e adolescentes, o tratamento de
+                        dados observa o <strong>melhor interesse</strong> do
+                        estudante, previsto no Art. 14 da LGPD.
+                    </p>
+                    <ul>
+                        <li>
+                            A participação do estudante deve ocorrer em contexto
+                            pedagógico, com informação clara e linguagem
+                            adequada à sua idade.
+                        </li>
+                        <li>
+                            Estudantes menores de 18 anos devem ter ciência dos
+                            Termos e da Política de Privacidade, com autorização
+                            do responsável legal quando exigida pela instituição
+                            ou pela legislação aplicável.
+                        </li>
+                        <li>
+                            Não são coletados dados desnecessários nem dados
+                            sensíveis sem base legal específica.
+                        </li>
+                        <li>
+                            Nenhuma decisão escolar relevante deve ser tomada de
+                            forma exclusivamente automatizada com base nos
+                            resultados da plataforma.
+                        </li>
+                    </ul>
+                    <p class="mb-0">
+                        Se você é estudante menor de idade, converse com seu
+                        responsável legal e com a escola antes de usar a
+                        plataforma. Se for responsável legal, você pode exercer
+                        os direitos previstos na Política de Privacidade em nome
+                        do estudante.
+                    </p>
+                </section>
+
+                <section id="servico" class="legal-section">
+                    <h2>3. O que a plataforma faz</h2>
+                    <p>A plataforma oferece, entre outras funcionalidades:</p>
+                    <ul>
+                        <li>
+                            cadastro e autenticação de estudantes, professores e
+                            gestores, com vínculo à instituição, série e turma;
+                        </li>
+                        <li>
+                            aplicação de questionários pedagógicos sobre
+                            contexto socioeconômico, cultural, escolar e
+                            expectativas do estudante;
+                        </li>
+                        <li>
+                            geração de indicadores, agrupamentos e gráficos
+                            agregados para apoiar o planejamento pedagógico;
+                        </li>
+                        <li>
+                            disponibilização de relatórios ao professor
+                            responsável pelo pedido de diagnóstico.
+                        </li>
+                    </ul>
+                    <p class="mb-0">
+                        A plataforma é uma ferramenta de apoio. Ela não substitui
+                        acompanhamento pedagógico, psicológico, social ou
+                        médico, nem serve como instrumento de avaliação
+                        disciplinar.
+                    </p>
+                </section>
+
+                <section id="conta" class="legal-section">
+                    <h2>4. Conta, credenciais e segurança</h2>
+                    <ul>
+                        <li>
+                            O acesso é pessoal e intransferível. Não compartilhe
+                            seu código de acesso, usuário ou senha.
+                        </li>
+                        <li>
+                            A senha temporária deve ser substituída por uma senha
+                            definitiva forte no primeiro acesso.
+                        </li>
+                        <li>
+                            Você é responsável por manter a confidencialidade de
+                            suas credenciais e por comunicar imediatamente
+                            qualquer uso indevido à instituição.
+                        </li>
+                        <li>
+                            A instituição pode bloquear ou revogar acessos em
+                            caso de suspeita de fraude, risco à segurança ou
+                            descumprimento destes Termos.
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="professores" class="legal-section">
+                    <h2>5. Responsabilidades do professor e do gestor</h2>
+                    <p>
+                        Professores e gestores acessam dados pessoais de
+                        estudantes e, por isso, devem observar deveres especiais
+                        de confidencialidade e finalidade:
+                    </p>
+                    <ul>
+                        <li>
+                            acessar apenas os pedidos, turmas e estudantes sob
+                            sua responsabilidade;
+                        </li>
+                        <li>
+                            usar as informações exclusivamente para fins
+                            pedagógicos e de melhoria do ensino;
+                        </li>
+                        <li>
+                            não divulgar, comentar ou expor publicamente dados
+                            individuais, respostas ou perfis de estudantes;
+                        </li>
+                        <li>
+                            não usar os resultados para punir, constranger,
+                            classificar publicamente ou discriminar estudantes;
+                        </li>
+                        <li>
+                            preservar o sigilo profissional e comunicar à
+                            instituição qualquer incidente, acesso indevido ou
+                            suspeita de vazamento;
+                        </li>
+                        <li>
+                            manter suas credenciais em segurança e não permitir
+                            que terceiros utilizem sua conta.
+                        </li>
+                    </ul>
+                    <p class="mb-0">
+                        O descumprimento desses deveres pode gerar
+                        responsabilização administrativa, civil e disciplinar,
+                        além das sanções previstas na LGPD.
+                    </p>
+                </section>
+
+                <section id="limitacoes" class="legal-section">
+                    <h2>6. Limitações das análises realizadas</h2>
+                    <ul>
+                        <li>
+                            Os resultados são <strong>indicativos e
+                            estatísticos</strong>. Podem conter margem de erro,
+                            limitações do questionário e efeitos de respostas
+                            incompletas ou imprecisas.
+                        </li>
+                        <li>
+                            Os perfis pedagógicos não são diagnósticos clínicos,
+                            psicológicos ou médicos e não rotulam o estudante de
+                            forma definitiva.
+                        </li>
+                        <li>
+                            Os relatórios não devem ser usados para decisões
+                            automatizadas que afetem direitos do estudante.
+                        </li>
+                        <li>
+                            A interpretação dos resultados deve considerar o
+                            contexto da turma, da escola e o olhar profissional
+                            da equipe pedagógica.
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="condutas" class="legal-section">
+                    <h2>7. Uso permitido e condutas proibidas</h2>
+                    <p>É proibido, entre outras condutas:</p>
+                    <ul>
+                        <li>tentar acessar contas, turmas ou dados de terceiros sem autorização;</li>
+                        <li>inserir informações falsas, ofensivas ou de terceiros sem consentimento;</li>
+                        <li>copiar, gravar ou divulgar respostas e relatórios com identificação de estudantes;</li>
+                        <li>utilizar a plataforma para fins comerciais, publicitários ou alheios à finalidade educacional;</li>
+                        <li>realizar engenharia reversa, burlar controles de segurança ou explorar vulnerabilidades;</li>
+                        <li>automatizar acessos ou sobrecarregar a infraestrutura sem autorização.</li>
+                    </ul>
+                </section>
+
+                <section id="privacidade" class="legal-section">
+                    <h2>8. Privacidade e proteção de dados</h2>
+                    <p>
+                        O tratamento de dados pessoais é detalhado na
+                        <a href="{{ url_for('politica_privacidade') }}">Política de Privacidade</a>,
+                        que informa quais dados são coletados, as finalidades, as
+                        bases legais, o compartilhamento, os prazos de retenção e
+                        os direitos dos titulares.
+                    </p>
+                    <p class="mb-0">
+                        No primeiro acesso, você confirma que leu e aceita estes
+                        Termos e que compreendeu a Política de Privacidade. Essa
+                        confirmação atende ao dever de informação, mas
+                        <strong>não define a base legal</strong> do tratamento,
+                        que segue a legislação e as políticas da instituição de
+                        ensino.
+                    </p>
+                </section>
+
+                <section id="encerramento" class="legal-section">
+                    <h2>9. Suspensão e encerramento do acesso</h2>
+                    <p>
+                        O acesso pode ser suspenso ou encerrado em caso de
+                        descumprimento destes Termos, determinação da instituição,
+                        encerramento do vínculo escolar ou necessidade de
+                        proteção de estudantes e da comunidade. Quando cabível, a
+                        exclusão dos dados observará a Política de Privacidade e
+                        os prazos legais de retenção.
+                    </p>
+                </section>
+
+                <section id="alteracoes" class="legal-section">
+                    <h2>10. Alterações destes Termos</h2>
+                    <p class="mb-0">
+                        Estes Termos podem ser atualizados para refletir mudanças
+                        legais, técnicas ou pedagógicas. A versão vigente e a data
+                        de vigência são sempre exibidas nesta página. Alterações
+                        relevantes serão comunicadas e poderão exigir novo aceite
+                        antes da continuidade do uso.
+                    </p>
+                </section>
+
+                <section id="legislacao" class="legal-section">
+                    <h2>11. Legislação aplicável</h2>
+                    <p class="mb-0">
+                        Estes Termos são regidos pela legislação brasileira,
+                        especialmente pela Lei nº 13.709/2018 (LGPD), pelo
+                        Estatuto da Criança e do Adolescente (Lei nº 8.069/1990),
+                        pela Lei Geral de Proteção de Dados no ambiente escolar e
+                        pelas normas da instituição de ensino. Eventuais
+                        controvérsias serão resolvidas no foro competente da
+                        comarca da instituição, sem prejuízo dos canais
+                        administrativos e de proteção ao consumidor e ao titular
+                        de dados.
+                    </p>
+                </section>
+
+                <section id="contato" class="legal-section">
+                    <h2>12. Contato</h2>
+                    <p>
+                        Para dúvidas, solicitações ou exercício de direitos
+                        relacionados a estes Termos, procure a instituição de
+                        ensino ou o encarregado de proteção de dados:
+                    </p>
+                    <ul class="mb-0">
+                        <li><strong>Encarregado:</strong> {{ lgpd_encarregado }}</li>
+                        <li>
+                            <strong>E-mail:</strong>
+                            <a href="mailto:{{ lgpd_contato }}">{{ lgpd_contato }}</a>
+                        </li>
+                        <li>
+                            <strong>Autoridade Nacional de Proteção de Dados
+                            (ANPD):</strong> <a href="https://www.gov.br/anpd" target="_blank" rel="noopener">www.gov.br/anpd</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <div class="legal-footer">
+                    <span><i class="bi bi-file-earmark-text me-1"></i> Termos de Uso — versão {{ termos_versao }}</span>
+                    <a href="{{ url_for('politica_privacidade') }}">
+                        Política de Privacidade <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
